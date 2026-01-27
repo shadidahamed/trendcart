@@ -98,7 +98,7 @@ function doPost(e){
  FEEDBACK FORM
 ************************/
 const SHEET_API_URL =
-"https://script.google.com/macros/s/AKfycbylNYNVCqQdl1EQXMsblbALFJ1orhCnSGhrhem6xSZ4Xes2m-lEAlFj_0RUoYHhbeaCug/exec";
+"https://script.google.com/macros/s/AKfycbw8xW9Qn2No9wZdQpLoTgdkuSBwfMkRnJeTw47HO6A9Mg_JixH_fM0pcHsE_n9F1u3Z/exec";
 
 const form = document.getElementById("feedbackForm");
 const msg = document.getElementById("feedbackMsg");
