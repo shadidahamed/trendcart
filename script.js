@@ -1,143 +1,88 @@
-/***********************
- PRODUCT DATA
-************************/
-const products = [
-  {
-    name: "Wireless Earbuds Pro",
-    description: "Noise cancellation, deep bass",
-    image: "https://via.placeholder.com/300",
-    price: 49.99,
-    oldPrice: 55.99,
-    discount: "10% OFF",
-    rating: 4.5,
-    reviews: 120,
-    link: "#"
-  },
-  {
-    name: "Smart Fitness Watch",
-    description: "Heart-rate & sleep tracking",
-    image: "https://via.placeholder.com/300",
-    price: 79.99,
-    oldPrice: 84.99,
-    discount: "5% OFF",
-    rating: 4.2,
-    reviews: 80,
-    link: "#"
-  },
-  {
-    name: "Pokemon Collector Card",
-    description: "Limited edition & rare",
-    image: "https://via.placeholder.com/300",
-    price: 120,
-    oldPrice: 0,
-    discount: "",
-    rating: 5,
-    reviews: 45,
-    link: "#"
-  }
-];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrendCart – Trending Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-const grid = document.getElementById("productGrid");
+<header class="main-header">
+  <div class="logo">TrendCart</div>
 
-/***********************
- STAR RATING
-************************/
-function createStars(rating) {
-  let stars = "";
-  for (let i = 1; i <= 5; i++) stars += rating >= i ? "★" : "☆";
-  return `<span class="stars">${stars}</span>`;
-}
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-items">
+      <li class="nav-item">
+        Categories
+        <div class="mega-menu">
+          <div class="mega-section">
+            <h4>Electronics</h4>
+            <a href="#">Headphones</a>
+            <a href="#">Smart Watches</a>
+            <a href="#">Speakers</a>
+          </div>
+          <div class="mega-section">
+            <h4>Books</h4>
+            <a href="#">Fiction</a>
+            <a href="#">Non-Fiction</a>
+            <a href="#">Comics</a>
+          </div>
+          <div class="mega-section">
+            <h4>Clothing</h4>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#">Deals</a></li>
+      <li class="nav-item"><a href="#">New Arrivals</a></li>
+      <li class="nav-item"><a href="#">Best Sellers</a></li>
+    </ul>
+  </nav>
 
-/***********************
- RENDER PRODUCTS
-************************/
-grid.innerHTML = "";
-products.forEach(p => {
-  const card = document.createElement("div");
-  card.className = "product-card";
-  card.innerHTML = `
-    ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
-    <img src="${p.image}" alt="${p.name}">
-    <div class="product-info">
-      <h3>${p.name}</h3>
-      <p>${p.description}</p>
-      <div class="price-row">
-        <span class="price">$${p.price}</span>
-        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
-      </div>
-      <div class="rating-row">
-        ${createStars(p.rating)} <span>(${p.reviews} reviews)</span>
-      </div>
-      <button class="buy-btn" onclick="window.open('${p.link}','_blank')">Buy Now</button>
-    </div>
-  `;
-  grid.appendChild(card);
-});
+  <!-- Header Actions -->
+  <div class="header-actions">
+    <button class="login-btn">Login</button>
+    <button class="cart-btn">Cart 🛒</button>
+  </div>
+</header>
 
-/***********************
- AI HELP CENTER BRAIN
-************************/
-const aiBrain = [
-  { keywords: ["delivery", "shipping", "arrive"], reply: "Delivery usually takes 3–7 working days depending on your location." },
-  { keywords: ["refund", "return", "money back"], reply: "Refunds are processed within 5–10 working days after approval." },
-  { keywords: ["affiliate", "commission"], reply: "We earn a small commission from affiliate links. No extra cost to you." },
-  { keywords: ["contact", "human", "support"], reply: "Your message has been forwarded to our support system." }
-];
+<p class="tagline">Trending products people love 🔥</p>
 
-function getAIReply(text) {
-  text = text.toLowerCase();
-  for (let item of aiBrain) {
-    for (let key of item.keywords) if (text.includes(key)) return item.reply;
-  }
-  return "I couldn’t find an exact answer. Your message has been sent for review.";
-}
+<main class="container">
+  <section class="product-grid" id="productGrid">
+    <p class="loading">Loading products...</p>
+  </section>
+</main>
 
-/***********************
- HELP CHAT
-************************/
-function toggleChat() {
-  const chatBody = document.getElementById("chatBody");
-  const chatInput = document.getElementById("chatInput");
-  chatBody.classList.toggle("show");
-  chatInput.classList.toggle("show");
-  if(chatBody.classList.contains("show")) chatInput.focus();
-}
+<section class="feedback-section">
+  <h2>Have a Complaint or Suggestion?</h2>
+  <form id="feedbackForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Write your feedback to help us..." required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="feedbackMsg"></p>
+</section>
 
-function sendMessage(e) {
-  if(e.key !== "Enter") return;
-  const input = document.getElementById("chatInput");
-  const chatBody = document.getElementById("chatBody");
-  const text = input.value.trim();
-  if(!text) return;
-  chatBody.innerHTML += `<div class="chat-message user">${text}</div>`;
-  chatBody.innerHTML += `<div class="chat-message bot">${getAIReply(text)}</div>`;
-  chatBody.scrollTop = chatBody.scrollHeight;
-  input.value = "";
-}
+<!-- Help Center Chat -->
+<div class="help-center" id="helpCenter">
+  <div class="chat-header" onclick="toggleChat()">Help Center 💬</div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-message bot">Hello! How can I help you today?</div>
+  </div>
+  <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="sendMessage(event)">
+</div>
 
-/***********************
- FEEDBACK FORM
-************************/
-const form = document.getElementById("feedbackForm");
-const msg = document.getElementById("feedbackMsg");
+<footer class="footer">
+  <p>© 2026 TrendCart. Affiliate links may earn commission.</p>
+</footer>
 
-const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbxTVDbF7ZJbl7pcssSXiQb7S_v1UcMLX9UGCAaT46rgwad79Tg8G-VvXu8X1ow9-v8oYg/exec";
+<script src="script.js"></script>
+</body>
+</html>
 
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  const data = { name: form.name.value, email: form.email.value, message: form.message.value };
-  fetch(SHEET_API_URL, {
-    method:"POST",
-    body:JSON.stringify(data),
-    headers: { "Content-Type":"application/json" }
-  })
-  .then(res => res.json())
-  .then(() => {
-    msg.textContent = "Thank you! Your message has been recorded.";
-    form.reset();
-  })
-  .catch(err => {
-    console.error(err);
-    msg.textContent = "Error! Please try again later.";
-  });
-});
