@@ -1,49 +1,4 @@
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 40px;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #0397d3;
-}
-
-.search-bar {
-  display: flex;
-  width: 420px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.search-bar input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-
-.search-bar button {
-  background: #0397d3;
-  color: white;
-  border: none;
-  padding: 0 18px;
-  cursor: pointer;
-}
-
-.header-icons span {
-  margin-left: 20px;
-  cursor: pointer;
-  font-weight: 500;
-}
 
 const products = [
   {
