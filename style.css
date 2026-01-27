@@ -160,5 +160,49 @@
 .nav-item:hover .mega-menu {
   display: flex;
 }
+.feedback-section {
+  padding: 40px;
+  background: #f7f8fa;
+  text-align: center;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.feedback-section h2 {
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.feedback-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.feedback-section button {
+  padding: 12px;
+  background: #ff7a18;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.feedback-section button:hover {
+  background: #ff3d00;
+}
+
 
 
