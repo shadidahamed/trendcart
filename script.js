@@ -23,162 +23,91 @@ const products = [
     rating: 4.2,
     reviews: 80,
     link: "#"
-  },
-  {
-    name: "Pokemon Collector Card",
-    description: "Limited edition & rare",
-    image: "https://via.placeholder.com/300",
-    price: 120,
-    oldPrice: 0,
-    discount: "",
-    rating: 5,
-    reviews: 45,
-    link: "#"
   }
 ];
 
 const grid = document.getElementById("productGrid");
-
-/***********************
- STAR RATING
-************************/
-function createStars(rating) {
-  let stars = "";
-  for (let i = 1; i <= 5; i++) {
-    stars += rating >= i ? "★" : "☆";
-  }
-  return `<span class="stars">${stars}</span>`;
+if (grid) {
+  products.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+    card.innerHTML = `
+      ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
+      <img src="${p.image}">
+      <h3>${p.name}</h3>
+      <p>${p.description}</p>
+      <div class="price-row">
+        <span>$${p.price}</span>
+        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
+      </div>
+      <button class="buy-btn" onclick="window.open('${p.link}')">Buy</button>
+    `;
+    grid.appendChild(card);
+  });
 }
 
 /***********************
- RENDER PRODUCTS
-************************/
-products.forEach(p => {
-  const card = document.createElement("div");
-  card.className = "product-card";
-
-  card.innerHTML = `
-    ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
-    <img src="${p.image}" alt="${p.name}">
-    <div class="product-info">
-      <h3>${p.name}</h3>
-      <p>${p.description}</p>
-
-      <div class="price-row">
-        <span class="price">$${p.price}</span>
-        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
-      </div>
-
-      <div class="rating-row">
-        ${createStars(p.rating)}
-        <span>(${p.reviews} reviews)</span>
-      </div>
-
-      <button class="buy-btn" onclick="window.open('${p.link}','_blank')">
-        Buy Now
-      </button>
-    </div>
-  `;
-  grid.appendChild(card);
-});
-
-/***********************
- AI HELP CENTER BRAIN
+ HELP CENTER
 ************************/
 const aiBrain = [
-  {
-    keywords: ["delivery", "shipping", "arrive"],
-    reply: "Delivery usually takes 3–7 working days depending on your location."
-  },
-  {
-    keywords: ["refund", "return", "money back"],
-    reply: "Refunds are processed within 5–10 working days after approval."
-  },
-  {
-    keywords: ["affiliate", "commission"],
-    reply: "We earn a small commission from affiliate links. No extra cost to you."
-  },
-  {
-    keywords: ["contact", "human", "support"],
-    reply: "Your message has been forwarded to our support system."
-  }
+  { keywords: ["delivery"], reply: "Delivery takes 3–7 days." },
+  { keywords: ["refund"], reply: "Refunds take 5–10 days." },
+  { keywords: ["affiliate"], reply: "We earn affiliate commission." }
 ];
 
 function getAIReply(text) {
   text = text.toLowerCase();
-  for (let item of aiBrain) {
-    for (let key of item.keywords) {
-      if (text.includes(key)) {
-        return item.reply;
-      }
-    }
+  for (let b of aiBrain) {
+    if (b.keywords.some(k => text.includes(k))) return b.reply;
   }
-  return "I couldn’t find an exact answer. Your message has been sent for review.";
+  return "Message forwarded to support.";
 }
 
 function toggleChat() {
-  const chatBody = document.getElementById("chatBody");
-  const chatInput = document.getElementById("chatInput");
-
-  chatBody.classList.toggle("show");
-  chatInput.classList.toggle("show");
-
-  // Scroll to bottom when opening
-  if (chatBody.classList.contains("show")) {
-    chatBody.scrollTop = chatBody.scrollHeight;
-    chatInput.focus();
-  }
+  document.getElementById("chatBody")?.classList.toggle("show");
+  document.getElementById("chatInput")?.classList.toggle("show");
 }
 
 function sendMessage(e) {
   if (e.key !== "Enter") return;
-
   const input = document.getElementById("chatInput");
-  const chatBody = document.getElementById("chatBody");
+  const body = document.getElementById("chatBody");
+  if (!input.value) return;
 
-  const userText = input.value.trim();
-  if (!userText) return;
-
-  chatBody.innerHTML += `<div class="chat-message user">${userText}</div>`;
-
-  const reply = getAIReply(userText);
-  chatBody.innerHTML += `<div class="chat-message bot">${reply}</div>`;
-
-  chatBody.scrollTop = chatBody.scrollHeight;
+  body.innerHTML += `<div class="chat-message user">${input.value}</div>`;
+  body.innerHTML += `<div class="chat-message bot">${getAIReply(input.value)}</div>`;
   input.value = "";
+  body.scrollTop = body.scrollHeight;
 }
 
-
 /***********************
- FEEDBACK / COMPLAINT
+ FEEDBACK FORM
 ************************/
+const SHEET_API_URL =
+"https://script.google.com/macros/s/AKfycbylNYNVCqQdl1EQXMsblbALFJ1orhCnSGhrhem6xSZ4Xes2m-lEAlFj_0RUoYHhbeaCug/exec";
+
 const form = document.getElementById("feedbackForm");
 const msg = document.getElementById("feedbackMsg");
 
-/* 🔴 এখানে তোমার Apps Script Web App URL বসাবে */
-const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbylNYNVCqQdl1EQXMsblbALFJ1orhCnSGhrhem6xSZ4Xes2m-lEAlFj_0RUoYHhbeaCug/exec";
-
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  };
-
-  fetch(SHEET_API_URL, {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: { "Content-Type": "application/json" }
-  })
-    .then(res => res.json())
+if (form) {
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(SHEET_API_URL, {
+      method: "POST",
+      body: JSON.stringify({
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      }),
+      headers: { "Content-Type": "application/json" }
+    })
+    .then(r => r.json())
     .then(() => {
-      msg.textContent = "Thank you! Your message has been recorded.";
+      msg.textContent = "Message sent successfully.";
       form.reset();
     })
     .catch(() => {
-      msg.textContent = "Error! Please try again later.";
+      msg.textContent = "Submission failed.";
     });
-});
+  });
+}
