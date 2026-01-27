@@ -1,3 +1,6 @@
+/***********************
+ PRODUCT DATA
+************************/
 const products = [
   {
     name: "Wireless Earbuds Pro",
@@ -36,16 +39,20 @@ const products = [
 
 const grid = document.getElementById("productGrid");
 
-function createStars(rating){
+/***********************
+ STAR RATING
+************************/
+function createStars(rating) {
   let stars = "";
-  for(let i=1;i<=5;i++){
-    if(rating >= i) stars += "★";
-    else if(rating > i-1 && rating < i) stars += "☆";
-    else stars += "☆";
+  for (let i = 1; i <= 5; i++) {
+    stars += rating >= i ? "★" : "☆";
   }
   return `<span class="stars">${stars}</span>`;
 }
 
+/***********************
+ RENDER PRODUCTS
+************************/
 products.forEach(p => {
   const card = document.createElement("div");
   card.className = "product-card";
@@ -54,92 +61,116 @@ products.forEach(p => {
     ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
     <img src="${p.image}" alt="${p.name}">
     <div class="product-info">
-      <div class="product-title">${p.name}</div>
-      <div class="product-desc">${p.description}</div>
-      
+      <h3>${p.name}</h3>
+      <p>${p.description}</p>
+
       <div class="price-row">
-        <div class="price">
-          $${p.price} ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
-        </div>
-        <div class="discount">${p.discount}</div>
+        <span class="price">$${p.price}</span>
+        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
       </div>
 
       <div class="rating-row">
-        ${createStars(p.rating)} <span class="reviews">(${p.reviews} reviews)</span>
+        ${createStars(p.rating)}
+        <span>(${p.reviews} reviews)</span>
       </div>
 
-      <button class="buy-btn" onclick="window.open('${p.link}', '_blank')">Buy on Amazon</button>
+      <button class="buy-btn" onclick="window.open('${p.link}','_blank')">
+        Buy Now
+      </button>
     </div>
   `;
   grid.appendChild(card);
 });
 
-// Feedback Form
-document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  document.getElementById('feedbackMsg').textContent = "Thank you for your feedback!";
-  this.reset();
-});
+/***********************
+ AI HELP CENTER BRAIN
+************************/
+const aiBrain = [
+  {
+    keywords: ["delivery", "shipping", "arrive"],
+    reply: "Delivery usually takes 3–7 working days depending on your location."
+  },
+  {
+    keywords: ["refund", "return", "money back"],
+    reply: "Refunds are processed within 5–10 working days after approval."
+  },
+  {
+    keywords: ["affiliate", "commission"],
+    reply: "We earn a small commission from affiliate links. No extra cost to you."
+  },
+  {
+    keywords: ["contact", "human", "support"],
+    reply: "Your message has been forwarded to our support system."
+  }
+];
 
-// Help Chat
+function getAIReply(text) {
+  text = text.toLowerCase();
+  for (let item of aiBrain) {
+    for (let key of item.keywords) {
+      if (text.includes(key)) {
+        return item.reply;
+      }
+    }
+  }
+  return "I couldn’t find an exact answer. Your message has been sent for review.";
+}
+
+/***********************
+ HELP CHAT UI
+************************/
 function toggleChat() {
-  const chatBody = document.getElementById('chatBody');
-  const chatInput = document.getElementById('chatInput');
-  chatBody.style.display = chatBody.style.display === 'block' ? 'none' : 'block';
-  chatInput.style.display = chatInput.style.display === 'block' ? 'none' : 'block';
+  document.getElementById("chatBody").classList.toggle("show");
+  document.getElementById("chatInput").classList.toggle("show");
 }
 
 function sendMessage(e) {
-  if (e.key === 'Enter') {
-    const input = document.getElementById('chatInput');
-    const chatBody = document.getElementById('chatBody');
-    const userMsg = document.createElement('div');
-    userMsg.className = 'chat-message user';
-    userMsg.textContent = input.value;
-    chatBody.appendChild(userMsg);
-    input.value = '';
+  if (e.key !== "Enter") return;
 
-    // Bot response
-    const botMsg = document.createElement('div');
-    botMsg.className = 'chat-message bot';
-    botMsg.textContent = "Thank you for your message! We'll get back to you soon.";
-    chatBody.appendChild(botMsg);
+  const input = document.getElementById("chatInput");
+  const chatBody = document.getElementById("chatBody");
 
-    chatBody.scrollTop = chatBody.scrollHeight;
-  }
+  const userText = input.value.trim();
+  if (!userText) return;
 
+  chatBody.innerHTML += `<div class="chat-message user">${userText}</div>`;
 
-function doPost(e){ 
-  var ss = SpreadsheetApp.openById("1r_FW8mJhPyVq3PLONefifX7eGOZ38xaUHxxXdp3sqIU"); 
-  var sheet = ss.getSheetByName("Sheet1");
-  var data = JSON.parse(e.postData.contents);
-  sheet.appendRow([new Date(), data.name, data.email, data.message, "New"]);
-  return ContentService.createTextOutput(JSON.stringify({"result":"success"}))
-                       .setMimeType(ContentService.MimeType.JSON);
+  const reply = getAIReply(userText);
+  chatBody.innerHTML += `<div class="chat-message bot">${reply}</div>`;
+
+  chatBody.scrollTop = chatBody.scrollHeight;
+  input.value = "";
 }
 
+/***********************
+ FEEDBACK / COMPLAINT
+************************/
+const form = document.getElementById("feedbackForm");
+const msg = document.getElementById("feedbackMsg");
 
+/* 🔴 এখানে তোমার Apps Script Web App URL বসাবে */
+const SHEET_API_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
 
-}
-
-document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
-  
-  const name = this.name.value;
-  const email = this.email.value;
-  const message = this.message.value;
 
-  fetch("1r_FW8mJhPyVq3PLONefifX7eGOZ38xaUHxxXdp3sqIU", {
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  fetch(SHEET_API_URL, {
     method: "POST",
-    body: JSON.stringify({name, email, message}),
-    headers: {"Content-Type": "application/json"}
+    body: JSON.stringify(data),
+    headers: { "Content-Type": "application/json" }
   })
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('feedbackMsg').textContent = "Thank you for your feedback!";
-    this.reset();
-  })
-  .catch(err => {
-    document.getElementById('feedbackMsg').textContent = "Something went wrong. Try again.";
-  });
+    .then(res => res.json())
+    .then(() => {
+      msg.textContent = "Thank you! Your message has been recorded.";
+      form.reset();
+    })
+    .catch(() => {
+      msg.textContent = "Error! Please try again later.";
+    });
 });
