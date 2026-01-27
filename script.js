@@ -129,7 +129,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
   const email = this.email.value;
   const message = this.message.value;
 
-  fetch("https://script.google.com/macros/s/AKfycbx6A0NWs4urJIEm99nawD1qPOGuWWarso_gdIOk2J0hlRHXp6P1LWgJq710n5f3ljKD/exec", {
+  fetch("1r_FW8mJhPyVq3PLONefifX7eGOZ38xaUHxxXdp3sqIU", {
     method: "POST",
     body: JSON.stringify({name, email, message}),
     headers: {"Content-Type": "application/json"}
