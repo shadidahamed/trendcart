@@ -1,4 +1,3 @@
-
 const products = [
   {
     name: "Wireless Earbuds Pro",
@@ -72,16 +71,17 @@ products.forEach(p => {
       <button class="buy-btn" onclick="window.open('${p.link}', '_blank')">Buy on Amazon</button>
     </div>
   `;
-
   grid.appendChild(card);
 });
 
+// Feedback Form
 document.getElementById('feedbackForm').addEventListener('submit', function(e) {
   e.preventDefault();
   document.getElementById('feedbackMsg').textContent = "Thank you for your feedback!";
   this.reset();
 });
 
+// Help Chat
 function toggleChat() {
   const chatBody = document.getElementById('chatBody');
   const chatInput = document.getElementById('chatInput');
@@ -99,7 +99,7 @@ function sendMessage(e) {
     chatBody.appendChild(userMsg);
     input.value = '';
 
-    // Auto bot response
+    // Bot response
     const botMsg = document.createElement('div');
     botMsg.className = 'chat-message bot';
     botMsg.textContent = "Thank you for your message! We'll get back to you soon.";
