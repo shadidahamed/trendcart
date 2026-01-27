@@ -23,112 +23,121 @@ const products = [
     rating: 4.2,
     reviews: 80,
     link: "#"
+  },
+  {
+    name: "Pokemon Collector Card",
+    description: "Limited edition & rare",
+    image: "https://via.placeholder.com/300",
+    price: 120,
+    oldPrice: 0,
+    discount: "",
+    rating: 5,
+    reviews: 45,
+    link: "#"
   }
 ];
 
 const grid = document.getElementById("productGrid");
-if (grid) {
-  products.forEach(p => {
-    const card = document.createElement("div");
-    card.className = "product-card";
-    card.innerHTML = `
-      ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
-      <img src="${p.image}">
-      <h3>${p.name}</h3>
-      <p>${p.description}</p>
-      <div class="price-row">
-        <span>$${p.price}</span>
-        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
-      </div>
-      <button class="buy-btn" onclick="window.open('${p.link}')">Buy</button>
-    `;
-    grid.appendChild(card);
-  });
+
+/***********************
+ STAR RATING
+************************/
+function createStars(rating) {
+  let stars = "";
+  for (let i = 1; i <= 5; i++) stars += rating >= i ? "★" : "☆";
+  return `<span class="stars">${stars}</span>`;
 }
 
 /***********************
- HELP CENTER
+ RENDER PRODUCTS
+************************/
+grid.innerHTML = "";
+products.forEach(p => {
+  const card = document.createElement("div");
+  card.className = "product-card";
+  card.innerHTML = `
+    ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
+    <img src="${p.image}" alt="${p.name}">
+    <div class="product-info">
+      <h3>${p.name}</h3>
+      <p>${p.description}</p>
+      <div class="price-row">
+        <span class="price">$${p.price}</span>
+        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
+      </div>
+      <div class="rating-row">
+        ${createStars(p.rating)} <span>(${p.reviews} reviews)</span>
+      </div>
+      <button class="buy-btn" onclick="window.open('${p.link}','_blank')">Buy Now</button>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+
+/***********************
+ AI HELP CENTER BRAIN
 ************************/
 const aiBrain = [
-  { keywords: ["delivery"], reply: "Delivery takes 3–7 days." },
-  { keywords: ["refund"], reply: "Refunds take 5–10 days." },
-  { keywords: ["affiliate"], reply: "We earn affiliate commission." }
+  { keywords: ["delivery", "shipping", "arrive"], reply: "Delivery usually takes 3–7 working days depending on your location." },
+  { keywords: ["refund", "return", "money back"], reply: "Refunds are processed within 5–10 working days after approval." },
+  { keywords: ["affiliate", "commission"], reply: "We earn a small commission from affiliate links. No extra cost to you." },
+  { keywords: ["contact", "human", "support"], reply: "Your message has been forwarded to our support system." }
 ];
 
 function getAIReply(text) {
   text = text.toLowerCase();
-  for (let b of aiBrain) {
-    if (b.keywords.some(k => text.includes(k))) return b.reply;
+  for (let item of aiBrain) {
+    for (let key of item.keywords) if (text.includes(key)) return item.reply;
   }
-  return "Message forwarded to support.";
+  return "I couldn’t find an exact answer. Your message has been sent for review.";
 }
 
+/***********************
+ HELP CHAT
+************************/
 function toggleChat() {
-  document.getElementById("chatBody")?.classList.toggle("show");
-  document.getElementById("chatInput")?.classList.toggle("show");
+  const chatBody = document.getElementById("chatBody");
+  const chatInput = document.getElementById("chatInput");
+  chatBody.classList.toggle("show");
+  chatInput.classList.toggle("show");
+  if(chatBody.classList.contains("show")) chatInput.focus();
 }
 
 function sendMessage(e) {
-  if (e.key !== "Enter") return;
+  if(e.key !== "Enter") return;
   const input = document.getElementById("chatInput");
-  const body = document.getElementById("chatBody");
-  if (!input.value) return;
-
-  body.innerHTML += `<div class="chat-message user">${input.value}</div>`;
-  body.innerHTML += `<div class="chat-message bot">${getAIReply(input.value)}</div>`;
+  const chatBody = document.getElementById("chatBody");
+  const text = input.value.trim();
+  if(!text) return;
+  chatBody.innerHTML += `<div class="chat-message user">${text}</div>`;
+  chatBody.innerHTML += `<div class="chat-message bot">${getAIReply(text)}</div>`;
+  chatBody.scrollTop = chatBody.scrollHeight;
   input.value = "";
-  body.scrollTop = body.scrollHeight;
 }
-
-function doPost(e) {
-  try {
-    var ss = SpreadsheetApp.openById("1s8cSoe4JAkEMO4KxDZ7-61ZqsedYhzp5S2W-c2Wk220");
-    var sheet = ss.getSheetByName("Sheet1");
-    var data = JSON.parse(e.postData.contents);
-
-    sheet.appendRow([new Date(), data.name, data.email, data.message, "New"]);
-
-    return ContentService
-      .createTextOutput(JSON.stringify({ "result": "success" }))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeader("Access-Control-Allow-Origin", "*"); // ✅ Allow all origins
-  } catch(err) {
-    return ContentService
-      .createTextOutput(JSON.stringify({ "result": "error", "message": err }))
-      .setMimeType(ContentService.MimeType.JSON)
-      .setHeader("Access-Control-Allow-Origin", "*");
-  }
-}
-
 
 /***********************
  FEEDBACK FORM
 ************************/
-const SHEET_API_URL =
-"https://script.google.com/macros/s/AKfycbw8xW9Qn2No9wZdQpLoTgdkuSBwfMkRnJeTw47HO6A9Mg_JixH_fM0pcHsE_n9F1u3Z/exec";
-
 const form = document.getElementById("feedbackForm");
 const msg = document.getElementById("feedbackMsg");
 
-if (form) {
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(SHEET_API_URL, {
-      method: "POST",
-      body: JSON.stringify({
-        name: form.name.value,
-        email: form.email.value,
-        message: form.message.value
-      }),
-      headers: { "Content-Type": "application/json" }
-    })
-    .then(r => r.json())
-    .then(() => {
-      msg.textContent = "Message sent successfully.";
-      form.reset();
-    })
-    .catch(() => {
-      msg.textContent = "Submission failed.";
-    });
+const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbw8xW9Qn2No9wZdQpLoTgdkuSBwfMkRnJeTw47HO6A9Mg_JixH_fM0pcHsE_n9F1u3Z/exec";
+
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  const data = { name: form.name.value, email: form.email.value, message: form.message.value };
+  fetch(SHEET_API_URL, {
+    method:"POST",
+    body:JSON.stringify(data),
+    headers: { "Content-Type":"application/json" }
+  })
+  .then(res => res.json())
+  .then(() => {
+    msg.textContent = "Thank you! Your message has been recorded.";
+    form.reset();
+  })
+  .catch(err => {
+    console.error(err);
+    msg.textContent = "Error! Please try again later.";
   });
-}
+});
