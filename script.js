@@ -75,3 +75,10 @@ products.forEach(p => {
 
   grid.appendChild(card);
 });
+
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('feedbackMsg').textContent = "Thank you for your feedback!";
+  this.reset();
+});
+
