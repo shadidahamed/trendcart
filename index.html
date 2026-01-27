@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,6 @@
 <body>
 
 <header class="main-header">
- <header class="main-header">
   <div class="logo">TrendCart</div>
 
   <!-- Navbar -->
@@ -44,24 +44,12 @@
     </ul>
   </nav>
 
+  <!-- Header Actions -->
   <div class="header-actions">
     <button class="login-btn">Login</button>
     <button class="cart-btn">Cart 🛒</button>
   </div>
-
-<div class="help-center" id="helpCenter">
-  <div class="chat-header" onclick="toggleChat()">Help Center 💬</div>
-  <div class="chat-body" id="chatBody">
-    <div class="chat-message bot">Hello! How can I help you today?</div>
-  </div>
-  <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="sendMessage(event)">
-</div>
-
-   
 </header>
-
-</header>
-
 
 <p class="tagline">Trending products people love 🔥</p>
 
@@ -70,6 +58,7 @@
     <p class="loading">Loading products...</p>
   </section>
 </main>
+
 <section class="feedback-section">
   <h2>Have a Complaint or Suggestion?</h2>
   <form id="feedbackForm">
@@ -78,8 +67,17 @@
     <textarea name="message" placeholder="Write your complaint or feedback..." required></textarea>
     <button type="submit">Submit</button>
   </form>
-  <p id="feedbackMsg" style="color:limegreen; margin-top:10px;"></p>
+  <p id="feedbackMsg"></p>
 </section>
+
+<!-- Help Center Chat -->
+<div class="help-center" id="helpCenter">
+  <div class="chat-header" onclick="toggleChat()">Help Center 💬</div>
+  <div class="chat-body" id="chatBody">
+    <div class="chat-message bot">Hello! How can I help you today?</div>
+  </div>
+  <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="sendMessage(event)">
+</div>
 
 <footer class="footer">
   <p>© 2026 TrendCart. Affiliate links may earn commission.</p>
