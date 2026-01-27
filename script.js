@@ -149,7 +149,8 @@ const form = document.getElementById("feedbackForm");
 const msg = document.getElementById("feedbackMsg");
 
 /* 🔴 এখানে তোমার Apps Script Web App URL বসাবে */
-const SHEET_API_URL = "PASTE_YOUR_WEB_APP_URL_HERE";
+const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbylNYNVCqQdl1EQXMsblbALFJ1orhCnSGhrhem6xSZ4Xes2m-lEAlFj_0RUoYHhbeaCug/exec";
+
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
