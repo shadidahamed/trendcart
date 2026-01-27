@@ -107,5 +107,58 @@
 .rating-row {
   margin-top: 6px;
 }
+.navbar {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 600px;
+  background: #fff;
+  color: #111;
+  padding: 20px;
+  display: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  z-index: 100;
+  display: flex;
+  gap: 40px;
+}
+
+.mega-menu .mega-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.mega-menu .mega-section a {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-item:hover .mega-menu {
+  display: flex;
+}
 
 
