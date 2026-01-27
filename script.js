@@ -80,6 +80,20 @@ function sendMessage(e) {
   body.scrollTop = body.scrollHeight;
 }
 
+function doPost(e){ 
+  var ss = SpreadsheetApp.openById("1s8cSoe4JAkEMO4KxDZ7-61ZqsedYhzp5S2W-c2Wk220"); 
+  var sheet = ss.getSheetByName("Sheet1");
+
+  var data = JSON.parse(e.postData.contents);
+
+  sheet.appendRow([new Date(), data.name, data.email, data.message, "New"]);
+
+  return ContentService
+           .createTextOutput(JSON.stringify({"result":"success"}))
+           .setMimeType(ContentService.MimeType.JSON);
+}
+
+
 /***********************
  FEEDBACK FORM
 ************************/
