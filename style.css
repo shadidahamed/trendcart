@@ -1,65 +1,56 @@
-/* =================== BASE =================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', Arial, sans-serif;
-}
-
-body {
-  background: #f5f7fa;
-  color: #111;
-}
-
-/* =================== HEADER =================== */
+/* Main Header */
 .main-header {
-  display: grid;
-  grid-template-columns: 200px 1fr 200px;
-  align-items: center;
-  padding: 16px 50px;
-  background: #fff;
-  border-bottom: 1px solid #eaeaea;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 700;
-  color: #0397d3;
-}
-
-.search-box {
   display: flex;
-  width: 100%;
-  max-width: 520px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #ff7a18, #ff3d00);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 0 0 12px 12px;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Search Box */
+.search-box {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  margin: 0 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .search-box input {
   flex: 1;
-  padding: 10px 14px;
-  border: 1px solid #ddd;
-  border-radius: 8px 0 0 8px;
-  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
   outline: none;
+  font-size: 14px;
 }
 
 .search-box button {
-  padding: 10px 18px;
+  padding: 0 24px;
   border: none;
-  background: #ff9900;
-  color: white;
-  border-radius: 0 8px 8px 0;
+  background: #fff;
+  color: #ff3d00;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
   transition: 0.2s;
 }
 
 .search-box button:hover {
-  background: #e68900;
+  background: #ffeed9;
 }
 
+/* Header Actions (Login + Cart) */
 .header-actions {
   display: flex;
   align-items: center;
@@ -67,147 +58,32 @@ body {
 }
 
 .header-actions button {
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 999px;
   border: none;
+  font-weight: 600;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.header-actions button:first-child {
-  background: #f1f3f6;
-  color: #111;
-}
-
-.header-actions button:first-child:hover {
-  background: #e2e5ea;
-}
-
-.header-actions button:last-child {
-  background: #0397d3;
+/* Login Button */
+.login-btn {
+  background: rgba(255,255,255,0.15);
   color: #fff;
 }
 
-.header-actions button:last-child:hover {
-  background: #027bb0;
+.login-btn:hover {
+  background: rgba(255,255,255,0.3);
 }
 
-/* =================== TAGLINE =================== */
-.tagline {
-  text-align: center;
-  margin: 14px 0 24px;
-  font-size: 15px;
-  color: #555;
-}
-
-/* =================== PRODUCT GRID =================== */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2rem;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 24px;
-}
-
-.product-card {
+/* Cart Button */
+.cart-btn {
   background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
+  color: #ff3d00;
 }
 
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
-}
-
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.product-info {
-  padding: 16px;
-}
-
-.product-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: #222;
-}
-
-.product-desc {
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.price-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.price {
-  font-size: 16px;
-  font-weight: bold;
-  color: #e53935;
-}
-
-.discount {
-  font-size: 12px;
-  color: #ff9900;
-}
-
-.buy-btn {
-  display: block;
-  width: 100%;
-  margin-top: 12px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #ff9900;
-  color: white;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.buy-btn:hover {
-  background: #e68900;
-}
-
-/* =================== DISCOUNT BADGE =================== */
-.badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #e53935;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
-  z-index: 2;
-}
-
-/* =================== FOOTER =================== */
-.footer {
-  text-align: center;
-  padding: 1rem;
-  opacity: 0.6;
-  background: #fff;
-  margin-top: 40px;
+.cart-btn:hover {
+  background: #ffe6d5;
 }
 
 .stars {
