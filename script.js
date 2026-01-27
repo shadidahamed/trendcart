@@ -32,9 +32,11 @@ products.forEach(p => {
   const card = document.createElement("div");
   card.className = "product-card";
 
-  card.innerHTML = `
-    <img src="${p.image}">
-    <div class="product-info">
+ card.innerHTML = `
+  ${p.discount ? `<div class="badge">${p.discount}</div>` : ""}
+  <img src="${p.image}">
+  <div class="product-info">
+
       <div class="product-title">${p.name}</div>
       <div class="product-desc">${p.description}</div>
 
