@@ -82,3 +82,29 @@ document.getElementById('feedbackForm').addEventListener('submit', function(e) {
   this.reset();
 });
 
+function toggleChat() {
+  const chatBody = document.getElementById('chatBody');
+  const chatInput = document.getElementById('chatInput');
+  chatBody.style.display = chatBody.style.display === 'block' ? 'none' : 'block';
+  chatInput.style.display = chatInput.style.display === 'block' ? 'none' : 'block';
+}
+
+function sendMessage(e) {
+  if (e.key === 'Enter') {
+    const input = document.getElementById('chatInput');
+    const chatBody = document.getElementById('chatBody');
+    const userMsg = document.createElement('div');
+    userMsg.className = 'chat-message user';
+    userMsg.textContent = input.value;
+    chatBody.appendChild(userMsg);
+    input.value = '';
+
+    // Auto bot response
+    const botMsg = document.createElement('div');
+    botMsg.className = 'chat-message bot';
+    botMsg.textContent = "Thank you for your message! We'll get back to you soon.";
+    chatBody.appendChild(botMsg);
+
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+}
