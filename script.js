@@ -116,12 +116,18 @@ function getAIReply(text) {
   return "I couldn’t find an exact answer. Your message has been sent for review.";
 }
 
-/***********************
- HELP CHAT UI
-************************/
 function toggleChat() {
-  document.getElementById("chatBody").classList.toggle("show");
-  document.getElementById("chatInput").classList.toggle("show");
+  const chatBody = document.getElementById("chatBody");
+  const chatInput = document.getElementById("chatInput");
+
+  chatBody.classList.toggle("show");
+  chatInput.classList.toggle("show");
+
+  // Scroll to bottom when opening
+  if (chatBody.classList.contains("show")) {
+    chatBody.scrollTop = chatBody.scrollHeight;
+    chatInput.focus();
+  }
 }
 
 function sendMessage(e) {
@@ -141,6 +147,7 @@ function sendMessage(e) {
   chatBody.scrollTop = chatBody.scrollHeight;
   input.value = "";
 }
+
 
 /***********************
  FEEDBACK / COMPLAINT
