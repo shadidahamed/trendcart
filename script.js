@@ -107,7 +107,21 @@ function sendMessage(e) {
 
     chatBody.scrollTop = chatBody.scrollHeight;
   }
+
+
+function doPost(e){ 
+  var ss = SpreadsheetApp.openById("1r_FW8mJhPyVq3PLONefifX7eGOZ38xaUHxxXdp3sqIU"); 
+  var sheet = ss.getSheetByName("Sheet1");
+  var data = JSON.parse(e.postData.contents);
+  sheet.appendRow([new Date(), data.name, data.email, data.message, "New"]);
+  return ContentService.createTextOutput(JSON.stringify({"result":"success"}))
+                       .setMimeType(ContentService.MimeType.JSON);
 }
+
+
+
+}
+
 document.getElementById('feedbackForm').addEventListener('submit', function(e) {
   e.preventDefault();
   
