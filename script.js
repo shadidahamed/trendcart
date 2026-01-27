@@ -121,7 +121,7 @@ function sendMessage(e) {
 const form = document.getElementById("feedbackForm");
 const msg = document.getElementById("feedbackMsg");
 
-const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbw8xW9Qn2No9wZdQpLoTgdkuSBwfMkRnJeTw47HO6A9Mg_JixH_fM0pcHsE_n9F1u3Z/exec";
+const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbxTVDbF7ZJbl7pcssSXiQb7S_v1UcMLX9UGCAaT46rgwad79Tg8G-VvXu8X1ow9-v8oYg/exec";
 
 form.addEventListener("submit", function(e){
   e.preventDefault();
