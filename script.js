@@ -108,3 +108,24 @@ function sendMessage(e) {
     chatBody.scrollTop = chatBody.scrollHeight;
   }
 }
+document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = this.name.value;
+  const email = this.email.value;
+  const message = this.message.value;
+
+  fetch("https://script.google.com/macros/s/AKfycbx6A0NWs4urJIEm99nawD1qPOGuWWarso_gdIOk2J0hlRHXp6P1LWgJq710n5f3ljKD/exec", {
+    method: "POST",
+    body: JSON.stringify({name, email, message}),
+    headers: {"Content-Type": "application/json"}
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('feedbackMsg').textContent = "Thank you for your feedback!";
+    this.reset();
+  })
+  .catch(err => {
+    document.getElementById('feedbackMsg').textContent = "Something went wrong. Try again.";
+  });
+});
