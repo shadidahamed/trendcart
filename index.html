@@ -4,22 +4,20 @@
   <meta charset="UTF-8">
   <title>TrendCart – Trending Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TrendCart brings you trending products people love.">
   <link rel="stylesheet" href="style.css">
-<meta name="description" content="TrendCart brings you trending products people love. Discover top deals, best sellers, and new arrivals.">
 </head>
+
 <body>
 
 <header class="main-header">
   <a href="/" class="logo">TrendCart</a>
 
-
-  <!-- Navbar -->
   <nav class="navbar">
     <ul class="nav-items">
-     <li class="nav-item has-mega">
-  <a href="#" class="nav-link">Categories</a>
-  <div class="mega-menu">
-
+      <li class="nav-item has-mega">
+        <a href="#">Categories</a>
+        <div class="mega-menu">
           <div class="mega-section">
             <h4>Electronics</h4>
             <a href="#">Headphones</a>
@@ -46,54 +44,18 @@
     </ul>
   </nav>
 
-  <!-- Header Actions -->
   <div class="header-actions">
     <button class="login-btn">Login</button>
-   <button class="cart-btn">
-  Cart <span class="cart-icon">🛒</span>
-</button>
-
+    <button class="cart-btn">Cart 🛒</button>
   </div>
 </header>
 
 <p class="tagline">Trending products people love 🔥</p>
 
 <main class="container">
-<section class="product-grid" id="productGrid">
-  <!-- Products injected by JS -->
-</section>
-<p class="loading" id="loadingText">Loading products...</p>
-
+  <section class="product-grid" id="productGrid"></section>
 </main>
 
-<section class="feedback-section">
-  <h2>Have a Complaint or Suggestion?</h2>
-  <form id="feedbackForm" method="post">
-
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Write your feedback to help us ...."></textarea>
-    <button type="submit">Submit</button>
-  </form>
-  <p id="feedbackMsg"></p>
-</section>
-
-<!-- Help Center Chat -->
-<div class="help-center" id="helpCenter">
-  <div class="chat-header" onclick="toggleChat()">Help Center 💬</div>
-  <div class="chat-body" id="chatBody">
-  <div class="chat-message bot">Hello! How can I help you today?</div>
-</div>
-<div class="chat-input-wrapper">
-  <input id="chatInput" onkeydown="sendMessage(event)" placeholder="Type a message..." />
-</div>
-
-
 <footer class="footer">
-  <p>© 2026 TrendCart. Affiliate links may earn commission.</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+  <p>© 2026 TrendCart. Affiliat
 
