@@ -114,17 +114,19 @@ function getAIReply(text) {
 /***********************
  HELP CHAT UI
 ************************/
-function toggleChat() {
+function toggleChat()function toggleChat() {
+  const helpCenter = document.querySelector(".help-center");
+  helpCenter.classList.toggle("active");
+
   const chatBody = document.getElementById("chatBody");
   const chatInput = document.getElementById("chatInput");
 
-  chatBody.classList.toggle("show");
-  chatInput.classList.toggle("show");
-
-  if (chatBody.classList.contains("show")) {
+  if (helpCenter.classList.contains("active")) {
     chatBody.scrollTop = chatBody.scrollHeight;
     chatInput.focus();
   }
+}
+
 }
 
 function sendMessage(e) {
