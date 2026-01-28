@@ -156,14 +156,41 @@ const msg = document.getElementById("feedbackMsg");
 // Your Apps Script Web App URL
 const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbxTVDbF7ZJbl7pcssSXiQb7S_v1UcMLX9UGCAaT46rgwad79Tg8G-VvXu8X1ow9-v8oYg/exec";
 
-form.addEventListener("submit", async function(e) {
+form.addEventListener("submit", async function (e) {
   e.preventDefault();
+
+  msg.textContent = "Submitting...";
+  msg.className = "feedback-status";
 
   const data = {
     name: form.name.value,
     email: form.email.value,
     message: form.message.value
   };
+
+  try {
+    const res = await fetch(SHEET_API_URL, {
+      method: "POST",
+      body: JSON.stringify(data)
+    });
+
+    const text = await res.text();
+    console.log("Server response:", text);
+
+    if (text.includes("success")) {
+      msg.textContent = "✅ Thank you! Your message has been saved.";
+      msg.classList.add("success");
+      form.reset();
+    } else {
+      throw new Error("Script error");
+    }
+  } catch (err) {
+    console.error(err);
+    msg.textContent = "❌ Submission failed. Check Apps Script deployment.";
+    msg.classList.add("error");
+  }
+});
+
 
   try {
     const res = await fetch(SHEET_API_URL, {
