@@ -5,9 +5,7 @@
   <title>TrendCart – Trending Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
 <header class="main-header">
@@ -85,92 +83,6 @@
 </footer>
 
 <script src="script.js"></script>
-  
-<!-- FEEDBACK FORM -->
-<div class="container">
-  <h2>Send Feedback</h2>
-  <form id="feedbackForm">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="feedbackMsg"></div>
-</div>
-
-<!-- HELP CENTER -->
-<div class="help-btn" onclick="toggleChat()">?</div>
-
-<div class="chat-box" id="chatBox">
-  <div class="chat-header">Help Center</div>
-  <div class="chat-body" id="chatBody">
-    <div class="bot">Hello! How can I help you?</div>
-  </div>
-  <div class="chat-input">
-    <input type="text" id="chatInput" placeholder="Type & press Enter" onkeydown="sendMessage(event)">
-  </div>
-</div>
-
-<script>
-// HELP CENTER
-function toggleChat() {
-  const box = document.getElementById("chatBox");
-  box.style.display = box.style.display === "flex" ? "none" : "flex";
-}
-
-function sendMessage(e) {
-  if (e.key !== "Enter") return;
-
-  const input = document.getElementById("chatInput");
-  const body = document.getElementById("chatBody");
-
-  if (!input.value.trim()) return;
-
-  body.innerHTML += `<div class="user">${input.value}</div>`;
-  body.innerHTML += `<div class="bot">Thanks for contacting us. We’ll review your issue.</div>`;
-
-  input.value = "";
-  body.scrollTop = body.scrollHeight;
-}
-
-// FEEDBACK FORM → GOOGLE SHEET
-const API_URL = "https://script.google.com/macros/s/AKfycbxTVDbF7ZJbl7pcssSXiQb7S_v1UcMLX9UGCAaT46rgwad79Tg8G-VvXu8X1ow9-v8oYg/exec";
-
-document.getElementById("feedbackForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const msg = document.getElementById("feedbackMsg");
-
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  };
-
-  try {
-    const res = await fetch(API_URL, {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: { "Content-Type": "application/json" }
-    });
-
-    const result = await res.json();
-
-    if (result.result === "success") {
-      msg.style.color = "green";
-      msg.textContent = "Feedback submitted successfully!";
-      form.reset();
-    } else {
-      throw new Error();
-    }
-  } catch {
-    msg.style.color = "red";
-    msg.textContent = "Submission failed. Try again.";
-  }
-});
-</script>
-
 </body>
 </html>
 
