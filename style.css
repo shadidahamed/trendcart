@@ -1,81 +1,75 @@
-/***********************
- PRODUCT DATA
-************************/
-const products = [
-  {
-    name: "Wireless Earbuds Pro",
-    description: "Noise cancellation, deep bass",
-    image: "https://via.placeholder.com/300",
-    price: 49.99,
-    oldPrice: 55.99,
-    discount: "10% OFF",
-    rating: 4.5,
-    reviews: 120,
-    link: "#"
-  },
-  {
-    name: "Smart Fitness Watch",
-    description: "Heart-rate & sleep tracking",
-    image: "https://via.placeholder.com/300",
-    price: 79.99,
-    oldPrice: 84.99,
-    discount: "5% OFF",
-    rating: 4.2,
-    reviews: 80,
-    link: "#"
-  },
-  {
-    name: "Pokemon Collector Card",
-    description: "Limited edition & rare",
-    image: "https://via.placeholder.com/300",
-    price: 120,
-    oldPrice: 0,
-    discount: "",
-    rating: 5,
-    reviews: 45,
-    link: "#"
-  }
-];
-
-const grid = document.getElementById("productGrid");
-
-/***********************
- STAR RATING
-************************/
-function createStars(rating) {
-  let stars = "";
-  for (let i = 1; i <= 5; i++) {
-    stars += rating >= i ? "★" : "☆";
-  }
-  return `<span class="stars">${stars}</span>`;
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-/***********************
- RENDER PRODUCTS
-************************/
-products.forEach(p => {
-  const card = document.createElement("div");
-  card.className = "product-card";
+body {
+  background: #fff6f0;
+  color: #111;
+}
 
-  card.innerHTML = `
-    ${p.discount ? `<div class="discount">${p.discount}</div>` : ""}
-    <img src="${p.image}" alt="${p.name}">
-    <div class="product-info">
-      <h3>${p.name}</h3>
-      <p>${p.description}</p>
-      <div class="price-row">
-        <span class="price">$${p.price}</span>
-        ${p.oldPrice ? `<span class="old-price">$${p.oldPrice}</span>` : ""}
-      </div>
-      <div class="rating-row">
-        ${createStars(p.rating)}
-        <span class="reviews">(${p.reviews} reviews)</span>
-      </div>
-      <button class="buy-btn" onclick="window.open('${p.link}','_blank')">
-        Buy Now
-      </button>
-    </div>
-  `;
+/* Main Header */
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #ff7a18, #ff3d00);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 12px 12px;
+}
 
-  grid.appendChild(card);
-});
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 12px;
+  font-weight: 600;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
+}
+
+.nav-item:hover a {
+  color: #ffeed9;
+}
+
+/* Mega Menu */
+.mega-menu {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  color: #111;
+  padding: 20px;
+  display: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-rad
