@@ -1,88 +1,205 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TrendCart – Trending Products</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback & Help Center</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Feedback Form */
+.container {
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+#feedbackMsg {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Help Center */
+.help-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #111827;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #111827;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-body {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.chat-input {
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  border: none;
+  outline: none;
+}
+
+.user {
+  text-align: right;
+  margin: 5px 0;
+}
+
+.bot {
+  text-align: left;
+  margin: 5px 0;
+  color: #2563eb;
+}
+</style>
 </head>
+
 <body>
 
-<header class="main-header">
-  <div class="logo">TrendCart</div>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <ul class="nav-items">
-      <li class="nav-item">
-        Categories
-        <div class="mega-menu">
-          <div class="mega-section">
-            <h4>Electronics</h4>
-            <a href="#">Headphones</a>
-            <a href="#">Smart Watches</a>
-            <a href="#">Speakers</a>
-          </div>
-          <div class="mega-section">
-            <h4>Books</h4>
-            <a href="#">Fiction</a>
-            <a href="#">Non-Fiction</a>
-            <a href="#">Comics</a>
-          </div>
-          <div class="mega-section">
-            <h4>Clothing</h4>
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-          </div>
-        </div>
-      </li>
-      <li class="nav-item"><a href="#">Deals</a></li>
-      <li class="nav-item"><a href="#">New Arrivals</a></li>
-      <li class="nav-item"><a href="#">Best Sellers</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header Actions -->
-  <div class="header-actions">
-    <button class="login-btn">Login</button>
-    <button class="cart-btn">Cart 🛒</button>
-  </div>
-</header>
-
-<p class="tagline">Trending products people love 🔥</p>
-
-<main class="container">
-  <section class="product-grid" id="productGrid">
-    <p class="loading">Loading products...</p>
-  </section>
-</main>
-
-<section class="feedback-section">
-  <h2>Have a Complaint or Suggestion?</h2>
+<!-- FEEDBACK FORM -->
+<div class="container">
+  <h2>Send Feedback</h2>
   <form id="feedbackForm">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Write your feedback to help us ...."></textarea>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
     <button type="submit">Submit</button>
   </form>
-  <p id="feedbackMsg"></p>
-</section>
-
-<!-- Help Center Chat -->
-<div class="help-center" id="helpCenter">
-  <div class="chat-header" onclick="toggleChat()">Help Center 💬</div>
-  <div class="chat-body" id="chatBody">
-    <div class="chat-message bot">Hello! How can I help you today?</div>
-  </div>
-  <input type="text" id="chatInput" placeholder="Type your question..." onkeypress="sendMessage(event)">
+  <div id="feedbackMsg"></div>
 </div>
 
-<footer class="footer">
-  <p>© 2026 TrendCart. Affiliate links may earn commission.</p>
-</footer>
+<!-- HELP CENTER -->
+<div class="help-btn" onclick="toggleChat()">?</div>
 
-<script src="script.js"></script>
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Help Center</div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot">Hello! How can I help you?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type & press Enter" onkeydown="sendMessage(event)">
+  </div>
+</div>
+
+<script>
+// HELP CENTER
+function toggleChat() {
+  const box = document.getElementById("chatBox");
+  box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+
+function sendMessage(e) {
+  if (e.key !== "Enter") return;
+
+  const input = document.getElementById("chatInput");
+  const body = document.getElementById("chatBody");
+
+  if (!input.value.trim()) return;
+
+  body.innerHTML += `<div class="user">${input.value}</div>`;
+  body.innerHTML += `<div class="bot">Thanks for contacting us. We’ll review your issue.</div>`;
+
+  input.value = "";
+  body.scrollTop = body.scrollHeight;
+}
+
+// FEEDBACK FORM → GOOGLE SHEET
+const API_URL = "https://script.google.com/macros/s/AKfycbxTVDbF7ZJbl7pcssSXiQb7S_v1UcMLX9UGCAaT46rgwad79Tg8G-VvXu8X1ow9-v8oYg/exec";
+
+document.getElementById("feedbackForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const msg = document.getElementById("feedbackMsg");
+
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  try {
+    const res = await fetch(API_URL, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" }
+    });
+
+    const result = await res.json();
+
+    if (result.result === "success") {
+      msg.style.color = "green";
+      msg.textContent = "Feedback submitted successfully!";
+      form.reset();
+    } else {
+      throw new Error();
+    }
+  } catch {
+    msg.style.color = "red";
+    msg.textContent = "Submission failed. Try again.";
+  }
+});
+</script>
+
 </body>
 </html>
+
