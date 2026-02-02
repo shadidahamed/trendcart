@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrendCart Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button { padding: 8px; margin: 6px 0; width: 100%; }
+  </style>
+</head>
+<body>
+
+<h2>TrendCart Admin</h2>
+
+<input id="title" placeholder="Product Title">
+<input id="price" placeholder="Price (USD)">
+<input id="image" placeholder="Image URL">
+<input id="link" placeholder="Affiliate Link">
+<input id="category" placeholder="Category">
+
+<button onclick="addProduct()">Add Product</button>
+
+<pre id="output"></pre>
+
+<script>
+  let products = [];
+
+  function addProduct() {
+    const p = {
+      id: Date.now(),
+      title: title.value,
+      priceUSD: parseFloat(price.value),
+      image: image.value,
+      affiliate: link.value,
+      category: category.value
+    };
+
+    products.push(p);
+    output.innerText = JSON.stringify(products, null, 2);
+  }
+</script>
+
+</body>
+</html>
