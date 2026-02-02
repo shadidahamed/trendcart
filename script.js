@@ -1,199 +1,72 @@
+/* =========================
+   TREND CART – MAIN JS
+   ========================= */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-body {
-  font-family: 'Inter', sans-serif;
-  background: #f7f7f7;
-  color: #222;
-}
+  /* ---------- MOBILE MENU ---------- */
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector(".navbar");
 
-/* ================= HEADER ================= */
-.main-header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 14px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #ff4d4d;
-  text-decoration: none;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 22px;
-  background: none;
-  border: none;
-}
-
-/* ================= NAV ================= */
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Mega Menu */
-.has-mega {
-  position: relative;
-}
-
-.mega-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.has-mega:hover .mega-menu {
-  display: grid;
-}
-
-.mega-section h4 {
-  margin-bottom: 10px;
-}
-
-.mega-section a {
-  display: block;
-  margin-bottom: 6px;
-  color: #555;
-  text-decoration: none;
-}
-
-/* ================= ACTIONS ================= */
-.header-actions button {
-  margin-left: 10px;
-  padding: 6px 12px;
-  border-radius: 6px;
-  border: none;
-  cursor: pointer;
-}
-
-.login-btn {
-  background: #eee;
-}
-
-.cart-btn {
-  background: #ff4d4d;
-  color: #fff;
-}
-
-/* ================= HERO ================= */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.hero h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* ================= PRODUCTS ================= */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.product-card {
-  background: #fff;
-  padding: 16px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,.05);
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.price {
-  font-weight: 600;
-  margin: 10px 0;
-}
-
-.buy-btn {
-  display: inline-block;
-  padding: 8px 14px;
-  background: #ff4d4d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-}
-
-/* ================= FOOTER ================= */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #fff;
-  margin-top: 40px;
-  font-size: 14px;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
   }
 
-  .navbar {
-    display: none;
-    position: absolute;
-    background: #fff;
-    top: 100%;
-    left: 0;
-    width: 100%;
+  /* ---------- PRODUCT DATA (Affiliate Ready) ---------- */
+  const products = [
+    {
+      title: "Wireless Headphones",
+      price: "$49.99",
+      image: "https://via.placeholder.com/300",
+      link: "https://example.com/affiliate-link-1"
+    },
+    {
+      title: "Smart Watch",
+      price: "$79.99",
+      image: "https://via.placeholder.com/300",
+      link: "https://example.com/affiliate-link-2"
+    },
+    {
+      title: "Bluetooth Speaker",
+      price: "$39.99",
+      image: "https://via.placeholder.com/300",
+      link: "https://example.com/affiliate-link-3"
+    }
+  ];
+
+  const productGrid = document.getElementById("productGrid");
+
+  if (productGrid) {
+    productGrid.innerHTML = products.map(product => `
+      <article class="product-card">
+        <img src="${product.image}" alt="${product.title}" loading="lazy">
+        <h3>${product.title}</h3>
+        <p class="price">${product.price}</p>
+        <a 
+          href="${product.link}" 
+          target="_blank" 
+          rel="nofollow sponsored noopener"
+          class="buy-btn"
+          data-product="${product.title}"
+        >
+          View Deal
+        </a>
+      </article>
+    `).join("");
   }
 
-  .navbar.active {
-    display: block;
-  }
+  /* ---------- CLICK TRACKING ---------- */
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("buy-btn")) {
+      const productName = e.target.dataset.product;
+      console.log("Affiliate click:", productName);
 
-  .navbar ul {
-    flex-direction: column;
-    padding: 20px;
-  }
+      // Later you can send this to analytics
+      // fetch("/track", { method: "POST", body: productName });
+    }
+  });
 
-  .mega-menu {
-    position: static;
-    grid-template-columns: 1fr;
-    box-shadow: none;
-  }
-}
+});
+
