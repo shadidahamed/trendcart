@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "priceUSD": 49.99,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/300",
+    "affiliate": "https://example.com/affiliate-1"
+  },
+  {
+    "id": 2,
+    "title": "Smart Watch",
+    "priceUSD": 79.99,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/300",
+    "affiliate": "https://example.com/affiliate-2"
+  },
+  {
+    "id": 3,
+    "title": "Bluetooth Speaker",
+    "priceUSD": 39.99,
+    "category": "Electronics",
+    "image": "https://via.placeholder.com/300",
+    "affiliate": "https://example.com/affiliate-3"
+  }
+]
