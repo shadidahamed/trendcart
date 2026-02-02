@@ -1,3 +1,22 @@
+let currentLang = localStorage.getItem("lang") || "en";
+
+window.setLang = function (lang) {
+  currentLang = lang;
+  localStorage.setItem("lang", lang);
+  applyLang();
+};
+
+function applyLang() {
+  document.querySelector(".hero h1").innerText =
+    translations[currentLang].tagline;
+
+  document.getElementById("searchBox").placeholder =
+    translations[currentLang].search;
+
+  document.querySelectorAll(".buy-btn").forEach(btn => {
+    btn.innerText = translations[currentLang].viewDeal;
+  });
+}
 /* =========================
    TREND CART – MAIN JS
    ========================= */
