@@ -1,3 +1,18 @@
+const translations = {
+  en: {
+    tagline: "Trending products people love 🔥",
+    search: "Search products...",
+    viewDeal: "View Deal",
+    currency: "USD / BDT"
+  },
+  bn: {
+    tagline: "মানুষ যেসব পণ্য ভালোবাসে 🔥",
+    search: "পণ্য খুঁজুন...",
+    viewDeal: "ডিল দেখুন",
+    currency: "ডলার / টাকা"
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const productGrid = document.getElementById("productGrid");
