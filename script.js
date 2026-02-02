@@ -14,6 +14,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+const searchBox = document.getElementById("searchBox");
+
+if (searchBox) {
+  searchBox.addEventListener("input", () => {
+    fetch("products.json")
+      .then(res => res.json())
+      .then(products => {
+        const value = searchBox.value.toLowerCase();
+        const filtered = products.filter(p =>
+          p.title.toLowerCase().includes(value)
+        );
+        renderProducts(filtered);
+      });
+  });
+}
+
+   
   /* ---------- PRODUCT DATA (Affiliate Ready) ---------- */
   const products = [
     {
