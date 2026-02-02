@@ -87,7 +87,8 @@ if (searchBox) {
           class="buy-btn"
           data-product="${product.title}"
         >
-          View Deal
+          ${translations[currentLang].viewDeal}
+
         </a>
       </article>
     `).join("");
