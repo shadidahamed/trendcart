@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TrendCart Admin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: sans-serif; padding: 20px; }
-    input, button { padding: 8px; margin: 6px 0; width: 100%; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>TrendCart – Trending Products</title>
+
+  <!-- SEO -->
+  <meta name="description" content="TrendCart brings you trending products people love. Discover the best deals, new arrivals, and top sellers." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js" defer></script>
+
 </head>
+
 <body>
 
-<h2>TrendCart Admin</h2>
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+  <div class="header-top">
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('bn')">বাংলা</button>
+    </div>
+    <button onclick="toggleCurrency()">USD / BDT</button>
+  </div>
 
-<input id="title" placeholder="Product Title">
-<input id="price" placeholder="Price (USD)">
-<input id="image" placeholder="Image URL">
-<input id="link" placeholder="Affiliate Link">
-<input id="category" placeholder="Category">
+  <div class="header-container">
+    <a href="/" class="logo">TrendCart</a>
 
-<button onclick="addProduct()">Add Product</button>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
-<pre id="output"></pre>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item has-mega">
+          <a href="#">Categories</a>
+          <div class="mega-menu">
+            <div class="mega-section">
+              <h4>Electronics</h4>
+              <a href="#">Headphones</a>
+              <a href="#">Smart Watches</a>
+              <a href="#">Speakers</a>
+            </div>
 
-<script>
-  let products = [];
+            <div class="mega-section">
+              <h4>Books</h4>
+              <a href="#">Fiction</a>
+              <a href="#">Non-Fiction</a>
+              <a href="#">Comics</a>
+            </div>
 
-  function addProduct() {
-    const p = {
-      id: Date.now(),
-      title: title.value,
-      priceUSD: parseFloat(price.value),
-      image: image.value,
-      affiliate: link.value,
-      category: category.value
-    };
+            <div class="mega-section">
+              <h4>Clothing</h4>
+              <a href="#">Men</a>
+              <a href="#">Women</a>
+              <a href="#">Kids</a>
+            </div>
+          </div>
+        </li>
 
-    products.push(p);
-    output.innerText = JSON.stringify(products, null, 2);
-  }
-</script>
+        <li class="nav-item"><a href="#">Deals</a></li>
+        <li class="nav-item"><a href="#">New Arrivals</a></li>
+        <li class="nav-item"><a href="#">Best Sellers</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="login-btn">Login</button>
+      <button class="cart-btn">🛒</button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <h1 id="tagline">Trending products people love 🔥</h1>
+  <p>Curated picks • Best prices • Trusted reviews</p>
+</section>
+
+<input 
+  type="search" 
+  id="searchBox" 
+  placeholder="Search products..."
+  class="search-box"
+/>
+
+<!-- ================= MAIN ================= -->
+<main class="container">
+  <section class="product-grid" id="productGrid">
+    <!-- Product Cards will be injected by app.js -->
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© 2026 TrendCart. This site contains affiliate links.</p>
+</footer>
 
 </body>
 </html>
+
