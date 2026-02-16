@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currency = "USD";
   const BDT_RATE = 120;
 
-  fetch("product.json")
+  fetch("products.json")
     .then(res => res.json())
     .then(products => renderProducts(products));
 
