@@ -1,3 +1,4 @@
+
 const translations = {
   en: {
     tagline: "Trending products people love 🔥",
@@ -19,19 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.querySelector(".menu-toggle");
   const navbar = document.querySelector(".navbar");
 
-  /* ================= MOBILE MENU ================= */
   if (menuToggle) {
     menuToggle.addEventListener("click", () => {
       navbar.classList.toggle("active");
     });
   }
 
-  /* ================= SETTINGS ================= */
-  let currency = "USD"; // USD or BDT
-  const BDT_RATE = 120; // approx
+  let currency = "USD";
+  const BDT_RATE = 120;
 
-  /* ================= LOAD PRODUCTS ================= */
-  fetch("products.json")
+  fetch("product.json")
     .then(res => res.json())
     .then(products => renderProducts(products));
 
@@ -59,21 +57,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }).join("");
   }
 
-  /* ================= CLICK TRACKING ================= */
   document.addEventListener("click", e => {
     if (e.target.classList.contains("buy-btn")) {
       const product = e.target.dataset.product;
       console.log("Affiliate Click:", product);
-
-      // Future:
-      // send to Google Analytics / Facebook Pixel
     }
   });
 
-  /* ================= CURRENCY TOGGLE ================= */
   window.toggleCurrency = () => {
     currency = currency === "USD" ? "BDT" : "USD";
-    fetch("products.json")
+    fetch("product.json")
       .then(res => res.json())
       .then(products => renderProducts(products));
   };
