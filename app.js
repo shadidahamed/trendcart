@@ -77,11 +77,4 @@ loadProducts();
     }
   });
 
-  window.toggleCurrency = () => {
-    currency = currency === "USD" ? "BDT" : "USD";
-    fetch("product.json")
-      .then(res => res.json())
-      .then(products => renderProducts(products));
-  };
-
 });
