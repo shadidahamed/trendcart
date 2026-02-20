@@ -1,18 +1,17 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const translations = {
-  en: {
-    tagline: "Trending products people love 🔥",
-    search: "Search products...",
-    viewDeal: "View Deal",
-    currency: "USD / BDT"
-  },
-  bn: {
-    tagline: "মানুষ যেসব পণ্য ভালোবাসে 🔥",
-    search: "পণ্য খুঁজুন...",
-    viewDeal: "ডিল দেখুন",
-    currency: "ডলার / টাকা"
-  }
+const firebaseConfig = {
+  apiKey: "AIzaSyDiMzH9m6Rt5Frnz3MLZXq7dhgs8uVIaww",
+  authDomain: "trendcart-104cc.firebaseapp.com",
+  projectId: "trendcart-104cc",
+  storageBucket: "trendcart-104cc.firebasestorage.app",
+  messagingSenderId: "767357155189",
+  appId: "1:767357155189:web:6208bd7132c669687ac53c"
 };
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -29,23 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
   let currency = "USD";
   const BDT_RATE = 120;
 
-window.toggleCurrency = async () => {
-  currency = currency === "USD" ? "BDT" : "USD";
-  loadProducts();
-};
-  
- async function loadProducts() {
-  const querySnapshot = await getDocs(collection(db, "products"));
-  const products = [];
+  async function loadProducts() {
+    const querySnapshot = await getDocs(collection(db, "products"));
+    const products = [];
 
-  querySnapshot.forEach((doc) => {
-    products.push(doc.data());
-  });
+    querySnapshot.forEach((doc) => {
+      products.push(doc.data());
+    });
 
-  renderProducts(products);
-}
+    renderProducts(products);
+  }
 
-loadProducts();
   function renderProducts(products) {
     productGrid.innerHTML = products.map(p => {
       const price =
@@ -61,8 +54,7 @@ loadProducts();
           <a href="${p.affiliate}"
              class="buy-btn"
              target="_blank"
-             rel="nofollow sponsored noopener"
-             data-product="${p.title}">
+             rel="nofollow sponsored noopener">
              View Deal
           </a>
         </article>
@@ -70,11 +62,10 @@ loadProducts();
     }).join("");
   }
 
-  document.addEventListener("click", e => {
-    if (e.target.classList.contains("buy-btn")) {
-      const product = e.target.dataset.product;
-      console.log("Affiliate Click:", product);
-    }
-  });
+  window.toggleCurrency = () => {
+    currency = currency === "USD" ? "BDT" : "USD";
+    loadProducts();
+  };
 
+  loadProducts();
 });
