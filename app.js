@@ -29,10 +29,23 @@ document.addEventListener("DOMContentLoaded", () => {
   let currency = "USD";
   const BDT_RATE = 120;
 
-  fetch("products.json")
-    .then(res => res.json())
-    .then(products => renderProducts(products));
+window.toggleCurrency = async () => {
+  currency = currency === "USD" ? "BDT" : "USD";
+  loadProducts();
+};
+  
+ async function loadProducts() {
+  const querySnapshot = await getDocs(collection(db, "products"));
+  const products = [];
 
+  querySnapshot.forEach((doc) => {
+    products.push(doc.data());
+  });
+
+  renderProducts(products);
+}
+
+loadProducts();
   function renderProducts(products) {
     productGrid.innerHTML = products.map(p => {
       const price =
