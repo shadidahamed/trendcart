@@ -1,3 +1,4 @@
+// ====== FIREBASE SETUP ======
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
@@ -7,12 +8,12 @@ const firebaseConfig = {
   projectId: "trendcart-104cc",
   storageBucket: "trendcart-104cc.firebasestorage.app",
   messagingSenderId: "767357155189",
-  appId: "1:767357155189:web:6208bd7132c669687ac53c"
+  appId: "1:767357155189:web:6208bd7132c669687ac53c",
+  measurementId: "G-1WC7CY24C8"
 };
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const productGrid = document.getElementById("productGrid");
