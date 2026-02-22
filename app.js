@@ -4,7 +4,7 @@ import { getFirestore, collection, getDocs } from "https://www.gstatic.com/fireb
 
 // ===== FIREBASE CONFIG =====
 const firebaseConfig = {
-  apiKey: "{{YOUR_API_KEY}}",
+  apiKey: "{{AIzaSyBMaq24A8pUn9SlTcaPl0TaIPx85nNlCXM}}",
   authDomain: "trendcart-104cc.firebaseapp.com",
   projectId: "trendcart-104cc",
   storageBucket: "trendcart-104cc.firebasestorage.app",
