@@ -116,7 +116,8 @@ a {
 
 .product-card img {
   width: 100%;
-  border-radius: 5px;
+  max-height: 200px; /* বা 250px */
+  object-fit: contain; /* image distortion ছাড়াই ফিট হবে */
 }
 
 .product-card h3 {
