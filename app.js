@@ -138,3 +138,15 @@ renderByCategory(allProducts); ;
 
 // ===== START =====
 loadProducts();
+
+let cart = [];
+
+document.querySelectorAll(".buy-btn").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    const productId = e.target.dataset.id;
+    const product = allProducts.find(p => p.id == productId);
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert("Added to cart!");
+  });
+});
