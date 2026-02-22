@@ -32,17 +32,22 @@ async function loadProducts() {
   renderProducts(allProducts);
 }
 
-// ===== RENDER =====
-function renderProducts(products) {
-  const grid = document.getElementById("productGrid");
+function renderByCategory(products) {
+  const electronicsGrid = document.getElementById("electronicsGrid");
+  const booksGrid = document.getElementById("booksGrid");
+  const clothingGrid = document.getElementById("clothingGrid");
 
-  grid.innerHTML = products.map(p => {
+  electronicsGrid.innerHTML = "";
+  booksGrid.innerHTML = "";
+  clothingGrid.innerHTML = "";
+
+  products.forEach(p => {
     const price =
       currency === "USD"
         ? `$${p.priceUSD}`
         : `৳${Math.round(p.priceUSD * BDT_RATE)}`;
 
-    return `
+    const card = `
       <article class="product-card">
         <img src="${p.image}" alt="${p.title}">
         <h3>${p.title}</h3>
@@ -52,7 +57,19 @@ function renderProducts(products) {
         </a>
       </article>
     `;
-  }).join("");
+
+    if (p.category === "Electronics") {
+      electronicsGrid.innerHTML += card;
+    }
+
+    if (p.category === "Books") {
+      booksGrid.innerHTML += card;
+    }
+
+    if (p.category === "Clothing") {
+      clothingGrid.innerHTML += card;
+    }
+  });
 }
 
 // ===== CATEGORY FILTER =====
