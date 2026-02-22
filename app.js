@@ -161,3 +161,13 @@ document.querySelectorAll(".buy-btn").forEach(btn => {
     alert("Added to cart!");
   });
 });
+
+function setLang(lang) {
+  if (lang === "en") {
+    document.body.dir = "ltr";
+    alert("Language set to English");
+  } else {
+    document.body.dir = "ltr"; // or rtl if needed
+    alert("Language set to Bangla");
+  }
+}
