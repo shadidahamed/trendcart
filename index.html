@@ -1,11 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>TrendCart – Trending Products</title>
-
-  <!-- SEO -->
   <meta name="description" content="TrendCart brings you trending products people love. Discover the best deals, new arrivals, and top sellers." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -14,20 +11,20 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  
-
+  <script src="app.js" defer></script>
 </head>
-
 <body>
 
 <!-- ================= HEADER ================= -->
 <header class="main-header">
-<div class="lang-switch">
-  <button onclick="setLang('en')">EN</button>
-  <button onclick="setLang('bn')">বাংলা</button>
-</div>
+  <div class="header-top">
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('bn')">বাংলা</button>
+    </div>
+    <button onclick="toggleCurrency()">USD / BDT</button>
+  </div>
 
-  <button onclick="toggleCurrency()">USD / BDT</button>
   <div class="header-container">
     <a href="/" class="logo">TrendCart</a>
 
@@ -35,52 +32,21 @@
     <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
     <nav class="navbar">
-      <ul class="nav-items">
-        <li class="nav-item has-mega">
-          <a href="#">Categories</a>
-
-          <div class="mega-menu">
-            <div class="mega-section">
-              <h4>Electronics</h4>
-             <a href="#" onclick="filterCategory('Electronics')">Headphones</a>
-<a href="#" onclick="filterCategory('Electronics')">Smart Watches</a>
-<a href="#" onclick="filterCategory('Electronics')">Speakers</a>
-
-             </a>
-            </div>
-
-            <div class="mega-section">
-              <h4>Books</h4>
-            <a href="#" onclick="filterCategory('Books')">Fiction</a>
-<a href="#" onclick="filterCategory('Books')">Non-Fiction</a>
-<a href="#" onclick="filterCategory('Books')">Comics</a>
-            </div>
-
-            <div class="mega-section">
-              <h4>Clothing</h4>
-<a href="#" onclick="filterCategory('Clothing')">Men</a>
-<a href="#" onclick="filterCategory('Clothing')">Women</a>
-<a href="#" onclick="filterCategory('Clothing')">Kids</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="nav-item"><a href="#">Deals</a></li>
-        <li class="nav-item"><a href="#">New Arrivals</a></li>
-        <li class="nav-item"><a href="#">Best Sellers</a></li>
+      <ul class="nav-items" id="categoryMenu">
+        <!-- Categories injected by app.js -->
       </ul>
     </nav>
 
     <div class="header-actions">
-      <button class="login-btn">Login</button>
-      <button class="cart-btn">🛒</button>
+      <button class="login-btn" onclick="login()">Login</button>
+      <button class="cart-btn" onclick="openCart()">🛒</button>
     </div>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
-  <h1>Trending products people love 🔥</h1>
+  <h1 id="tagline">Trending products people love 🔥</h1>
   <p>Curated picks • Best prices • Trusted reviews</p>
 </section>
 
@@ -93,33 +59,15 @@
 
 <!-- ================= MAIN ================= -->
 <main class="container">
-  <h2>Electronics</h2>
-<section class="product-grid" id="electronicsGrid"></section>
-
-<h2>Books</h2>
-<section class="product-grid" id="booksGrid"></section>
-
-<h2>Clothing</h2>
-<section class="product-grid" id="clothingGrid"></section>
+  <section class="product-grid" id="productGrid">
+    <!-- Product Cards will be injected by app.js -->
   </section>
 </main>
 
 <!-- ================= FOOTER ================= -->
-<footer class="footer">rel="nofollow sponsored"
-
+<footer class="footer">
   <p>© 2026 TrendCart. This site contains affiliate links.</p>
 </footer>
 
-<!-- ================= JS ================= -->
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const navbar = document.querySelector('.navbar');
-
-  toggle.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-  });
-</script>
-<script type="module" src="app.js"></script>
 </body>
 </html>
-
