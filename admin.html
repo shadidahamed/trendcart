@@ -39,27 +39,16 @@
       <ul class="nav-items">
         <li class="nav-item has-mega">
           <a href="#">Categories</a>
-          <div class="mega-menu">
-            <div class="mega-section">
-              <h4>Electronics</h4>
-              <a href="#">Headphones</a>
-              <a href="#">Smart Watches</a>
-              <a href="#">Speakers</a>
-            </div>
+         
+        <!-- Categories Button -->
+<div class="categories-container">
+  <button onclick="showCategory('Electronics')">Electronics</button>
+  <button onclick="showCategory('Books')">Books</button>
+  <button onclick="showCategory('Clothing')">Clothing</button>
+</div>
 
-            <div class="mega-section">
-              <h4>Books</h4>
-              <a href="#">Fiction</a>
-              <a href="#">Non-Fiction</a>
-              <a href="#">Comics</a>
-            </div>
-
-            <div class="mega-section">
-              <h4>Clothing</h4>
-              <a href="#">Men</a>
-              <a href="#">Women</a>
-              <a href="#">Kids</a>
-            </div>
+<!-- Sub-categories will appear here dynamically -->
+<div id="subCategoriesContainer"></div>
           </div>
         </li>
 
