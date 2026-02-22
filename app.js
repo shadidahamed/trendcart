@@ -24,13 +24,27 @@ let currency = "USD";
 const BDT_RATE = 120;
 
 // ===== LOAD PRODUCTS =====
-async function loadProducts() {
-  const snapshot = await getDocs(collection(db, "products"));
-  allProducts = snapshot.docs.map(doc => doc.data());
-  renderCategories();
-  renderProducts(allProducts);
+function loadProducts() {
+  allProducts = [
+    {
+      id: 1,
+      title: "Wireless Headphones",
+      priceUSD: 49.99,
+      category: "Electronics",
+      image: "https://images-na.ssl-images-amazon.com/images/I/81eDpWz0V3L._AC_SL1500_.jpg",
+      affiliate: "https://www.amazon.com/dp/B09BF64J55/?tag=trendcartbd-20"
+    },
+    {
+      id: 2,
+      title: "Smart Watch",
+      priceUSD: 79.99,
+      category: "Electronics",
+      image: "https://images-na.ssl-images-amazon.com/images/I/71mPpF6CwzL._AC_SL1500_.jpg",
+      affiliate: "https://www.amazon.com/dp/B08X4YQZ4L/?tag=trendcartbd-20"
+    }
+  ];
+  renderByCategory(allProducts);
 }
-
 // ===== RENDER CATEGORIES =====
 function renderByCategory(products) {
   const electronicsGrid = document.getElementById("electronicsGrid");
