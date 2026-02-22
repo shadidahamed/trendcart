@@ -2,95 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TrendCart – Trending Products</title>
-
-  <!-- SEO -->
-  <meta name="description" content="TrendCart brings you trending products people love. Discover the best deals, new arrivals, and top sellers." />
+  <title>TrendCart Admin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <script src="app.js" defer></script>
-
+  <script src="admin.js" defer></script>
 </head>
-
 <body>
+  <h1>TrendCart Admin Panel</h1>
 
-<!-- ================= HEADER ================= -->
-<header class="main-header">
-  <div class="header-top">
-    <div class="lang-switch">
-      <button onclick="setLang('en')">EN</button>
-      <button onclick="setLang('bn')">বাংলা</button>
-    </div>
-    <button onclick="toggleCurrency()">USD / BDT</button>
-  </div>
+  <form id="addProductForm">
+    <input type="text" id="title" placeholder="Product Title" required />
+    <input type="number" id="priceUSD" placeholder="Price USD" required />
+    <select id="category" required>
+      <option value="">Select Category</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Books">Books</option>
+      <option value="Clothing">Clothing</option>
+    </select>
+    <input type="url" id="image" placeholder="Image URL" required />
+    <input type="url" id="affiliate" placeholder="Affiliate URL {{replace with real Amazon link}}" required />
+    <button type="submit">Add Product</button>
+  </form>
 
-  <div class="header-container">
-    <a href="/" class="logo">TrendCart</a>
-
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
-    <nav class="navbar">
-      <ul class="nav-items">
-        <li class="nav-item has-mega">
-          <a href="#">Categories</a>
-         
-        <!-- Categories Button -->
-<div class="categories-container">
-  <button onclick="showCategory('Electronics')">Electronics</button>
-  <button onclick="showCategory('Books')">Books</button>
-  <button onclick="showCategory('Clothing')">Clothing</button>
-</div>
-
-<!-- Sub-categories will appear here dynamically -->
-<div id="subCategoriesContainer"></div>
-          </div>
-        </li>
-
-        <li class="nav-item"><a href="#">Deals</a></li>
-        <li class="nav-item"><a href="#">New Arrivals</a></li>
-        <li class="nav-item"><a href="#">Best Sellers</a></li>
-      </ul>
-    </nav>
-
-    <div class="header-actions">
-       <button class="login-btn">Login</button>
-      <a href="#" class="buy-btn" data-id="1">View Deal</a>
-     
-    </div>
-  </div>
-</header>
-
-<!-- ================= HERO ================= -->
-<section class="hero">
-  <h1 id="tagline">Trending products people love 🔥</h1>
-  <p>Curated picks • Best prices • Trusted reviews</p>
-</section>
-
-<input 
-  type="search" 
-  id="searchBox" 
-  placeholder="Search products..."
-  class="search-box"
-/>
-
-<!-- ================= MAIN ================= -->
-<main class="container">
-  <section class="product-grid" id="productGrid">
-    <!-- Product Cards will be injected by app.js -->
-  </section>
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <p>© 2026 TrendCart. This site contains affiliate links.</p>
-</footer>
-
+  <div id="status"></div>
 </body>
 </html>
-
