@@ -16,6 +16,17 @@ const firebaseConfig = {
   appId: "1:767357155189:web:6208bd7132c669687ac53c"
 };
 
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const auth = getAuth();
+const provider = new GoogleAuthProvider();
+
+document.querySelector(".login-btn").addEventListener("click", () => {
+  signInWithPopup(auth, provider)
+    .then(result => alert(`Logged in as ${result.user.displayName}`))
+    .catch(err => console.error(err));
+});
+
 // ===== INIT =====
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
