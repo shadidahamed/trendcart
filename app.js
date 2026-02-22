@@ -30,16 +30,30 @@ async function loadProducts() {
 }
 
 // ===== RENDER CATEGORIES =====
-function renderCategories() {
-  const categoryMenu = document.getElementById("categoryMenu");
-  categoryMenu.innerHTML = "";
+function renderByCategory(products) {
+  const electronicsGrid = document.getElementById("electronicsGrid");
+  const booksGrid = document.getElementById("booksGrid");
+  const clothingGrid = document.getElementById("clothingGrid");
 
-  const categories = [...new Set(allProducts.map(p => p.category))];
+  electronicsGrid.innerHTML = "";
+  booksGrid.innerHTML = "";
+  clothingGrid.innerHTML = "";
 
-  categories.forEach(cat => {
-    const li = document.createElement("li");
-    li.innerHTML = `<button onclick="filterByCategory('${cat}')">${cat}</button>`;
-    categoryMenu.appendChild(li);
+  products.forEach(p => {
+    const price = currency === "USD" ? `$${p.priceUSD}` : `৳${Math.round(p.priceUSD * BDT_RATE)}`;
+
+    const card = `
+      <article class="product-card">
+        <img src="${p.image}" alt="${p.title}">
+        <h3>${p.title}</h3>
+        <p class="price">${price}</p>
+        <a href="${p.affiliate}" target="_blank" class="buy-btn">View Deal</a>
+      </article>
+    `;
+
+    if (p.category === "Electronics") electronicsGrid.innerHTML += card;
+    if (p.category === "Books") booksGrid.innerHTML += card;
+    if (p.category === "Clothing") clothingGrid.innerHTML += card;
   });
 }
 
