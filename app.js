@@ -29,7 +29,7 @@ const BDT_RATE = 120;
 async function loadProducts() {
   const snapshot = await getDocs(collection(db, "products"));
   allProducts = snapshot.docs.map(doc => doc.data());
-  renderProducts(allProducts);
+renderByCategory(allProducts); ;
 }
 
 function renderByCategory(products) {
@@ -94,7 +94,7 @@ document.addEventListener("input", (e) => {
 // ===== CURRENCY TOGGLE =====
 window.toggleCurrency = () => {
   currency = currency === "USD" ? "BDT" : "USD";
-  renderProducts(allProducts);
+renderByCategory(allProducts); ;
 };
 
 // ===== START =====
