@@ -37,6 +37,8 @@ let currency = "USD";
 const BDT_RATE = 120;
 
 // ===== LOAD PRODUCTS =====
+
+
 document.getElementById("searchBox").addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
   const filtered = allProducts.filter(p => p.title.toLowerCase().includes(value));
@@ -133,6 +135,14 @@ function showProductsBySubCategory(subCat) {
   }
 ]
 
+
+
+// ===== CURRENCY TOGGLE =====
+window.toggleCurrency = () => {
+  currency = currency === "USD" ? "BDT" : "USD";
+renderByCategory(allProducts); ;
+};
+
 // ===== SEARCH =====
 document.addEventListener("input", (e) => {
   if (e.target.id === "searchBox") {
@@ -145,12 +155,6 @@ document.addEventListener("input", (e) => {
     renderProducts(filtered);
   }
 });
-
-// ===== CURRENCY TOGGLE =====
-window.toggleCurrency = () => {
-  currency = currency === "USD" ? "BDT" : "USD";
-renderByCategory(allProducts); ;
-};
 
 // ===== START =====
 loadProducts();
