@@ -37,6 +37,11 @@ let currency = "USD";
 const BDT_RATE = 120;
 
 // ===== LOAD PRODUCTS =====
+document.getElementById("searchBox").addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase();
+  const filtered = allProducts.filter(p => p.title.toLowerCase().includes(value));
+  renderProducts(filtered);
+});
 async function loadProducts() {
   const snapshot = await getDocs(collection(db, "products"));
   allProducts = snapshot.docs.map(doc => doc.data());
