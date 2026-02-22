@@ -78,6 +78,45 @@ window.filterCategory = (category) => {
   renderProducts(filtered);
 };
 
+// Sub-categories mapping
+const subCategories = {
+  Electronics: ["Headphones", "Smart Watch", "Speakers"],
+  Books: ["Fiction", "Non-Fiction", "Comics"],
+  Clothing: ["Men", "Women", "Kids"]
+};
+
+// Show sub-categories when a main category is clicked
+function showCategory(cat) {
+  const container = document.getElementById("subCategoriesContainer");
+  container.innerHTML = ""; // clear previous subcategories
+
+  subCategories[cat].forEach(sub => {
+    const btn = document.createElement("button");
+    btn.textContent = sub;
+    btn.onclick = () => showProductsBySubCategory(sub); // show products when sub is clicked
+    container.appendChild(btn);
+  });
+}
+
+// Show only products of that sub-category
+function showProductsBySubCategory(subCat) {
+  const filtered = allProducts.filter(p => p.subCategory === subCat);
+  renderProducts(filtered);
+}
+
+// Update your product JSON to include `subCategory`:
+[
+  {
+    "id": 1,
+    "title": "Wireless Headphones",
+    "priceUSD": 49.99,
+    "category": "Electronics",
+    "subCategory": "Headphones",
+    "image": "🔗[PUT_REAL_IMAGE_URL_HERE]",
+    "affiliate": "🔗[PUT_REAL_AMAZON_AFFILIATE_LINK_HERE]"
+  }
+]
+
 // ===== SEARCH =====
 document.addEventListener("input", (e) => {
   if (e.target.id === "searchBox") {
