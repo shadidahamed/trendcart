@@ -138,3 +138,13 @@ loginBtn.addEventListener("click", () => {
 
 const cartBtn = document.getElementById("cartBtn");
 cartBtn.innerText = `Cart (${cart.length})`;
+
+window.addToCart = function(id) {
+  const product = allProducts.find(p => p.id === id);
+  cart.push(product);
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  cartBtn.innerText = `Cart (${cart.length})`;
+};
+
