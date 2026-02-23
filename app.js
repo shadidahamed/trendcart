@@ -74,6 +74,25 @@ window.toggleCurrency = () => {
   renderByCategory(allProducts);
 };
 
+let language = "ENG";
+
+const langBtn = document.getElementById("langBtn");
+
+langBtn.addEventListener("click", () => {
+  language = language === "ENG" ? "BAN" : "ENG";
+  langBtn.innerText = language;
+
+  if (language === "BAN") {
+    document.getElementById("electronicsTitle").innerText = "ইলেকট্রনিক্স";
+    document.getElementById("booksTitle").innerText = "বই";
+    document.getElementById("clothingTitle").innerText = "পোশাক";
+  } else {
+    document.getElementById("electronicsTitle").innerText = "Electronics";
+    document.getElementById("booksTitle").innerText = "Books";
+    document.getElementById("clothingTitle").innerText = "Clothing";
+  }
+});
+
 loadProducts();
 const searchBtn = document.getElementById("searchBtn");
 const searchInput = document.getElementById("searchInput");
