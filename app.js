@@ -118,3 +118,20 @@ currencyBtn.addEventListener("click", () => {
 
   renderByCategory(allProducts);
 });
+
+let loggedIn = false;
+const loginBtn = document.getElementById("loginBtn");
+
+loginBtn.addEventListener("click", () => {
+  loggedIn = !loggedIn;
+
+  if (loggedIn) {
+    loginBtn.innerText = "Logout";
+    alert("Logged in successfully!");
+  } else {
+    loginBtn.innerText = "Login";
+    alert("Logged out!");
+  }
+});
+
+
