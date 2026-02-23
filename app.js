@@ -56,15 +56,15 @@ function renderByCategory(products) {
     const price =
       currency === "USD" ? `$${p.priceUSD}` : `৳${Math.round(p.priceUSD * BDT_RATE)}`;
 
-    const card = `
-      <article class="product-card">
-        <img src="${p.image}" alt="${p.title}" style="width:100%;border-radius:5px;">
-        <h3>${p.title}</h3>
-        <p class="price">${price}</p>
-        <a href="${p.affiliate}" target="_blank" class="buy-btn">View Deal</a>
-      </article>
-    `;
-
+const card = `
+  <article class="product-card">
+    <img src="${p.image}" alt="${p.title}" style="width:100%">
+    <h3>${p.title}</h3>
+    <p class="price">${price}</p>
+    <button onclick="addToCart(${p.id})">Add to Cart</button>
+    <a href="${p.affiliate}" target="_blank" class="buy-btn">View Deal</a>
+  </article>
+`;
     if (p.category === "Electronics") electronicsGrid.innerHTML += card;
     if (p.category === "Books") booksGrid.innerHTML += card;
     if (p.category === "Clothing") clothingGrid.innerHTML += card;
