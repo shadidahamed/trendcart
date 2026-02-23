@@ -104,6 +104,44 @@ const products = [
     link: "https://www.amazon.com/Re-Zero-Starting-Another-World/dp/0316315303?crid=29RO9T0EHYUAL&dib=eyJ2IjoiMSJ9.ItMRwWmpULj_cyu2t6bT3E-VrDNL8bsGX3rGpGjc86fq9011wRrddGQNAVLDv351Ug2-F2UCw2TrPgli3VZx_ToZps4WBYHJWxLCTVU0Y-v5LH9R1Gw4FXA8DV42V7QpXogsMPr4P0pE54EgEpCrSZSJC7ZcqfJLo3TKyeFsYZVdrrkBLm-uYG66CJ9nFBNqnBgTS0XqiBX84NFwKPI8IXc-5J_MVsg7-xxDhhVoowY.eUQ9TzUI0UtI1u84pmpiK-fKVXKkOxkYQ6SJpS3uA9I&dib_tag=se&keywords=light+novel&qid=1771859835&s=books&sprefix=l%2Cstripbooks-intl-ship%2C333&sr=1-6&linkCode=ll2&tag=trendcartbd-20&linkId=112cf0781f8d61c01a4c65564391c9f3&language=en_US&ref_=as_li_ss_tl"
   },
   
+   {
+    category: "books",
+    sub: "webnovel",
+    title: "Popular webnovel Volume 4",
+    price: 12.00,
+    image: "https://m.media-amazon.com/images/I/91X6rx1HX5L._SL1500_.jpg",
+    link: "https://www.amazon.com/dp/1975319273?_encoding=UTF8&pd_rd_w=tichu&pd_rd_wg=zFLxc&pd_rd_r=cc22d364-1c30-47c5-91c5-853446d72cae&content-id=amzn1.sym.476b1b7d-c787-4147-8a3c-fdef209103a1&linkCode=ll2&tag=trendcartbd-20&linkId=68d8d2f8226adba3a097b4366e779046&language=en_US&ref_=as_li_ss_tl"
+  },
+        
+   {
+    category: "books",
+    sub: "webnovel",
+    title: "Popular webnovel Volume 5",
+    price: 5.99,
+    image: "https://m.media-amazon.com/images/I/515fsT6ty4L._SL1000_.jpg",
+    link: "https://www.amazon.com/dp/B0B7MJH9TK?_encoding=UTF8&pd_rd_w=OrEI9&content-id=amzn1.sym.68a48b3d-8323-44f6-bbc2-414df317110f&pf_rd_p=68a48b3d-8323-44f6-bbc2-414df317110f&pf_rd_r=B16PC3HPQH2CB08PB0NQ&pd_rd_wg=0herZ&pd_rd_r=2b0193dd-4e80-431f-9a02-cc04235e158a&linkCode=ll2&tag=trendcartbd-20&linkId=6802235e728730f72915419d82d7a0ec&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+ 
+   {
+    category: "books",
+    sub: "webnovel",
+    title: "Popular webnovel Volume 6",
+    price: 142.70 ,
+    image: "https://m.media-amazon.com/images/I/811uqUkXl1L._SL1400_.jpg",
+    link: "https://www.amazon.com/dp/197475829X?psc=1&pd_rd_i=197475829X&pd_rd_w=Y6w5c&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=DRV6ZMGDBCAX5SFJPRK8&pd_rd_wg=ZBBNn&pd_rd_r=255c756d-9dac-4d0a-8bae-2d112a2e7394&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&linkCode=ll2&tag=trendcartbd-20&linkId=57b06eb5b92ff6f7bac0611aa7ede8bd&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   {
+    category: "books",
+    sub: "webnovel",
+    title: "Popular webnovel Volume 7",
+    price:9.59 ,
+    image: "https://m.media-amazon.com/images/I/81Y3J1ghwrL._SL1500_.jpg",
+    link: "https://www.amazon.com/Gokurakugai-Vol-1-Yuto-Sano/dp/197474356X?pd_rd_w=ueLEV&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=MPC1C19MCVWS92SY2CTS&pd_rd_wg=8YPen&pd_rd_r=92a4d163-b458-4489-ac06-4b277e5ababd&pd_rd_i=197474356X&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=addffde71201673353cef5e9a431a5a7&language=en_US&ref_=as_li_ss_tl"
+  },
+
+  
   {
     category: "clothing",
     sub: "men",
