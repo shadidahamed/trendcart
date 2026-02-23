@@ -35,83 +35,75 @@ const products = [
    {
     category: "books",
     sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    title: "Popular Manga Volume 3",
+    price: 497.55  ,
+    image: "https://m.media-amazon.com/images/I/A1rf2eKhb5L._SL1500_.jpg",
+    link: "https://www.amazon.com/Berserk-Deluxe-Hardcover-Collection-Books/dp/1616599588?crid=1OX3RRF94UGR4&dib=eyJ2IjoiMSJ9.UJlbON9YVF36x6ocuCu2_rLvNwrQGT2COHRXXpxyekOO7Jsyr9fHPub_sQX8OAFxwpnLIXizy7yUZ1rrH5wGyLorX3r74o2Ahn_G_C5fZ8QtQmyDFneUIjnAZH2j6-g8NCwxoGRwGH-kC7bAuoeHjQlWUjMhAhaVhyq8UXESPTYtDJl8w4zKw7iFYBo7Na6hjDeRAcvLvcoJeBD_yys9pV2mRRXc7pKPEUZpfKbH0dY.lVYLX36jMqH3U70labH2Y6fvfjudZxQqyCro-GJ56HE&dib_tag=se&keywords=berserk+manga+box+set&qid=1771859197&s=books&sprefix=berser%2Cstripbooks-intl-ship%2C433&sr=1-2&linkCode=ll2&tag=trendcartbd-20&linkId=f3d26c8d0eefa967b982c699b3179655&language=en_US&ref_=as_li_ss_tl"
   },
        
    {
     category: "books",
     sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    title: "Popular Manga Volume 4",
+    price:  299.00 ,
+    image: "https://m.media-amazon.com/images/I/81+lAK01ciL._SL1500_.jpg",
+    link: "https://www.amazon.com/Vagabond-VIZBIG-Complete-Collection-Takehiko/dp/B084RK3D53?crid=14KU37D2VSBC&dib=eyJ2IjoiMSJ9.2xY7eKHwW9LSGF07yn7S1z0k6flUBG7yBjUMBQ6Ou52QF73GNndsfSvdhILdG2OABj24Z6znELnnOt6a1pSYuhZE3r0hZfAFw7hT4mtyq5NWO4q8AMr0BXmsze7XETAjLalOspdXgaw8ZGNtfUtBFI0PQo8Ea-9qltRIP2iUmo-Y4MzTtmRT5vfT6QCPkbzSlGe3z5mqAp3DCjd9m9Qho0sA_o6RXqxQHFMi0TZ341U.O6rGOtIPJVDUuG_Nz9zriMi9FwUpr6LnWjnOdwZDGcU&dib_tag=se&keywords=vagabond+box+set&qid=1771859293&s=books&sprefix=vgabond%2Cstripbooks-intl-ship%2C609&sr=1-1&linkCode=ll2&tag=trendcartbd-20&linkId=e9bb10ed956c78a365496fc69897c0c1&language=en_US&ref_=as_li_ss_tl"
   },
         
    {
     category: "books",
     sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    title: "Popular Manga Volume 5",
+    price:  116.89,
+    image: "https://m.media-amazon.com/images/I/81X+0RW2tQL._SL1280_.jpg",
+    link: "https://www.amazon.com/Goodnight-Punpun-Collection-Books-Asano/dp/9526538463?crid=1V8X2ROLJST5F&dib=eyJ2IjoiMSJ9.CqGFbxhy6N2DgznfoSARcdUksgWw6gwemjR9vJIj06G7K9DcDVS5k_SsFYW9WeLTrEg-dGH1_T256t_5fDC2Kr7GMUAdAp0eboPTC7XWN97Yg6swZMR6JSod6gz3Zux7xVS0C-3LCp7cHccvULwahA.z8Z2BgLCyGRBDRw2WeS7UbZyb6VgZsbp_R72ophK3CM&dib_tag=se&keywords=goodnight+punpun+full+book&qid=1771859378&sprefix=goodnight+punpun+full%2Caps%2C689&sr=8-1&linkCode=ll2&tag=trendcartbd-20&linkId=179c205f70900c17f91dd7f4c9480424&language=en_US&ref_=as_li_ss_tl"
   },
   
    {
     category: "books",
     sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    title: "Popular Manga Volume 6",
+    price: 42.50 ,
+    image: "https://m.media-amazon.com/images/I/81Wo3b3sNZL._SL1500_.jpg",
+    link: "https://www.amazon.com/Blue-Lock-Season-Part-Manga/dp/B0CZQ5GD57?content-id=amzn1.sym.7d2d3bbd-26a2-4075-ac43-74eb944dc665%3Aamzn1.sym.7d2d3bbd-26a2-4075-ac43-74eb944dc665&crid=31SFO8AIAM1DO&cv_ct_cx=the+climber+full+set+manga&keywords=the+climber+full+set+manga&pd_rd_i=B0CZQ5GD57&pd_rd_r=a7d4335c-eb24-4a56-bfb1-9bf450d3de89&pd_rd_w=ruF9G&pd_rd_wg=oMFpO&pf_rd_p=7d2d3bbd-26a2-4075-ac43-74eb944dc665&pf_rd_r=095F7F7NXB3YQZZVDM94&qid=1771859499&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=the+climber+full+set+manga%2Caps%2C338&sr=1-3-4a0b18c3-7aa7-46cf-a15e-b807b62cb425-spons&aref=zae1aNrt6R&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=edd1e64907ccb980bbac603d724b8a50&language=en_US&ref_=as_li_ss_tl"
   },
   
    {
     category: "books",
     sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    title: "Popular Manga Volume 7",
+    price: 23.99 ,
+    image: "https://m.media-amazon.com/images/I/81VkApOiIdL._SL1500_.jpg",
+    link: "https://www.amazon.com/Homunculus-Omnibus-Vol-Hideo-Yamamoto/dp/1685797296?pd_rd_w=AtvaF&content-id=amzn1.sym.80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_p=80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_r=G8ADXA0XDD49B3EBWKWR&pd_rd_wg=9tVOc&pd_rd_r=c09fa83b-2d12-4139-9fc5-8a4295f8b90a&pd_rd_i=1685797296&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=26c50cfd40d138b18b0c84985be62d28&language=en_US&ref_=as_li_ss_tl"
   },
   
    {
     category: "books",
-    sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    sub: "webnovel",
+    title: "Popular webnovel Volume 1",
+    price:  16.00,
+    image: "https://m.media-amazon.com/images/I/81BKBqWOY6L._SL1500_.jpg",
+    link: "https://www.amazon.com/Lord-Mysteries-Vol-Clown-Part/dp/B0DQKLC79Z?crid=29RO9T0EHYUAL&dib=eyJ2IjoiMSJ9.zQnpdGX23Wb0kenuAT3lcuc71_xTZ6sfXe3xVwjOpN3q9011wRrddGQNAVLDv351ccjHsv-iXlODGNYc5W0pAu8-alyjnuYFIeiuiGDPmb5gfgCUcmHGtvf0tTq9Y8tzkP2Vrq69anOi7HKENXEDfeTw6g3ZMStzmcyMNgkaAB2ZeGCZGfXJvZ2XInApdZy1CM2yAXbrsse1YCCpphkspHc-5J_MVsg7-xxDhhVoowY.XGC7NWjcQ5lJ2aHEAaGnjgRtDad4XqzJmZduIBtR3tQ&dib_tag=se&keywords=light+novel&qid=1771859745&s=books&sprefix=l%2Cstripbooks-intl-ship%2C333&sr=1-2&linkCode=ll2&tag=trendcartbd-20&linkId=46c7a73326ca3cc92017e4956a5d7e54&language=en_US&ref_=as_li_ss_tl"
   },
   
    {
     category: "books",
-    sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    sub: "webnovel",
+    title: "Popular webnovel Volume 2",
+    price:  12.80,
+    image: "https://m.media-amazon.com/images/I/71iwyy-U0WL._SL1500_.jpg",
+    link: "https://www.amazon.com/Omniscient-Readers-Viewpoint-novel-Vol/dp/B0DK8D2642?crid=29RO9T0EHYUAL&dib=eyJ2IjoiMSJ9.ItMRwWmpULj_cyu2t6bT3E-VrDNL8bsGX3rGpGjc86fq9011wRrddGQNAVLDv351Ug2-F2UCw2TrPgli3VZx_ToZps4WBYHJWxLCTVU0Y-v5LH9R1Gw4FXA8DV42V7QpXogsMPr4P0pE54EgEpCrSZSJC7ZcqfJLo3TKyeFsYZVdrrkBLm-uYG66CJ9nFBNqnBgTS0XqiBX84NFwKPI8IXc-5J_MVsg7-xxDhhVoowY.eUQ9TzUI0UtI1u84pmpiK-fKVXKkOxkYQ6SJpS3uA9I&dib_tag=se&keywords=light+novel&qid=1771859835&s=books&sprefix=l%2Cstripbooks-intl-ship%2C333&sr=1-5&linkCode=ll2&tag=trendcartbd-20&linkId=980c9a380705923773e2b0d73228be51&language=en_US&ref_=as_li_ss_tl"
   }, 
   
    {
     category: "books",
-    sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
+    sub: "webnovel",
+    title: "Popular webnovel Volume 3",
+    price:  12.80,
+    image: "https://m.media-amazon.com/images/I/81cNfgJEI-L._SL1500_.jpg",
+    link: "https://www.amazon.com/Re-Zero-Starting-Another-World/dp/0316315303?crid=29RO9T0EHYUAL&dib=eyJ2IjoiMSJ9.ItMRwWmpULj_cyu2t6bT3E-VrDNL8bsGX3rGpGjc86fq9011wRrddGQNAVLDv351Ug2-F2UCw2TrPgli3VZx_ToZps4WBYHJWxLCTVU0Y-v5LH9R1Gw4FXA8DV42V7QpXogsMPr4P0pE54EgEpCrSZSJC7ZcqfJLo3TKyeFsYZVdrrkBLm-uYG66CJ9nFBNqnBgTS0XqiBX84NFwKPI8IXc-5J_MVsg7-xxDhhVoowY.eUQ9TzUI0UtI1u84pmpiK-fKVXKkOxkYQ6SJpS3uA9I&dib_tag=se&keywords=light+novel&qid=1771859835&s=books&sprefix=l%2Cstripbooks-intl-ship%2C333&sr=1-6&linkCode=ll2&tag=trendcartbd-20&linkId=112cf0781f8d61c01a4c65564391c9f3&language=en_US&ref_=as_li_ss_tl"
   },
   
-   {
-    category: "books",
-    sub: "manga",
-    title: "Popular Manga Volume ",
-    price:  ,
-    image: "",
-    link: ""
-  },
   {
     category: "clothing",
     sub: "men",
