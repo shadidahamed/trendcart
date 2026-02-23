@@ -136,4 +136,5 @@ loginBtn.addEventListener("click", () => {
   }
 });
 
-
+const cartBtn = document.getElementById("cartBtn");
+cartBtn.innerText = `Cart (${cart.length})`;
