@@ -75,3 +75,17 @@ window.toggleCurrency = () => {
 };
 
 loadProducts();
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
+
+searchBtn.addEventListener("click", () => {
+  const query = searchInput.value.trim();
+
+  if (!query) return;
+
+  const formattedQuery = query.replace(/\s+/g, "+");
+
+  const amazonURL = `https://www.amazon.com/s?k=${formattedQuery}&tag=trendcartbd-20`;
+
+  window.open(amazonURL, "_blank");
+});
