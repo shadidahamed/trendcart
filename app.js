@@ -1,3 +1,5 @@
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 let allProducts = [];
 let currency = "USD";
 const BDT_RATE = 120;
