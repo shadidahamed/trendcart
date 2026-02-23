@@ -141,15 +141,33 @@ const products = [
     link: "https://www.amazon.com/Gokurakugai-Vol-1-Yuto-Sano/dp/197474356X?pd_rd_w=ueLEV&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=MPC1C19MCVWS92SY2CTS&pd_rd_wg=8YPen&pd_rd_r=92a4d163-b458-4489-ac06-4b277e5ababd&pd_rd_i=197474356X&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=addffde71201673353cef5e9a431a5a7&language=en_US&ref_=as_li_ss_tl"
   },
 
+  {
+    category: "clothing",
+    sub: "women",
+    title: "Excessories 1",
+    price: ,
+    image: "",
+    link: ""
+  },
   
   {
     category: "clothing",
-    sub: "men",
-    title: "Men Casual Shirt",
-    price: 25.99,
-    image: "(PUT IMAGE URL HERE)",
-    link: "(PUT YOUR AMAZON AFFILIATE LINK HERE)"
-  }
+    sub: "women",
+    title: "Excessories",
+    price: 12.99,
+    image: "https://m.media-amazon.com/images/I/61zmeUSGmXL._AC_SX625_.jpg",
+    link: "https://www.amazon.com/Fesciory-Leather-Bracelets-Multi-Layer-Bracelet/dp/B0BD5563WD?dib=eyJ2IjoiMSJ9.5wb9EtnRKRtNcr518aFUwOzI2V7Isl7yf_bivDHvek593THla9oShDI3bjpsPIvR3E9pDWQQYCWHq-o0PQy_ZOT2ebm9vq8-bNcD4Ng6fBoQ9xj0LKFbF-xW91sxuJuRF_970cbirqBFjP-lw2U0Ti01qfsgHG0tWLOHitU1KiOqOeBxXpmxyWCopi2f4L0mh3Q1yH_zAy1MAya9--gBqTtPNxCg1t7LOcD_1tDPX9XCjtYjs1o6HQnZOJ8vhg0R_FdnRFj1lDeBNGQwht1MuzpDQ4SIZjH8p-OMx4SLdlk.cPlqy9X6gZopoVDXi3273AYmFf9dYXlmMjKTHMCATO0&dib_tag=se&qid=1771861822&refinements=p_36%3A-2000%2Cp_n_g-1004232833091%3A2343351011&rnid=2343347011&s=fashion-womens-intl-ship&sr=1-5&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=575e8e6029daf230a156f4ed044c7961&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+  {
+    category: "clothing",
+    sub: "women",
+    title: "Excessories",
+    price: 9.99,
+    image: "https://m.media-amazon.com/images/I/71LyXNYLHNL._AC_SY500_.jpg",
+    link: "https://www.amazon.com/QIUTIMIY-Leather-Bracelets-Bracelet-Layered/dp/B0DY7Z3KVP?pd_rd_w=EVdEG&content-id=amzn1.sym.3d5af8a3-cce9-42ea-9ba5-183bb8c2673b&pf_rd_p=3d5af8a3-cce9-42ea-9ba5-183bb8c2673b&pf_rd_r=6MFYCS30WHYXAY6T39KY&pd_rd_wg=q3gmA&pd_rd_r=bc8faee6-a3b7-4b3d-877c-1393fa54d637&pd_rd_i=B0DY7XJQZ3&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=44ca6386d1015cba3874f152fff2adb7&language=en_US&ref_=as_li_ss_tl"
+  },
+
 ];
 
 function renderProducts(category, sub=null){
