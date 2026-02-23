@@ -28,6 +28,14 @@ function loadProducts() {
       image: "https://m.media-amazon.com/images/I/61y+b4M0RZL._AC_SL1200_.jpg",
       affiliate: "https://www.amazon.com/Anker-SoundCore-Playtime-Bluetooth-Portable/dp/B016XTADG2?crid=13R9WOT8LEGRT&dib=eyJ2IjoiMSJ9.Ruva69X2wmY2wc-v_USRuVlnbsYyZSzRK3HpupHC6JBuHhMdFkimF5DnrCgi3oHMX1OrrJClEEyEDBricdeQMhOJee14OUAtpBZw5Ar6Z7GSYf7VfYwKaqZMC2oav5LgrJy7ps1MKo4LlUG7rwfwqYl5BMrNH6fdPJuTV_fuKF8JYfH_UPrVEJHACij9_xUycKTTrg5F2e5eEUv22p6omUiaFknUYDgppN4bGHRI1qU.lhey5rXVFvVAM5QF93gNp0suEBfwlYV0Vtq62TeLc0A&dib_tag=se&keywords=bluetooth%2Bspeaker&qid=1771785769&sprefix=bluetooth%2Caps%2C359&sr=8-8&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ace176f0c901133b13f3ad4922ff3246&language=en_US&ref_=as_li_ss_tl"
     }
+    {
+  id: 4,
+  title: "Noise Cancelling Earbuds",
+  priceUSD: 49.99,
+  category: "Electronics",
+  image: "https://m.media-amazon.com/images/I/71fEWG6n4aL._AC_SL1500_.jpg",
+  affiliate: "https://www.amazon.com/Soundcore-Real-Time-Cancelling-Translation-Bluetooth/dp/B0FNWCYLZN?crid=1DKJ9MG9VQ6XL&dib=eyJ2IjoiMSJ9.3HaLV4y1tLIYC1rquxipLDkn5sNFGYk5bDlnjSuvKtgirSTNlx5gKoeg1a38n8nD6rZsvFKiYhNy2juuHDH9M2g-JCtYB0t9R6zYV_Y4H6H8QxiqRFrJoR3lrz5lvHIz3oWQEWpCweIAk4Hestwi10D4mtEjeetHN6cVNQZTeBnp2d37cYTFqY2RMavVjApJyo9cS0N31KrqBTrdw6MZxtAzgRDgNOxoN9srRQeodhk._dtP4DsnTFvW2qNhtX5niCGkPCBXTtfcbTEL8RykNZs&dib_tag=se&keywords=noise%2Bcancelling%2Bearbuds&qid=1771841896&sprefix=noise%2Bcancelling%2B%2Caps%2C404&sr=8-3&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=7cbbab402446c3ee04fb104be88c24df&language=en_US&ref_=as_li_ss_tl"
+}
   ];
 
   renderByCategory(allProducts);
