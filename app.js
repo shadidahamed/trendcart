@@ -1,150 +1,94 @@
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-let allProducts = [];
-let currency = "USD";
 const BDT_RATE = 120;
+let currentTheme = localStorage.getItem("theme") || "light";
 
-function loadProducts() {
-  allProducts = [
-    {
-      id: 1,
-      title: "Wireless Headphones",
-      priceUSD: 18.99,
-      category: "Electronics",
-      image: "https://m.media-amazon.com/images/I/71Hx8b6HGbL._AC_SL1500_.jpg",
-      affiliate: "https://www.amazon.com/Bluetooth-Headphones-KVIDIO-Microphone-Lightweight/dp/B09BF64J55?crid=1JFKZHF32XMLN&dib=eyJ2IjoiMSJ9.iUiT5ZutSPLrCAX_yIx8Es2jDEh2bmniVV_1GkL8Crv6_LGbQi-iB-dVEcT_HG3t-c507Leybg8Z-XhTa-pRWrLGgD-CVpLJsL5blMGkSdKjQk5euQs3MW8RYu4oNbAahwKKsTydPTdaoZNs7u-C54SbtsJCAutrGtMn1z4nDK5aK797WWxlot7Rql4iWj2jzAPDEaX0dItCDu98NLhVu-o5QL8GXjOuFcLbQK_pSUA.hjtxnF2Jw0h2GImc8grGzqT4jIBDRRXXsLHmahFwjRY&dib_tag=se&keywords=wireless%2Bheadphones&qid=1771773391&sprefix=wire%2Caps%2C351&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=3988a2961e160f4ffe6b87c8af043afe&language=en_US&ref_=as_li_ss_tl"
-    },
-    {
-      id: 2,
-      title: "Smart Watch",
-      priceUSD: 99.99,
-      category: "Electronics",
-      image: "https://m.media-amazon.com/images/I/71Q7JMrurtL._AC_SL1500_.jpg",
-      affiliate: "https://www.amazon.com/gp/aw/d/B0BS3TZHBV?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=7e926c07228faabebb7accbb72643db0&hsa_cr_id=0&qid=1771785663&sr=1-2-f02f01d6-adaf-4bef-9a7c-29308eff9043&pd_rd_w=giEVj&content-id=amzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a%3Aamzn1.sym.e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_p=e2c9099f-6964-4dbf-9ce9-8bc2c1a8ec1a&pf_rd_r=P1K0H6T8JA454ZQDR21Y&pd_rd_wg=QC3uu&pd_rd_r=c275721b-f1e9-45de-a631-87f86e4be0be&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=3b9f4808f861f91298526e504931caff&language=en_US&ref_=as_li_ss_tl"
-    },
-    {
-      id: 3,
-      title: "Bluetooth Speaker",
-      priceUSD: 24.99,
-      category: "Electronics",
-      image: "https://m.media-amazon.com/images/I/61y+b4M0RZL._AC_SL1200_.jpg",
-      affiliate: "https://www.amazon.com/Anker-SoundCore-Playtime-Bluetooth-Portable/dp/B016XTADG2?crid=13R9WOT8LEGRT&dib=eyJ2IjoiMSJ9.Ruva69X2wmY2wc-v_USRuVlnbsYyZSzRK3HpupHC6JBuHhMdFkimF5DnrCgi3oHMX1OrrJClEEyEDBricdeQMhOJee14OUAtpBZw5Ar6Z7GSYf7VfYwKaqZMC2oav5LgrJy7ps1MKo4LlUG7rwfwqYl5BMrNH6fdPJuTV_fuKF8JYfH_UPrVEJHACij9_xUycKTTrg5F2e5eEUv22p6omUiaFknUYDgppN4bGHRI1qU.lhey5rXVFvVAM5QF93gNp0suEBfwlYV0Vtq62TeLc0A&dib_tag=se&keywords=bluetooth%2Bspeaker&qid=1771785769&sprefix=bluetooth%2Caps%2C359&sr=8-8&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ace176f0c901133b13f3ad4922ff3246&language=en_US&ref_=as_li_ss_tl"
-    },
-    { 
-  id: 4,
-  title: "Noise Cancelling Earbuds",
-  priceUSD: 49.99,
-  category: "Electronics",
-  image: "https://m.media-amazon.com/images/I/71fEWG6n4aL._AC_SL1500_.jpg",
-  affiliate: "https://www.amazon.com/Soundcore-Real-Time-Cancelling-Translation-Bluetooth/dp/B0FNWCYLZN?crid=1DKJ9MG9VQ6XL&dib=eyJ2IjoiMSJ9.3HaLV4y1tLIYC1rquxipLDkn5sNFGYk5bDlnjSuvKtgirSTNlx5gKoeg1a38n8nD6rZsvFKiYhNy2juuHDH9M2g-JCtYB0t9R6zYV_Y4H6H8QxiqRFrJoR3lrz5lvHIz3oWQEWpCweIAk4Hestwi10D4mtEjeetHN6cVNQZTeBnp2d37cYTFqY2RMavVjApJyo9cS0N31KrqBTrdw6MZxtAzgRDgNOxoN9srRQeodhk._dtP4DsnTFvW2qNhtX5niCGkPCBXTtfcbTEL8RykNZs&dib_tag=se&keywords=noise%2Bcancelling%2Bearbuds&qid=1771841896&sprefix=noise%2Bcancelling%2B%2Caps%2C404&sr=8-3&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=7cbbab402446c3ee04fb104be88c24df&language=en_US&ref_=as_li_ss_tl"
-}
-  ];
-
-  renderByCategory(allProducts);
+if(currentTheme === "dark"){
+  document.body.classList.add("dark");
 }
 
-function renderByCategory(products) {
-  const electronicsGrid = document.getElementById("electronicsGrid");
-  const booksGrid = document.getElementById("booksGrid");
-  const clothingGrid = document.getElementById("clothingGrid");
+const products = [
+  {
+    category: "electronics",
+    sub: "gaming",
+    title: "Gaming Headset",
+    price: 49.99,
+    image: "(PUT IMAGE URL HERE)",
+    link: "(PUT YOUR AMAZON AFFILIATE LINK HERE)"
+  },
+  {
+    category: "books",
+    sub: "manga",
+    title: "Popular Manga Volume 1",
+    price: 15.99,
+    image: "(PUT IMAGE URL HERE)",
+    link: "(PUT YOUR AMAZON AFFILIATE LINK HERE)"
+  },
+  {
+    category: "clothing",
+    sub: "men",
+    title: "Men Casual Shirt",
+    price: 25.99,
+    image: "(PUT IMAGE URL HERE)",
+    link: "(PUT YOUR AMAZON AFFILIATE LINK HERE)"
+  }
+];
 
-  electronicsGrid.innerHTML = "";
-  booksGrid.innerHTML = "";
-  clothingGrid.innerHTML = "";
+function renderProducts(category, sub=null){
+  const grid = document.getElementById(category+"Grid");
+  grid.innerHTML = "";
 
-  products.forEach(p => {
-    const price =
-      currency === "USD" ? `$${p.priceUSD}` : `৳${Math.round(p.priceUSD * BDT_RATE)}`;
+  products
+  .filter(p => p.category === category)
+  .filter(p => sub ? p.sub === sub : true)
+  .forEach(p => {
 
-const card = `
-  <article class="product-card">
-    <img src="${p.image}" alt="${p.title}" style="width:100%">
-    <h3>${p.title}</h3>
-    <p class="price">${price}</p>
-    <button onclick="addToCart(${p.id})">Add to Cart</button>
-    <a href="${p.affiliate}" target="_blank" class="buy-btn">View Deal</a>
-  </article>
-`;
-    if (p.category === "Electronics") electronicsGrid.innerHTML += card;
-    if (p.category === "Books") booksGrid.innerHTML += card;
-    if (p.category === "Clothing") clothingGrid.innerHTML += card;
+    const bdt = Math.round(p.price * BDT_RATE);
+
+    grid.innerHTML += `
+      <div class="product-card">
+        <img src="${p.image}">
+        <h3>${p.title}</h3>
+        <p>৳${bdt}  ($${p.price})</p>
+        <a class="buy-btn" href="${p.link}" target="_blank">
+        Buy on Amazon
+        </a>
+      </div>
+    `;
   });
 }
 
-window.toggleCurrency = () => {
-  currency = currency === "USD" ? "BDT" : "USD";
-  renderByCategory(allProducts);
-};
+function showCategory(cat){
+  document.querySelectorAll(".category-section")
+  .forEach(sec => sec.classList.add("hidden"));
 
-let language = "ENG";
+  document.getElementById(cat+"Section")
+  .classList.remove("hidden");
 
-const langBtn = document.getElementById("langBtn");
+  renderProducts(cat);
+}
 
-langBtn.addEventListener("click", () => {
-  language = language === "ENG" ? "BAN" : "ENG";
-  langBtn.innerText = language;
+function filterSub(cat, sub){
+  renderProducts(cat, sub);
+}
 
-  if (language === "BAN") {
-    document.getElementById("electronicsTitle").innerText = "ইলেকট্রনিক্স";
-    document.getElementById("booksTitle").innerText = "বই";
-    document.getElementById("clothingTitle").innerText = "পোশাক";
-  } else {
-    document.getElementById("electronicsTitle").innerText = "Electronics";
-    document.getElementById("booksTitle").innerText = "Books";
-    document.getElementById("clothingTitle").innerText = "Clothing";
-  }
+/* SEARCH */
+document.getElementById("searchBtn").addEventListener("click",()=>{
+  const query = document.getElementById("searchInput").value.trim();
+  if(!query) return;
+  window.open(`https://www.amazon.com/s?k=${query.replace(/\s+/g,"+")}&tag=(PUT YOUR AFFILIATE TAG HERE)`);
 });
 
-loadProducts();
-const searchBtn = document.getElementById("searchBtn");
-const searchInput = document.getElementById("searchInput");
-
-searchBtn.addEventListener("click", () => {
-  const query = searchInput.value.trim();
-
-  if (!query) return;
-
-  const formattedQuery = query.replace(/\s+/g, "+");
-
-  const amazonURL = `https://www.amazon.com/s?k=${formattedQuery}&tag=trendcartbd-20`;
-
-  window.open(amazonURL, "_blank");
+/* SETTINGS */
+document.getElementById("settingsBtn").addEventListener("click",()=>{
+  document.getElementById("settingsPanel").classList.toggle("hidden");
 });
 
-const currencyBtn = document.getElementById("currencyBtn");
-
-currencyBtn.addEventListener("click", () => {
-  currency = currency === "USD" ? "BDT" : "USD";
-
-  currencyBtn.innerText = currency;
-
-  renderByCategory(allProducts);
+/* DARK MODE */
+document.getElementById("toggleTheme").addEventListener("click",()=>{
+  document.body.classList.toggle("dark");
+  localStorage.setItem("theme",
+    document.body.classList.contains("dark") ? "dark":"light"
+  );
 });
 
-let loggedIn = false;
-const loginBtn = document.getElementById("loginBtn");
-
-loginBtn.addEventListener("click", () => {
-  loggedIn = !loggedIn;
-
-  if (loggedIn) {
-    loginBtn.innerText = "Logout";
-    alert("Logged in successfully!");
-  } else {
-    loginBtn.innerText = "Login";
-    alert("Logged out!");
-  }
-});
-
-const cartBtn = document.getElementById("cartBtn");
-cartBtn.innerText = `Cart (${cart.length})`;
-
-window.addToCart = function(id) {
-  const product = allProducts.find(p => p.id === id);
-  cart.push(product);
-
-  localStorage.setItem("cart", JSON.stringify(cart));
-
-  cartBtn.innerText = `Cart (${cart.length})`;
-};
-
+/* START */
+showCategory("electronics");
