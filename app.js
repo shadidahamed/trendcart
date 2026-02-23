@@ -89,3 +89,13 @@ searchBtn.addEventListener("click", () => {
 
   window.open(amazonURL, "_blank");
 });
+
+const currencyBtn = document.getElementById("currencyBtn");
+
+currencyBtn.addEventListener("click", () => {
+  currency = currency === "USD" ? "BDT" : "USD";
+
+  currencyBtn.innerText = currency;
+
+  renderByCategory(allProducts);
+});
