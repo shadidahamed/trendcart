@@ -143,7 +143,7 @@ const products = [
 
  {
     category: "books",
-    sub: "Educational",
+    sub: "educational",
     title: "Figure drawing book",
     price:35.00,
     image: "https://m.media-amazon.com/images/I/71Nvh-+9+kL._SL1000_.jpg",
