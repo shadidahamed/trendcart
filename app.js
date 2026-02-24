@@ -141,15 +141,7 @@ const products = [
     link: "https://www.amazon.com/Gokurakugai-Vol-1-Yuto-Sano/dp/197474356X?pd_rd_w=ueLEV&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=MPC1C19MCVWS92SY2CTS&pd_rd_wg=8YPen&pd_rd_r=92a4d163-b458-4489-ac06-4b277e5ababd&pd_rd_i=197474356X&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=addffde71201673353cef5e9a431a5a7&language=en_US&ref_=as_li_ss_tl"
   },
 
-  {
-    category: "clothing",
-    sub: "women",
-    title: "Excessories 1",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
+
   {
     category: "clothing",
     sub: "women",
