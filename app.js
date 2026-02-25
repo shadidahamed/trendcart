@@ -17,83 +17,83 @@ const products = [
 
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "gaming",
+    title: "PS5/Slim/Pro Stand for Disc & Digital Console, PS5 Cooling & Charging Station with RGB Lights, PS5 Controller Charger Built-in 3 Level & AUTO Adjustable Fan, PS5/Slim/Pro Accessories Comes 3 USB Ports",
+    price: 35.14,
+    image: "https://m.media-amazon.com/images/I/71IGxhZk29L._SL1500_.jpg",
+    link: "https://www.amazon.com/Rysker-Lighting-Controller-Faceplates-Protector/dp/B0CLV1YDYS?qid=1772023492&s=electronics&sr=1-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGZfYnJvd3Nl&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=caccd39bce7704ac429871d67c0a66ce&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "gaming",
+    title: "OIVO PS5 Controller Charger with Fast Charging AC Adapter, PS5 Controller Charging Station Stand for PlayStation 5, Docking Station Replacement for PS 5 Accessories Kits",
+    price: 17.99,
+    image: "https://m.media-amazon.com/images/I/71GpgNkje8L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B08LZGPPBH?pd_rd_i=B08LZGPPBH&pd_rd_w=wjzlG&content-id=amzn1.sym.386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_p=386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_r=99231NZ6JJ2532MYWM8K&pd_rd_wg=nimsG&pd_rd_r=5af5b46e-0cde-4c9f-8f2c-7b49752c99d3&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=667614d526260ffdb46b7955633926aa&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "kitchen",
+    title: "Ninja Kitchen System | 8-Cup Food Processor Bowl & 72 oz. Blender All-in-One | With (2) 16 oz. To-Go Cups | For Smoothies, Ice Crushing, Dough & More | 1500 Watt | Black | BL770",
+    price: 171.99 ,
+    image: "https://m.media-amazon.com/images/I/81ME5sqz5TL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Ninja-Kitchen-BL770-Processor-Smoothies/dp/B00939I7EK?crid=1I7ZODV2U8J1X&dib=eyJ2IjoiMSJ9.OR4dH2Y2mB-e0QB5hy4plXqI9aK1CoM6J_vfH4vmh5xf8px3Kmi29k_KNIhnm98W2Bi8Snx_fs660iMzv5aNyEMs4ZPpk4SsDKme8WA3if2sX9ldnG5_16qQ8xs7ROvu6dsqWhO_fTSaacDHyrcovBlCTsM1nr_5A1S16He4oENvgZEIctAlw3mki-KML1Ibxcak-AYrb2e4dduVq3tRBCyZR4uLQIoxZFntG7eZkzc.cGGYtkVL5pr5xQDIb5rq7q9KPF3KXcbB2b8IaXXhcHQ&dib_tag=se&keywords=kitchen%2Belectronics&qid=1772023804&sprefix=kitchen%2Belec%2Caps%2C354&sr=8-4&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=89c966e0a9b22689dd8694608d5431c3&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "kitchen",
+    title: "Knife Set, Astercook 21 Pieces Knife Sets for Kitchen with Block, Dishwasher Safe Kitchen Knife Set with Built-in Sharpener, German Stainless Steel Black Knife Block Set",
+    price: 49.99 ,
+    image: "https://m.media-amazon.com/images/I/61Ed5NPvpDL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Astercook-Kitchen-Dishwasher-Sharpener-Stainless/dp/B0BW91HX7D?pd_rd_w=8Xumz&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=8KBPZHAESCNM3M0ZB6T4&pd_rd_wg=6ITvC&pd_rd_r=c00058a1-5b55-49ef-bbfd-721ba8c0ab87&pd_rd_i=B0BW91HX7D&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=7e0702ce421e56583cb27a3046a00a24&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "kitchen",
+    title: "YUSWKO Red Milk Frother Handheld with 3 Heads, Coffee Whisk Foam Mixer with USB Rechargeable 3 Speeds, Electric Mini Hand Hand Frother for Latte, Cappuccino, Hot Chocolate, Egg",
+    price: 25.99,
+    image: "https://m.media-amazon.com/images/I/61GdUrYYtJL._AC_SX679_.jpg",
+    link: "https://www.amazon.com/Stainless-Rechargeable-Adjustable-Chocolate-Cappuccino/dp/B08VD4RX6Y?content-id=amzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142%3Aamzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142&crid=1I7ZODV2U8J1X&cv_ct_cx=kitchen%2Belectronics&keywords=kitchen%2Belectronics&pd_rd_i=B08VD4RX6Y&pd_rd_r=796c32b7-6986-46ed-ba68-7b431d5fb7eb&pd_rd_w=YvayB&pd_rd_wg=ZRq0H&pf_rd_p=11f03cd7-d882-4fed-ae42-aff13d15d142&pf_rd_r=GZSB41A617WZCZ6NKQ7F&qid=1772024083&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=kitchen%2Belec%2Caps%2C354&sr=1-3-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons&aref=lYMdDe34sF&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=95c3da7267eec2739d87188f846b3f26&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "kitchen",
+    title: "Qcen Juicer Machine, 500W Centrifugal Juicer Extractor with Wide Mouth 3” Feed Chute for Fruit Vegetable, Easy to Clean, Stainless Steel, BPA-free (Black)",
+    price: 41.99,
+    image: "https://m.media-amazon.com/images/I/71nonehjNMS._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Centrifugal-Extractor-Vegetable-Stainless-QCen/dp/B08HM1CRDW?content-id=amzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142%3Aamzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142&crid=1I7ZODV2U8J1X&cv_ct_cx=kitchen%2Belectronics&keywords=kitchen%2Belectronics&pd_rd_i=B08HM1CRDW&pd_rd_r=796c32b7-6986-46ed-ba68-7b431d5fb7eb&pd_rd_w=YvayB&pd_rd_wg=ZRq0H&pf_rd_p=11f03cd7-d882-4fed-ae42-aff13d15d142&pf_rd_r=GZSB41A617WZCZ6NKQ7F&qid=1772024083&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=kitchen%2Belec%2Caps%2C354&sr=1-2-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons&aref=ppkpvlVi6f&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=eda2a66eae5accfa302242c13782121d&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "kitchen",
+    title: "Electric Salt and Pepper Grinder Set Automatic Battery Pepper Mill Shakers Adjustable Coarseness Upgraded Larger Capacity with Led Home and Kitchen Appliances Birthday Gifts for Women Mom",
+    price: 22.99 ,
+    image: "https://m.media-amazon.com/images/I/71NpF4JP7HL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Electric-Automatic-Adjustable-Coarseness-Upgraded/dp/B0DJSQQ1ZW?crid=1I7ZODV2U8J1X&dib=eyJ2IjoiMSJ9.8BMc85SBGRuxtGxbwooXvTl-wStIyLw4biDt1TSjgnZf8px3Kmi29k_KNIhnm98WovVesIQ3_fClCM4KFLyw5x6Hl7fW_-iPRi0E41-fcNLhXBqQIs-nfPnN5PBW3OqahYBTTmyBgLlHboAZm_-yG03o6yNuLn7Q69KhiC7I3iaV25XHhZcqfxZvURm621HBs6uw2p8_cs1iIOcRcGTWEJLngKzkAh0MGQ8qXLvG3C0.cNFwmxOAnvR_phFaeMuMtzSPH4QvlpmN_01AtdmjdTA&dib_tag=se&keywords=kitchen%2Belectronics&qid=1772024083&sprefix=kitchen%2Belec%2Caps%2C354&sr=8-15&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=f838fba317738b5695521cb74e0e94c6&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "recreation",
+    title: "Berserk Complete 1997 TV Series Marc Diraison (Actor), Naohito Takahashi (Director)  Format: Blu-ray",
+    price: 48.24 ,
+    image: "https://m.media-amazon.com/images/I/81bUe78VGCL._SL1500_.jpg",
+    link: "https://www.amazon.com/Berserk-Complete-1997-TV-Blu-ray/dp/B0CSF4TTNS?brr=1&dib=eyJ2IjoiMSJ9.HjsAsaewS5eg7K6F3TmEAi66RG6bk2mWv9CIk7dGtaWTkgY5-GVY7SsLACTMNTfOtXIRTmH9kYou4G2G7YXJ4hY1B3RNvKzQOyOa7kuaNHK7s0PQlBxsZ9unu4Ixlz9rrdit9r2VAHv96HYYAn218k8Tn2R1h9TO2N_lpXy2aNqpSViLTVDYkdS0fNS557SyKjc0vtzaV5cOzvvdzRxB-I27_9mLLpd0nwgfm743JWg.IdtNT9VH5S6kEo6sLEqYIQGXcWKzlMqBsjyNb7G6UYM&dib_tag=se&qid=1772024686&rd=1&s=movies-tv&sr=1-4&linkCode=ll2&tag=trendcartbd-20&linkId=148641885001a2f75637f47b78f1824d&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
     category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
+    sub: "recreation",
+    title: "Grave of the Fireflies Steelbook",
+    price: 13.83 ,
+    image: "https://m.media-amazon.com/images/I/81ON8DARSpL._SL1500_.jpg",
+    link: "https://www.amazon.com/Grave-Fireflies-Limited-Steelbook-Blu-ray/dp/B0F4X7K3Q3?brr=1&dib=eyJ2IjoiMSJ9.HjsAsaewS5eg7K6F3TmEAi66RG6bk2mWv9CIk7dGtaWTkgY5-GVY7SsLACTMNTfOtXIRTmH9kYou4G2G7YXJ4hY1B3RNvKzQOyOa7kuaNHK7s0PQlBxsZ9unu4Ixlz9rrdit9r2VAHv96HYYAn218k8Tn2R1h9TO2N_lpXy2aNqpSViLTVDYkdS0fNS557SyKjc0vtzaV5cOzvvdzRxB-I27_9mLLpd0nwgfm743JWg.IdtNT9VH5S6kEo6sLEqYIQGXcWKzlMqBsjyNb7G6UYM&dib_tag=se&qid=1772024686&rd=1&s=movies-tv&sr=1-5&linkCode=ll2&tag=trendcartbd-20&linkId=ec7607bd582e1b3badb418049a50ea17&language=en_US&ref_=as_li_ss_tl"
   },
   
   {
