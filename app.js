@@ -479,7 +479,79 @@ const products = [
     image: "https://m.media-amazon.com/images/I/91fSsf24MyL._SL1500_.jpg",
     link: "https://www.amazon.com/Always-Remember-Mole-Horse-Storm/dp/0593994825?_encoding=UTF8&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-8&pf_rd_r=VW41PDBG0JNWNTRR5S43&pf_rd_p=2a74faf9-89c0-4d28-b9a0-5146fc6374a8&pf_rd_t=&pf_rd_i=549028&linkCode=ll2&tag=trendcartbd-20&linkId=847e325cced3c3156fe0aa9e7f85c021&language=en_US&ref_=as_li_ss_tl"
   },
-  
+                
+   {
+    category: "books",
+    sub: "dark psychology",
+    title: " The Dark Psychology Playbook [9-in-1]: 100+ Techniques of Influence and Manipulation Exposed. A Powerful Guide to Brainwashing, Lie Detection, Mental Warfare, Mind Control, NLP, Persuasion, & More",
+    price: 29.99 ,
+    image: "https://m.media-amazon.com/images/I/61jj45AtgbL._SL1293_.jpg",
+    link: "https://www.amazon.com/Dark-Psychology-Playbook-Manipulation-Brainwashing/dp/1963621425?crid=15TD2K3EUQ143&dib=eyJ2IjoiMSJ9.sfeozVA9Ry4DwYPGABvBNjFcApAv08Twc-FHeiIEI0VTwXUKROl87o8aJnZFJhRn8eLW7LJ-rkXRTO_Hb_lpHWZ6CsZaHVyolR1bcmEftlppuj6GGIVdj19T8pVhuexHZOJg_I1wXpzwYkEKtuLUF-M7gw2Ec57T9N0NK46YrcRvRJ9qF33wnkeURdXA3bHVDdSl6DWEYct8lZRShOeZXhv_f48ybRiQX97s1oXnu7VzBgR0Xm4WxFYN0QYKIkR3AapDXVBy7k5bkg5wfvdUQSKyxF46C59zm2lTIG5UNzM.4C3tY5cgMesM6yKLgx64kZDr9CUwuZY90Def89dpLR4&dib_tag=se&keywords=dark+psychology+and+manipulation&qid=1772037649&sprefix=dark+psy%2Caps%2C443&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=44ffc9882233c617941d34ce62c09a4a&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "dark psychology",
+    title: " The 48 Laws of Power",
+    price: 13.99 ,
+    image: "https://m.media-amazon.com/images/I/61GcH6gF0GL._SL1500_.jpg",
+    link: "https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197?pd_rd_w=NjXY2&content-id=amzn1.sym.80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_p=80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_r=WTV58AC0R7ARQCJWG3RV&pd_rd_wg=IBFOG&pd_rd_r=b11d7528-7483-409d-9a18-46fae118aeb6&pd_rd_i=0140280197&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=694ff84a1419ac35f1ff4e5f0a5c8a19&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "dark psychology",
+    title: "The 33 Strategies of War (Joost Elffers Books) ",
+    price: 10.76 ,
+    image: "https://m.media-amazon.com/images/I/61j7cRHf7+L._SL1500_.jpg",
+    link: "https://www.amazon.com/Strategies-War-Joost-Elffers-Books/dp/0143112783?pd_rd_w=kHfYM&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=VKCHSVB8MVFJJ3WVEQV6&pd_rd_wg=aLKWH&pd_rd_r=8120a984-55ef-4fdc-9324-9a4da8b35057&pd_rd_i=0143112783&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=85ef212d8429472b5d670f6db3715545&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "dark psychology",
+    title: "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones ",
+    price: 12.75 ,
+    image: "https://m.media-amazon.com/images/I/81kg51XRc1L._SL1500_.jpg",
+    link: "https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299?pd_rd_w=iFWZr&content-id=amzn1.sym.80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_p=80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_r=2RJK04S5FK1KB5944G1T&pd_rd_wg=P2wAu&pd_rd_r=f5ae65b0-5144-4632-86fe-6b6bc10a6b4c&pd_rd_i=0735211299&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=52c597234e943a64b2fda8890317ab1b&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "dark psychology",
+    title: " The Art of Letting Go: Stop Overthinking, Stop Negative Spirals, and Find Emotional Freedom (The Path to Calm)",
+    price:  14.24,
+    image: "https://m.media-amazon.com/images/I/61yhZ8TKwwL._SL1500_.jpg",
+    link: "https://www.amazon.com/Art-Letting-Go-Overthinking-Emotional/dp/B0C6C15SLR?pd_rd_w=Hq5WG&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=QE6RKYXANTR0GHWCBJK1&pd_rd_wg=tJ08O&pd_rd_r=0f3889e5-aa06-4b04-b5c2-588980de56f3&pd_rd_i=B0C6C15SLR&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=016255149e69d2d4dd0d9af4e3834a93&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "fiction",
+    title: " Metamorphosis",
+    price:  3.70,
+    image: "https://m.media-amazon.com/images/I/61W+d8xoBdL._SL1500_.jpg",
+    link: "https://www.amazon.com/Metamorphosis-Franz-Kafka/dp/9360078255?content-id=amzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142%3Aamzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142&crid=3UX76AB68L2TX&cv_ct_cx=franz+kafka&keywords=franz+kafka&pd_rd_i=9360078255&pd_rd_r=0a5cfa78-724e-4192-9dcb-6ce937f7f148&pd_rd_w=litZX&pd_rd_wg=rQ63V&pf_rd_p=11f03cd7-d882-4fed-ae42-aff13d15d142&pf_rd_r=TCQ48V3QWVGV1MCVBTRX&qid=1772038271&s=books&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=fran%2Cstripbooks-intl-ship%2C369&sr=1-1-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons&aref=AyFTTjO88U&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=5f33e78b141fe867a924b0adf9320140&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "fiction",
+    title: " The Best of Fyodor Dostoevsky (Wordsworth Author Collections)",
+    price:  45.99,
+    image: "https://m.media-amazon.com/images/I/71mZP2246hL._SL1500_.jpg",
+    link: "https://www.amazon.com/Best-Fyodor-Dostoevsky/dp/1848702035?crid=MZ6MU5RA8BUX&dib=eyJ2IjoiMSJ9.P-EU1XgvibUcz5CVX_7t4IRFA2ZuX_K-ts1WPqZ_tOuBa2O3NurIfKtMQN-uwSoWQLcCkf8whCjl91dbu52z2OUBUQlQ1VuTKqavWlSE_UO2OKEY0GY-b6V9yb8YBFc1zpOjYc70E0ftgnmjy-MROrL6nYY16Nv2iD4_UQlTLmp4w1tiORCyFl3N_A4WfDVKwYOJkbk1weWOmT4FCxOPxZZmJwnWYVMYXUeP8BN20wY.xoMdKvr55iM9tk4oY8NwJ35Pwu6cEWKr2K4JZvpzyOM&dib_tag=se&keywords=dostoevsky+books&qid=1772038391&s=books&sprefix=dost%2Cstripbooks-intl-ship%2C486&sr=1-1&linkCode=ll2&tag=trendcartbd-20&linkId=e582c842aa3dcc50ee71f93831544c06&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+   {
+    category: "books",
+    sub: "web novel",
+    title: " Fire Punch, Vol. 1",
+    price: 11.99 ,
+    image: "https://m.media-amazon.com/images/I/71WDlCXBe0L._SL1500_.jpg",
+    link: "https://www.amazon.com/Fire-Punch-Vol-Tatsuki-Fujimoto/dp/1421597179?pd_rd_w=C2dgG&content-id=amzn1.sym.80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_p=80d4c51c-5e2d-4cf4-a6f8-fde9512cf6a4&pf_rd_r=5DNHFZ542MDDAPD5406N&pd_rd_wg=s1VTf&pd_rd_r=0c43627c-c538-4c21-8d50-a3bec33767f8&pd_rd_i=1421597179&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=ab44cb3ed8e2b8d6dd2cf87af28195e4&language=en_US&ref_=as_li_ss_tl"
+  },
+       
   {
     category: "clothing",
     sub: "women",
