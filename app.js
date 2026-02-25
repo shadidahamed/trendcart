@@ -14,6 +14,88 @@ const products = [
     image: "https://m.media-amazon.com/images/I/61cRrWcW-pL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/NUBWO-Wireless-Gaming-Headset-Microphone-PS5/dp/B08TBF4S42?_encoding=UTF8&pd_rd_w=82mLD&content-id=amzn1.sym.61d4ee60-9341-4d7a-912d-bc661951aa32&pf_rd_p=61d4ee60-9341-4d7a-912d-bc661951aa32&pf_rd_r=XZKPWV700JK7ZKH2A5WN&pd_rd_wg=sMylL&pd_rd_r=c8c1d0ad-b60e-4cc8-9b40-238cbf05c3e1&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=889b3211f7b109c4a188e475eb8c15de&language=en_US&ref_=as_li_ss_tl"
   },
+
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
+    {
+    category: "electronics",
+    sub: "",
+    title: "",
+    price: ,
+    image: "",
+    link: ""
+  },
+  
   {
     category: "books",
     sub: "manga",
