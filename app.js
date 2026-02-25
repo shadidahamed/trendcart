@@ -497,6 +497,96 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71LyXNYLHNL._AC_SY500_.jpg",
     link: "https://www.amazon.com/QIUTIMIY-Leather-Bracelets-Bracelet-Layered/dp/B0DY7Z3KVP?pd_rd_w=EVdEG&content-id=amzn1.sym.3d5af8a3-cce9-42ea-9ba5-183bb8c2673b&pf_rd_p=3d5af8a3-cce9-42ea-9ba5-183bb8c2673b&pf_rd_r=6MFYCS30WHYXAY6T39KY&pd_rd_wg=q3gmA&pd_rd_r=bc8faee6-a3b7-4b3d-877c-1393fa54d637&pd_rd_i=B0DY7XJQZ3&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=44ca6386d1015cba3874f152fff2adb7&language=en_US&ref_=as_li_ss_tl"
   },
+      
+  {
+    category: "clothing",
+    sub: "women",
+    title: "YanaFab Women's Tussar Silk With Patola Print And Foil Work Lehenga choli",
+    price: 79.00 ,
+    image: "https://m.media-amazon.com/images/I/51kTry7BW7L._AC_SY606_.jpg",
+    link: "https://www.amazon.com/LooknBook-Art-YanaFab-Womens-Lehenga/dp/B0FT316L7V?crid=31D4524KTYXUT&dib=eyJ2IjoiMSJ9.8oevEMULRukpajKZ_5dGOwo6SZjUFJc2VOHBheQNC9ez3iCJzQDPvSHYNFQxVRWnG6_D7QtesB7_CpSGTilg_-wq2443T4MHSM4Hiyvb__HYninAKUlrhVuCtyXD9tHAFctV72JpwJ8z5ZomtCIWd80WSMmVDHtMt_kt1Q228cx9hi70_rZW_f9QpI6p9MedMLvNEZZcJdmcFP5jXqu4pVU6_W_pIHYoSwumhcSZljOfVLsFnLxcDYArKJ-PVVFf_FXzdpGwhzCDUmLt-fQNr9MAscgAn9S2lIIlA1ahy7c.eEgmaM2NV5mkoDF8BgRTN5s9o7lsX_do80_dSBjrqGU&dib_tag=se&keywords=lehenga%2Bfor%2Bwomen&qid=1772034133&sprefix=lehenga%2Caps%2C369&sr=8-39&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=1890f1625897cbcd246c540fb46bd948&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "clothing",
+    sub: "women",
+    title: "Lannaclothesdesign Women's Long Maxi Skirt Bohemian Gypsy Hippie Style Clothing Boho Skirts",
+    price:  23.95,
+    image: "https://m.media-amazon.com/images/I/812grlX1LeL._AC_SX679_.jpg",
+    link: "https://www.amazon.com/dp/B07X47F2BW?psc=1&pd_rd_i=B07X47F2BW&pd_rd_w=TPImx&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=RSHY36MPECCVYVCA93EN&pd_rd_wg=V1QSU&pd_rd_r=8198f137-c710-4e04-9ed3-4ac35bbe7b24&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&linkCode=ll2&tag=trendcartbd-20&linkId=5074f77a4f48133b37ce354aea645370&language=en_US&ref_=as_li_ss_tl"
+  },
+        
+    {
+    category: "clothing",
+    sub: "women",
+    title: "Women Long Dresses Dubai Pendant Bat Sleeves Turkey African Caftan Vest",
+    price:  48.94,
+    image: "https://m.media-amazon.com/images/I/61bZLU0ktiL._AC_SX679_.jpg",
+    link: "https://www.amazon.com/dp/B0CQ3YJTDP?pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=6K906SVPJ0ZY9MVKXFB1&pd_rd_wg=iBkEq&pd_rd_w=7I6cW&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pd_rd_r=c3c6348d-ef67-4c01-ac3c-605be35d1b08&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=c1225fa41a9cc1650c90cb3a39a372a2&language=en_US&ref_=as_li_ss_tl"
+  },
+    
+    {
+    category: "clothing",
+    sub: "women",
+    title: "KuaiLu Flip Flops for Women with Arch Support Yoga Mat Comfortable Summer Beach Walking Thong Cushion Sandals Slip On Indoor Outdoor",
+    price:  12.99 ,
+    image: "https://m.media-amazon.com/images/I/71JYGE8VzeL._AC_SX695_.jpg",
+    link: "https://www.amazon.com/dp/B07PQHH3JV?psc=1&pd_rd_i=B07PQHH3JV&pd_rd_w=2fYMX&content-id=amzn1.sym.953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_p=953c7d66-4120-4d22-a777-f19dbfa69309&pf_rd_r=4PVC15QMQ032V21AK62D&pd_rd_wg=ThDOv&pd_rd_r=f3918365-2120-4605-bb21-db7ba75926e6&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWwy&linkCode=ll2&tag=trendcartbd-20&linkId=f8dfe9f71de3c1193902e4793f3af8ca&language=en_US&ref_=as_li_ss_tl"
+  },
+    
+    {
+    category: "clothing",
+    sub: "women",
+    title: "Acelitt Women Casual Lightweight Drawstring Elastic Waist Pants with Pockets, S-XXL",
+    price:  29.99,
+    image: "https://m.media-amazon.com/images/I/61Zjg70zLNL._AC_SY741_.jpg",
+    link: "https://www.amazon.com/Acelitt-Lightweight-Drawstring-Elastic-Trousers/dp/B0CGV8JHRC?content-id=amzn1.sym.b2dc4cca-d6d4-4776-92b2-3d88a5464e84%3Aamzn1.sym.b2dc4cca-d6d4-4776-92b2-3d88a5464e84&crid=104A6HLAQVWZE&cv_ct_cx=baggy%2Bfor%2Bwoman&keywords=baggy%2Bfor%2Bwoman&pd_rd_i=B0CGV8JHRC&pd_rd_r=99164bca-cdf0-49b0-8cc5-1a780a2f10c7&pd_rd_w=csdhv&pd_rd_wg=7gnPU&pf_rd_p=b2dc4cca-d6d4-4776-92b2-3d88a5464e84&pf_rd_r=ATKB6MXH8HJWCQWKBABX&qid=1772036221&s=apparel&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=baggy%2Bfor%2Bwoman%2Cfashion-womens-clothing%2C331&sr=1-4-38f1b294-ceac-4b0f-b4a4-629ab102646f-spons&aref=z95fY5dRDT&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=eda14ef23b2133be8bd99550a9a8a3a9&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "clothing",
+    sub: "women",
+    title: "FUNYYZO Wide Leg Pants Women's High Elastic Waisted in The Back Business Work Trousers Long Straight Suit Pants",
+    price:  39.99 ,
+    image: "https://m.media-amazon.com/images/I/61HJVfYjC0L._AC_SY741_.jpg",
+    link: "https://www.amazon.com/FUNYYZO-Elastic-Business-Trousers-Straight/dp/B0BKSTG9RV?content-id=amzn1.sym.8434473f-2a2c-446a-ac8e-0536b9432266%3Aamzn1.sym.8434473f-2a2c-446a-ac8e-0536b9432266&crid=104A6HLAQVWZE&cv_ct_cx=baggy+for+woman&keywords=baggy+for+woman&pd_rd_i=B0BKSTG9RV&pd_rd_r=4d99e5cd-a468-442e-b1c3-fb5b47ed7469&pd_rd_w=NG6t6&pd_rd_wg=5OQYm&pf_rd_p=8434473f-2a2c-446a-ac8e-0536b9432266&pf_rd_r=NVN2Y3AVMKSQ7FF88KTR&qid=1772036472&s=apparel&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=baggy+for+woman%2Cfashion-womens-clothing%2C331&sr=1-5-59465cf1-147a-41eb-ada4-72d14f4b87b5-spons&aref=LxwodqVyp0&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=f25a863343c940976777096e3fbf73cd&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "clothing",
+    sub: "kids",
+    title: "Amazon Essentials x Sofia Grainge Toddlers and Baby Girls' French Terry Pant and Top Set",
+    price:  19.90 ,
+    image: "https://m.media-amazon.com/images/I/81BDJKzvzWL._AC_SX679_.jpg",
+    link: "https://www.amazon.com/Amazon-Essentials-Grainge-Toddler-Valentine/dp/B0FFJTHTJH?brr=1&crid=38QIYIRJ8OGDL&dib=eyJ2IjoiMSJ9.FrUxWG3AFB-ZqMtSwYL_1PTqgAEsBPGHkn0NdMs0bqqpwaErYYHJ_bhbdolejOrOPMRUgLG5F7A6t64X4rQU5fvzu63f4Gb6CaHZ8wWDQ-pIjuSAaZ6ZM2aNifKejVGi7y0PwFB24io9GlUl7Rid3S4fMnfnknkm9-zRgRPfVw7kzuODLeEOdvGzqPozSRhPGthOd_wsuUl_HZMQsPj98vyBumKhVEoMibwptuANdY6o0dmC3odHl8Vhith2SZAjLuvhhEUECcViE483308P2NTtxF5tQdZk3axEImI2fkE.jEmenEHhmsM1M3bgBcsi2oWW0X1rT6DG6_znHWVr_gE&dib_tag=se&qid=1772036856&rd=1&s=fashion-girls-intl-ship&sprefix=%2Cfashion-girls-intl-ship%2C316&sr=1-49&xpid=KEMwliTAqKLno&th=1&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=771558277aca96531308275f9a1ab5c8&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "clothing",
+    sub: "kids",
+    title: "Toddler Girl Dress Little Girl Clothes Ruffle Sleeveless Multipack Floral Flamingo Striped Summer Spring Casual Dresses",
+    price:  29.99,
+    image: "https://m.media-amazon.com/images/I/71HM6sVyqCL._AC_SX569_.jpg",
+    link: "https://www.amazon.com/Clothes-Multipack-Sleeveless-Toddler-Outfits/dp/B0DQWJBY5Y?crid=2AWL69DTY2I3D&dib=eyJ2IjoiMSJ9.LFIWzSd5ekcKohp930rOqFdl-pHrkY-oOIx7Fo8Aivt9ynwCVYty_ZD6DES-Ys2SpD9QJQQdAg2tNC0Q8rlxQd1-KmpwK2I_tCLBeA0w4Isfv7loke59oGh0HVjUhJD1rKY2QUaLkFjf0xJ4hUZI2lwVO6UznCJ7fqbDg15LVIAW1t3ynJ8uXYPbIbzEt_1kYdjkkB0MbCDx8_8J_DD13Ogcvp9RCkpRlwFiAy3La1w0DHOdR9MpP9isFGuJ2zT0hWF-s8j5NAEOm3SfjJdamiaUrog_plDIhUonXJgCpQw.ZFdQ3j4qkqQZL0U0ApbKZxjvzCs8YrQLnDgGZ19tI5I&dib_tag=se&keywords=kids%2Bdress&qid=1772036998&sprefix=kids%2Bdress%2Caps%2C429&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=67770e9a03f0762c36e3fb9ebd6b8acf&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "clothing",
+    sub: "kids",
+    title: "Bumeex Girl's Dresses Cotton Ruffle Sleeve Tiered Swing A-Line Cute Midi Casual Sundress",
+    price:  14.99,
+    image: "https://m.media-amazon.com/images/I/81DJL1oJblL._AC_SX679_.jpg",
+    link: "https://www.amazon.com/Toddler-Clothes-Dresses-Sundress-Pockets/dp/B0CTCMK7NW?content-id=amzn1.sym.a5755450-d3ec-4dc5-bc6b-0b481d609a6e%3Aamzn1.sym.a5755450-d3ec-4dc5-bc6b-0b481d609a6e&crid=2AWL69DTY2I3D&cv_ct_cx=kids+dress&keywords=kids+dress&pd_rd_i=B0CTCMK7NW&pd_rd_r=1987631d-db93-452e-a96f-17538dd13d10&pd_rd_w=23R5u&pd_rd_wg=ED5Sf&pf_rd_p=a5755450-d3ec-4dc5-bc6b-0b481d609a6e&pf_rd_r=69Z18K5DYESQQK8M4Z15&qid=1772037082&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=kids+dress%2Caps%2C429&sr=1-4-50a2b317-b617-44c1-b7a6-daec194a2368-spons&aref=PMb2VGN3rB&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=23539754c191bbd935a240e9b236c9fa&language=en_US&ref_=as_li_ss_tl"
+  },
+    
+    {
+    category: "clothing",
+    sub: "kids",
+    title: "Girls Dresses Toddler Girls Dress 3-Pack Casual Party Print Skater A-line Dress Sundress",
+    price:  26.99 ,
+    image: "https://m.media-amazon.com/images/S/aplus-media-library-service-media/1decc094-0639-4b5e-9195-9d7d45485d94.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+    link: "https://www.amazon.com/VARMILO-Dresses-Toddler-3-Pack-Sundress/dp/B0F2XWQHVK?content-id=amzn1.sym.a5755450-d3ec-4dc5-bc6b-0b481d609a6e%3Aamzn1.sym.a5755450-d3ec-4dc5-bc6b-0b481d609a6e&crid=2AWL69DTY2I3D&cv_ct_cx=kids+dress&keywords=kids+dress&pd_rd_i=B0F2XWQHVK&pd_rd_r=1987631d-db93-452e-a96f-17538dd13d10&pd_rd_w=23R5u&pd_rd_wg=ED5Sf&pf_rd_p=a5755450-d3ec-4dc5-bc6b-0b481d609a6e&pf_rd_r=69Z18K5DYESQQK8M4Z15&qid=1772037082&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=kids+dress%2Caps%2C429&sr=1-3-50a2b317-b617-44c1-b7a6-daec194a2368-spons&aref=8aKlTcZgbO&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=2cc5c551148033c62f4681a361c07646&language=en_US&ref_=as_li_ss_tl"
+  },
     
 {
     category: "clothing",
