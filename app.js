@@ -14,6 +14,84 @@ const products = [
     image: "https://m.media-amazon.com/images/I/61cRrWcW-pL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/NUBWO-Wireless-Gaming-Headset-Microphone-PS5/dp/B08TBF4S42?_encoding=UTF8&pd_rd_w=82mLD&content-id=amzn1.sym.61d4ee60-9341-4d7a-912d-bc661951aa32&pf_rd_p=61d4ee60-9341-4d7a-912d-bc661951aa32&pf_rd_r=XZKPWV700JK7ZKH2A5WN&pd_rd_wg=sMylL&pd_rd_r=c8c1d0ad-b60e-4cc8-9b40-238cbf05c3e1&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=889b3211f7b109c4a188e475eb8c15de&language=en_US&ref_=as_li_ss_tl"
   },
+ {
+    category: "electronics",
+    sub: "gaming",
+    title: "acer Nitro V Gaming Laptop | Intel Core i7-13620H Processor | NVIDIA GeForce RTX 4050 Laptop GPU | 15.6inch FHD IPS 165Hz Display | 16GB DDR5 | 1TB Gen 4 SSD | Wi-Fi 6 | Backlit KB | ANV15-52-76NK",
+    price:899.99  ,
+    image: "https://m.media-amazon.com/images/I/71qcxp9fsxL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/i7-13620H-Processor-GeForce-Display-ANV15-52-76NK/dp/B0F6PLQ93N?crid=31QMUF5IX137E&dib=eyJ2IjoiMSJ9.NNJSIVMZBu-NsA5YY9BrCqY5ekVK_97Mh_I1r3t27bf173jK6Ago3B8qDTcjnZwp8gThixJkE5I7QsVNjdJ-gqW-IGAwf7493WgvC4lB2ZLsxMHifpi2GnAWXV_UnPfhvYuOite6QuA0ah3nq_-nVaSEZEYe1k8Zy3lQKktQwJ9HqkGqDBwyTwcsR1x2PbNq.x7w-LIayAZ34CiR5cPyJ7a5Kdx8ZwC-hS76r17Idif8&dib_tag=se&keywords=gaming+pc&qid=1772029268&s=computers-intl-ship&sprefix=gaming+%2Ccomputers-intl-ship%2C353&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=0307f4dc4f3e0819e56702d1b17344dd&language=en_US&ref_=as_li_ss_tl"
+  }, 
+       
+  {
+    category: "electronics",
+    sub: "gaming",
+    title: "KAMRUI Hyper H2 Mini PC with Intel Core 14450HX (10C/16T, up to 4.8GHz), 16GB RAM 512GB NVMe SSD, Triple 4K, HDMI, DP, USB-C, Ethernet, Mini Desktop Computer for Office, Business, Gaming",
+    price: 469.99 ,
+    image: "https://m.media-amazon.com/images/I/61MkUYRjkzL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0G488CW54?th=1&linkCode=ll2&tag=trendcartbd-20&linkId=f62b35bb2094a61a4528c4c945db79bc&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+  {
+    category: "electronics",
+    sub: "gaming",
+    title: "amFilm Auto-Alignment OneTouch for Nintendo Switch 2 Screen Protector [7.9''] 2025 Tempered Glass, Accessories, 30 seconds Installation, Bubble Free, Anti-Scratch, Touch Sensitive, Ultra-Clear [2Pack]",
+    price: 8.99,
+    image: "https://m.media-amazon.com/images/I/61eLt9bO17L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Auto-Alignment-Protector-Accessories-Installation-Anti-Scratch-Ultra-Clear/dp/B0DRCKDWD1?dib=eyJ2IjoiMSJ9.Vl1Es-mSIFY5OQg8fWP67HL2CXQhIV-6ZopcnLfujNKJxKb7wCiyYr7OSrXqTQIykBLqAUB9R2xMgGaLGxE-WPgu9v183Ejg3qpp2hFjLjQwpxzCwXjoQ6zy7P6kLLPYuPitGXd9hthPlGoM8t3M2XiSUAmcRwgRn5BOZm9fNd69mfBX7D7nm8XpeTfwjedWNfN7wBuG4E0q5EYKeVzl3ZDzRx9S784IauDbwMFaYAw.NhsxmxC4ZPWdZGDlxo6qI55YXhPn9eI8K0GnqBDkr08&dib_tag=se&qid=1772031604&s=videogames-intl-ship&sr=1-6&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=faeaef1c88f9296122f7dcfed42953f8&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+  {
+    category: "electronics",
+    sub: "gaming",
+    title: "MARSDOCK 45W Charger for Nintendo Switch - 15V 2.6A AC Adapter Fast Charging with 5FT USB C Cord - Compatible with Switch Lite, OLED, Steam Deck - Support TV Mode",
+    price: 16.99,
+    image: "https://m.media-amazon.com/images/I/6170JKKerxL._SL1500_.jpg",
+    link: "https://www.amazon.com/Charger-Nintendo-MARSDOCK-Charging-Compatible/dp/B0C7CLHFX7?dib=eyJ2IjoiMSJ9.Vl1Es-mSIFY5OQg8fWP67HL2CXQhIV-6ZopcnLfujNKJxKb7wCiyYr7OSrXqTQIykBLqAUB9R2xMgGaLGxE-WPgu9v183Ejg3qpp2hFjLjQwpxzCwXjoQ6zy7P6kLLPYuPitGXd9hthPlGoM8t3M2XiSUAmcRwgRn5BOZm9fNd69mfBX7D7nm8XpeTfwjedWNfN7wBuG4E0q5EYKeVzl3ZDzRx9S784IauDbwMFaYAw.NhsxmxC4ZPWdZGDlxo6qI55YXhPn9eI8K0GnqBDkr08&dib_tag=se&qid=1772031807&s=videogames-intl-ship&sr=1-14&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=77ce17c0d9c5af89919e0a71db948dc1&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+  {
+    category: "electronics",
+    sub: "gaming",
+    title: "One Cable No Driver Laptop Screen Extender,14inch FHD IPS Triple Portable Monitor, Single USB-C Plug & Play Compatible with 13inch-16.5inch Windows & MacBook (M1/M2/M3)",
+    price: 289.00 ,
+    image: "https://m.media-amazon.com/images/I/71jZO2f+kPL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/ZokoTop-Screen-Extender-Portable-Compatible/dp/B0GG9PDW9D?dib=eyJ2IjoiMSJ9.vXjaZ5LQ60nRmS_W_8Noo6xf8NYxmCRguo36lvVEwpPD5fZ6JCh8OmCfQx_qFSatKyfRpzgCeMxBOaYQOZuDc_YJ6-4OgUlJPj7IPUlGDrPJeHEiO2fpY_fBJNv2YQsrEVkgLfhroFiaCctOIXBgMCfp4l-U6Tv9XjZNS5_uOaT8jWBXVpRosZBwzeorBlsDeHB1TreFRPMDGLroqajo1RnLt6Lt8aa6okPHHUly5o9IofOm97-F3Sw_wd37sUGIXw4jvPGE4gI-rxkOaWsVRCfwH4CVI2mVRCX8aMT-AZA.BAHfb3MhiJXr5mVIZ-w4VwlDjumN2sznSn5pBSMNf28&dib_tag=se&qid=1772031991&s=computers-intl-ship&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=4d45b646c1ee995ebac84f26c67427bd&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+  {
+    category: "electronics",
+    sub: "desining",
+    title: "Metapen Pencil A8 for Apple iPad 2018-2025, (2X Faster Charge), Tilt Sensitivity, Pixel Precision, Stylus Pen for iPad 11/10/9/8/7/6th Gen, Pro 12.9/11/13-inch M4, Air 3/4/5/M2/M3, Mini 5/6th, Blue",
+    price: 26.99 ,
+    image: "https://m.media-amazon.com/images/I/51EzMdAK0uL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Metapen-2018-2024-Precise-Sensitivity-13-inch/dp/B0C4L9C9TQ?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032350&s=computers-intl-ship&sr=1-5&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ed271687cb1c2d7c275c1cb6ec212a3d&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+  {
+    category: "electronics",
+    sub: "desining",
+    title: "Hamile for iPad 11th 10th Generation Case with Keyboard - 7 Colors Backlit Wireless Detachable Folio Keyboard Cover with Pencil Holder for iPad 11-inch A16 2025 10th Gen 10.9 Inch 2022 (Pink)",
+    price: 21.97,
+    image: "https://m.media-amazon.com/images/I/61c+MlYZ9qL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Hamile-iPad-10th-Generation-Keyboard/dp/B0C375272K?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-20&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=e26ba1d6d82d3ee15163dc6fa0b8b32d&language=en_US&ref_=as_li_ss_tl"
+  },
+
+   
+   
+ {
+    category: "electronics",
+    sub: "desining",
+    title: "Replacement Tips for Apple Pencil 2nd Generation/ 1st Generation Tips, iPencil Nibs Accessories for iPad Pro Pencil 2/1 Gen(4 Pack)",
+    price:5.99,
+    image: "https://m.media-amazon.com/images/I/51ljJxXlKVL._AC_SL1001_.jpg",
+    link: "https://www.amazon.com/Replacement-Apple-Pencil-Generation-Accessories/dp/B0CJ2JH1KF?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-26&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ca9ce14072001415096e16abd60aeeff&language=en_US&ref_=as_li_ss_tl"
+  },
 
     {
     category: "electronics",
