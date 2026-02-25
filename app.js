@@ -389,7 +389,7 @@ const products = [
     sub: "educational",
     title: "Don't Believe Everything You Think (Expanded Edition): Why Your Thinking Is The Beginning & End Of Suffering (Books By Joseph Nguyen)",
     price:8.97,
-    image: "https://m.media-amazon.com/images/I/819I+YyuU-L._SL1500_.jpgvc",
+    image: "https://m.media-amazon.com/images/I/41rmBYPMsUL._SY445_SX342_FMwebp_.jpg",
     link: "https://www.amazon.com/Dont-Believe-Everything-Think-Expanded/dp/B0D47VYQMY?_encoding=UTF8&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-8&pf_rd_r=VW41PDBG0JNWNTRR5S43&pf_rd_p=2a74faf9-89c0-4d28-b9a0-5146fc6374a8&pf_rd_t=&pf_rd_i=549028&linkCode=ll2&tag=trendcartbd-20&linkId=14fa1f5cf4d12e47f6f912cbf53dba92&language=en_US&ref_=as_li_ss_tl"
   },
   
