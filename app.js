@@ -62,69 +62,7 @@ const products = [
     link: "https://www.amazon.com/ZokoTop-Screen-Extender-Portable-Compatible/dp/B0GG9PDW9D?dib=eyJ2IjoiMSJ9.vXjaZ5LQ60nRmS_W_8Noo6xf8NYxmCRguo36lvVEwpPD5fZ6JCh8OmCfQx_qFSatKyfRpzgCeMxBOaYQOZuDc_YJ6-4OgUlJPj7IPUlGDrPJeHEiO2fpY_fBJNv2YQsrEVkgLfhroFiaCctOIXBgMCfp4l-U6Tv9XjZNS5_uOaT8jWBXVpRosZBwzeorBlsDeHB1TreFRPMDGLroqajo1RnLt6Lt8aa6okPHHUly5o9IofOm97-F3Sw_wd37sUGIXw4jvPGE4gI-rxkOaWsVRCfwH4CVI2mVRCX8aMT-AZA.BAHfb3MhiJXr5mVIZ-w4VwlDjumN2sznSn5pBSMNf28&dib_tag=se&qid=1772031991&s=computers-intl-ship&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=4d45b646c1ee995ebac84f26c67427bd&language=en_US&ref_=as_li_ss_tl"
   },
 
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: "https://www.amazon.com/EDJY-Fingernail-Cutter-Fingernails-Rust-Resistant/dp/B0DJWTK4C5?crid=1SW43D7QPDRD3&dib=eyJ2IjoiMSJ9.YkedbZNhKIzzuYJNXh5gJUelFc_GAwcwUNpWW_WKh-22utjMWcShBz_0qV6RmjVUeyRx-HYw2f8P5TYa91mdlbhL25GMqIdzr9N63rVNsPP4Nzh6cMbgdNR_hgw4gJ4PvycA7esLpN9GYy7qkBCy86zG8toffLx4Ex-9zUil0ZUt1kIwPpgP4xLco2U4Oo-NxbE-H70zbAnFK2kOpxnxV6aGqHdotY-CubJxEYcd1tuzLuJnF12KCGFmocKwDXJxoRSLwZhlNkKiyAsYvuOB1y90SuXH58zhX6DqFoZQvBY.LBpS3uSm6yQXrVcxVbVnNSabXLSzVHDQ0_qkY9DIPOc&dib_tag=se&keywords=edjy%2Bbrand%2Bnail%2Bclipper&qid=1772118507&sprefix=edjy%2Caps%2C385&sr=8-1&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=7492f5636e02ed1713bad16a038fae7d&language=en_US&ref_=as_li_ss_tl"
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
-    {
-    category: "electronics",
-    sub: "",
-    title: "",
-    price: ,
-    image: "",
-    link: ""
-  },
-  
+
   {
     category: "electronics",
     sub: "desining",
