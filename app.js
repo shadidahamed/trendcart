@@ -61,39 +61,8 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71jZO2f+kPL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/ZokoTop-Screen-Extender-Portable-Compatible/dp/B0GG9PDW9D?dib=eyJ2IjoiMSJ9.vXjaZ5LQ60nRmS_W_8Noo6xf8NYxmCRguo36lvVEwpPD5fZ6JCh8OmCfQx_qFSatKyfRpzgCeMxBOaYQOZuDc_YJ6-4OgUlJPj7IPUlGDrPJeHEiO2fpY_fBJNv2YQsrEVkgLfhroFiaCctOIXBgMCfp4l-U6Tv9XjZNS5_uOaT8jWBXVpRosZBwzeorBlsDeHB1TreFRPMDGLroqajo1RnLt6Lt8aa6okPHHUly5o9IofOm97-F3Sw_wd37sUGIXw4jvPGE4gI-rxkOaWsVRCfwH4CVI2mVRCX8aMT-AZA.BAHfb3MhiJXr5mVIZ-w4VwlDjumN2sznSn5pBSMNf28&dib_tag=se&qid=1772031991&s=computers-intl-ship&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGZfYnJvd3Nl&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=4d45b646c1ee995ebac84f26c67427bd&language=en_US&ref_=as_li_ss_tl"
   },
-
-
-  {
-    category: "electronics",
-    sub: "desining",
-    title: "Metapen Pencil A8 for Apple iPad 2018-2025, (2X Faster Charge), Tilt Sensitivity, Pixel Precision, Stylus Pen for iPad 11/10/9/8/7/6th Gen, Pro 12.9/11/13-inch M4, Air 3/4/5/M2/M3, Mini 5/6th, Blue",
-    price: 26.99 ,
-    image: "https://m.media-amazon.com/images/I/51EzMdAK0uL._AC_SL1500_.jpg",
-    link: "https://www.amazon.com/Metapen-2018-2024-Precise-Sensitivity-13-inch/dp/B0C4L9C9TQ?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032350&s=computers-intl-ship&sr=1-5&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ed271687cb1c2d7c275c1cb6ec212a3d&language=en_US&ref_=as_li_ss_tl"
-  },
-
-   
-  {
-    category: "electronics",
-    sub: "desining",
-    title: "Hamile for iPad 11th 10th Generation Case with Keyboard - 7 Colors Backlit Wireless Detachable Folio Keyboard Cover with Pencil Holder for iPad 11-inch A16 2025 10th Gen 10.9 Inch 2022 (Pink)",
-    price: 21.97,
-    image: "https://m.media-amazon.com/images/I/61c+MlYZ9qL._AC_SL1500_.jpg",
-    link: "https://www.amazon.com/Hamile-iPad-10th-Generation-Keyboard/dp/B0C375272K?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-20&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=e26ba1d6d82d3ee15163dc6fa0b8b32d&language=en_US&ref_=as_li_ss_tl"
-  },
-
-   
-   
+  
  {
-    category: "electronics",
-    sub: "desining",
-    title: "Replacement Tips for Apple Pencil 2nd Generation/ 1st Generation Tips, iPencil Nibs Accessories for iPad Pro Pencil 2/1 Gen(4 Pack)",
-    price:5.99,
-    image: "https://m.media-amazon.com/images/I/51ljJxXlKVL._AC_SL1001_.jpg",
-    link: "https://www.amazon.com/Replacement-Apple-Pencil-Generation-Accessories/dp/B0CJ2JH1KF?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-26&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ca9ce14072001415096e16abd60aeeff&language=en_US&ref_=as_li_ss_tl"
-  },
-
-    {
     category: "electronics",
     sub: "gaming",
     title: "PS5/Slim/Pro Stand for Disc & Digital Console, PS5 Cooling & Charging Station with RGB Lights, PS5 Controller Charger Built-in 3 Level & AUTO Adjustable Fan, PS5/Slim/Pro Accessories Comes 3 USB Ports",
@@ -110,7 +79,169 @@ const products = [
     image: "https://m.media-amazon.com/images/I/71GpgNkje8L._AC_SL1500_.jpg",
     link: "https://www.amazon.com/dp/B08LZGPPBH?pd_rd_i=B08LZGPPBH&pd_rd_w=wjzlG&content-id=amzn1.sym.386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_p=386c274b-4bfe-4421-9052-a1a56db557ab&pf_rd_r=99231NZ6JJ2532MYWM8K&pd_rd_wg=nimsG&pd_rd_r=5af5b46e-0cde-4c9f-8f2c-7b49752c99d3&s=electronics&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=667614d526260ffdb46b7955633926aa&language=en_US&ref_=as_li_ss_tl"
   },
-  
+
+  {
+    category: "electronics",
+    sub: "desining",
+    title: "Metapen Pencil A8 for Apple iPad 2018-2025, (2X Faster Charge), Tilt Sensitivity, Pixel Precision, Stylus Pen for iPad 11/10/9/8/7/6th Gen, Pro 12.9/11/13-inch M4, Air 3/4/5/M2/M3, Mini 5/6th, Blue",
+    price: 26.99 ,
+    image: "https://m.media-amazon.com/images/I/51EzMdAK0uL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Metapen-2018-2024-Precise-Sensitivity-13-inch/dp/B0C4L9C9TQ?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032350&s=computers-intl-ship&sr=1-5&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ed271687cb1c2d7c275c1cb6ec212a3d&language=en_US&ref_=as_li_ss_tl"
+  },
+ 
+  {
+    category: "electronics",
+    sub: "desining",
+    title: "Hamile for iPad 11th 10th Generation Case with Keyboard - 7 Colors Backlit Wireless Detachable Folio Keyboard Cover with Pencil Holder for iPad 11-inch A16 2025 10th Gen 10.9 Inch 2022 (Pink)",
+    price: 21.97,
+    image: "https://m.media-amazon.com/images/I/61c+MlYZ9qL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Hamile-iPad-10th-Generation-Keyboard/dp/B0C375272K?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-20&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=e26ba1d6d82d3ee15163dc6fa0b8b32d&language=en_US&ref_=as_li_ss_tl"
+  },
+
+ {
+    category: "electronics",
+    sub: "desining",
+    title: "Replacement Tips for Apple Pencil 2nd Generation/ 1st Generation Tips, iPencil Nibs Accessories for iPad Pro Pencil 2/1 Gen(4 Pack)",
+    price:5.99,
+    image: "https://m.media-amazon.com/images/I/51ljJxXlKVL._AC_SL1001_.jpg",
+    link: "https://www.amazon.com/Replacement-Apple-Pencil-Generation-Accessories/dp/B0CJ2JH1KF?dib=eyJ2IjoiMSJ9.F3rzoR5YypvL7mSW-vP-W3japlxczdvee4UQ1xUaMnRB6EeoeqUdygTf2olwkU_DxoZODCT-He3iBNAuFvnhlaauX_BdEjRBQsiPMHZGaQcgfJX1FgQmwk-ilALuVZVLA_2I1rEXLxTUTsSoBAi6Y5w6nqDQU6HCm8NhUranf9JwOksQmd-FStYl2s5ueR_zCfXfyrFV-QKxI0pVcAfaVUFtrGpwHFVfTNSN-cCyjoA8jA_vav2Ao8SJ0pnPXFD09rovt1gay29LX-Y7tT4sbb3cAWvAf453L55CmgRFNxo.0cSpTYdFr0M4swywjYIa0qIzwRRMarZmaJ0Hkm4UYcw&dib_tag=se&qid=1772032803&s=computers-intl-ship&sr=1-26&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ca9ce14072001415096e16abd60aeeff&language=en_US&ref_=as_li_ss_tl"
+  },
+               
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "JOREST 59Pcs Small Precision Screwdriver Set with Torx T5, T6, T8, Mini Repair Tool Kit for Macbook, Computer, Laptop, iPhone, PS4 PS5, Xbox, Switch, Eyeglasses, Watch, PC, Ring Doorbell, Electronic",
+    price: 12.99,
+    image: "https://m.media-amazon.com/images/I/81EUU5sjsOL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Precision-Screwdriver-Computer-Eyeglasses-Electronic/dp/B0DMNDCNNJ?crid=1KS4WZEA897LQ&dib=eyJ2IjoiMSJ9.fPPjcHwpmn4gHOxfHVgWYgaC01LajcF1vxgkSR8JUcWMG4zEokH8U-DVieukgnWIjx8DTgkQHXjZcUD1dR24b1N2VYLcyaWQB9qFE8jFxuZsZ03DjIQImgMqKVnX1005axfrS1zo4F5kPiIPJtoMqEEVmEdh3OAeV0qZQ5L4w1uV8WvWXEFczKTm60YTIgl6MXrPViBkwOjOjEhbaJ3WN2Eo38_6DF478dMnPsoeFHpoxR8o2cCzf9enOvjnhmi2wxm0rIAEZtSiRPq7QDIQMvR7O9BgBWJvzAr0X0-uZhk.sKbhCYJ21utOW-zGVWfzkOz-3z-xyDL_R8T-O_1VjFc&dib_tag=se&keywords=designing%2Btools%2Belectronics&qid=1772265158&sprefix=desining%2Btools%2Belectronics%2Caps%2C325&sr=8-5-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=dd1cf97b5b873f9ac2874fda795ae4b1&language=en_US&ref_=as_li_ss_tl"
+  },
+            
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "JOREST 152 in 1 Precision Screwdriver Set, Tool Gifts for Men, Magnetic Tool Kit with Torx Triwing Bits, Repair for Electronics,Macbook, Laptop, PC, RC, PS5, iphone,Jewelers, XBOX, Glasses",
+    price: 29.99,
+    image: "https://m.media-amazon.com/images/I/819L4k43aSL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Precision-Screwdriver-Professional-Magnetic-Electronics/dp/B0D2HGJFL2?content-id=amzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142%3Aamzn1.sym.11f03cd7-d882-4fed-ae42-aff13d15d142&crid=1KS4WZEA897LQ&cv_ct_cx=designing%2Btools%2Belectronics&keywords=designing%2Btools%2Belectronics&pd_rd_i=B0D2HGJFL2&pd_rd_r=dd58e1a9-2619-40d0-aee2-584e73780703&pd_rd_w=fa9ZR&pd_rd_wg=J6s23&pf_rd_p=11f03cd7-d882-4fed-ae42-aff13d15d142&pf_rd_r=EAEKS0WCQZ93G5XD4WH8&qid=1772265236&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=desining%2Btools%2Belectronics%2Caps%2C325&sr=1-5-6e60e730-e094-43e9-99e8-1a4854cd27ff-spons&aref=1VieHJAlUB&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=aeef34aa1ae328e5a87115319f54e9e1&language=en_US&ref_=as_li_ss_tl"
+  },
+          
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "AXTH 128-in-1 Precision Screwdriver Set, Professional Magnetic Mini Repair Tool Kit for Phone, Computer, Watch, Laptop, Macbook, Ring Doorbell, Eyeglass, Electronic, [Bearing Steel] Screw Driver",
+    price: 25.99,
+    image: "https://m.media-amazon.com/images/I/71CQsQuQ2BL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/AXTH-Precision-Screwdriver-Professional-Electronic/dp/B0FGPY349K?crid=1KS4WZEA897LQ&dib=eyJ2IjoiMSJ9.fPPjcHwpmn4gHOxfHVgWYgaC01LajcF1vxgkSR8JUcWMG4zEokH8U-DVieukgnWIjx8DTgkQHXjZcUD1dR24b1N2VYLcyaWQB9qFE8jFxuZsZ03DjIQImgMqKVnX1005axfrS1zo4F5kPiIPJtoMqEEVmEdh3OAeV0qZQ5L4w1uV8WvWXEFczKTm60YTIgl6MXrPViBkwOjOjEhbaJ3WN2Eo38_6DF478dMnPsoeFHpoxR8o2cCzf9enOvjnhmi2wxm0rIAEZtSiRPq7QDIQMvR7O9BgBWJvzAr0X0-uZhk.sKbhCYJ21utOW-zGVWfzkOz-3z-xyDL_R8T-O_1VjFc&dib_tag=se&keywords=designing%2Btools%2Belectronics&qid=1772265236&sprefix=desining%2Btools%2Belectronics%2Caps%2C325&sr=8-16&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=7be414ffc115a0e220381ea56602966f&language=en_US&ref_=as_li_ss_tl"
+  },
+              
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "Cossini Black Superior Vegan Leather Business Portfolio with Zipper – Padfolio All-in-One. Smartest Protective 10.1 Inch Tablet Sleeve, Presentation Slot, Solar Calculator, Card Storage, Writing Pad",
+    price: 25.99,
+    image: "https://m.media-amazon.com/images/I/91sei2ybemL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Business-Portfolio-Padfolio-Zippered-Interior/dp/B01N74KH32?crid=32668LHJPBJXN&dib=eyJ2IjoiMSJ9.YxLfhlCJE_WajBE4t-zsas7CPxiITnIJQ48Ev6pChi4Q1hc2Nabs2j86CcPsV7GJdCq6dRlILRumZ7cAru_wor7pBm-Ek0idYs1YsAlKCfo.bCQKlwL2RxMM8OgelU2IcU1CkgMgYdxHwsLlfi2Uj1I&dib_tag=se&keywords=logo%2Bdesigner%2Belectronics&qid=1772269948&sprefix=logo%2Bdesigner%2Belectronics%2Caps%2C362&sr=8-8-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9idGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=bc7605a733229b79da3495d11d122fc2&language=en_US&ref_=as_li_ss_tl"
+  },
+                 
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "gianotter Desk Organizers and Accessories with File Holder, 4-Tier Desk Accessories & Workspace Organizers with Drawer and 2 Pen Holder, Paper Organizer for Office Supplies (Rose Gold)",
+    price: 24.99,
+    image: "https://m.media-amazon.com/images/I/81iE5xG2+pL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0BWTT3WK1?pd_rd_i=B0BWTT3WK1&pd_rd_w=6zKe1&content-id=amzn1.sym.f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_p=f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_r=W1HAWWADC1QJMC7EN4MA&pd_rd_wg=75Vjv&pd_rd_r=adfb8528-9e0e-4946-b2e5-2c7082d56705&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=db6ed23137b6ae6a5ce3f1b1867a4706&language=en_US&ref_=as_li_ss_tl"
+  },
+          
+    {
+    category: "electronics",
+    sub: "desining",
+    title: "Samsung Galaxy Tab S10 Lite, 6GB RAM, 128GB, 2TB Expand, Long Battery Life, 10.9inch LCD, S Pen for Note-Taking, Exynos 1380, Circle to Search, AI Tools, Gray",
+    price: 315.12 ,
+    image: "https://m.media-amazon.com/images/I/61jwusQUP2L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Samsung-Galaxy-Expand-Battery-Note-Taking/dp/B0FF5JJ3CP?crid=2XDGHHKFOTSAI&dib=eyJ2IjoiMSJ9.f4lHPZaEfK4x_l4mC2WKY12gdNV4HRkvbPFfmrv2LMC_ZySDPYpryx8LOf9_pCzHqzmGMEDySZhaqTv8R5-gS09ArNMcPog0KShcd9lAaO3NN_aEkrp-KVByO_SKnLWKqBggp3YvkphE4sC-7q_mfugU4I5kxD_q8Xxm2f1ZvB9Z3-MYZXMydYE1XQffTlBWxmfG3zOiQaNZxCDyy_9v1sbF4fXPRGbCQO24BtbPRcU.-PC8QbdSS52QKk_jfGvEiZwZrJKUyWmh-3wH-bL_xQ8&dib_tag=se&keywords=i%2Bpad&qid=1772270204&sprefix=i%2Bpad%2Caps%2C341&sr=8-8&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=9c9448ae4e0c32466548d0cb0e4f795e&language=en_US&ref_=as_li_ss_tl"
+  },
+           
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "Homedics Tabletop Water Fountain, Home Décor Soothing Sound Machine - Automatic Pump, Deep Basin & Natural River Rocks. Indoor Zen Relaxation for Office, Living Room, or Bedroom, 8.25inch Tall",
+    price: 39.99 ,
+    image: "https://m.media-amazon.com/images/I/61vEjplUwlL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Homedics-Tabletop-Water-Fountain-Soothing/dp/B000QTUJXS?crid=I28OJGUCZCA3&dib=eyJ2IjoiMSJ9.naqM79XA6t5BvzswdEKty0aOIkpix43kZgCqua4m92_E6AEgeEzBsM9gnLCXOXDAVyA8bkNmytakQ57iTLDzGLgKVEqw4OWzTR7-0ZG1QuXpYl7mqx0eVUuIk7oPBt4JsuU50HpMHxcr-1gyAh616FoDPqmv2tzGixt-lwYOUAC4EpHgimP1wJBcOgP_MthHzVCP1CqylbCeErgSRdglzQ1lFk_BoYc1BzW0REs-7USFy2-jQkA9Ly5S__CMK62czDcgS67vGP-fpIKxrYLLSg671Q2nxscTioiaPH5M0ww.Wn5xj7kWVdCWiSvFyfULweq6vOw7MygW_IcJoCN5e70&dib_tag=se&keywords=home%2Bdecor&qid=1772270455&sprefix=home%2B%2Caps%2C397&sr=8-11&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=a6d64171c42ac021b6db81f371d0204e&language=en_US&ref_=as_li_ss_tl"
+  },
+                               
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "EUDELE Adhesive Shower Caddy, 5 Pack Rustproof Stainless Steel Bath Organizers With Large Capacity, No Drilling Shelves for Bathroom Storage & Home Decor",
+    price: 19.99 ,
+    image: "https://m.media-amazon.com/images/I/81S6FPdEHWL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/EUDELE-Adhesive-Organizer-Rustproof-Stainless/dp/B0BLSCY6PR?crid=I28OJGUCZCA3&dib=eyJ2IjoiMSJ9.MPE2IGKOwOYVYQPgzX7UQOms4x64CARupRn_uWLIR9fsu-UNM_3ky-u_jZHH7EAL8w6XcXY9l-dl35fUbpfICNGDiQ2YUIAzsgTe1-k2M-Jua8IOHK_aLQTUC6Dy1WS_PDu7SQrV3DQvn2h6e2GfDx2E0aCwhemWpqQeBytTnNMLPHw01M81vhRwzcv4Cmvdt0PuAVKLaD0wl2-hTAvP1U4W6RNGsCQBBHmIrhBX1-sRYeerecb55gKNHuNb_B4HEkhruLUC4QlHv478lY0V5r1FwpgSy7BTpMcPwsD8ors.rXbmNT9YB2NHJ-x0cpF5Yw0XMeQ7Ahn2O2q8Kx0FVqo&dib_tag=se&keywords=home%2Bdecor&qid=1772271181&sprefix=home%2B%2Caps%2C397&sr=8-19&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=64f33354aca147b88477b37901f58a56&language=en_US&ref_=as_li_ss_tl"
+  },
+                                      
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "2x6 Hallway Washable Runner Rug : Vintage Soft Kitchen Laundry Runner with Non Slip Backing Farmhouse Entryway Living Room Floor Mat Stain Resistant Carpet for Bedroom Bathroom Distressed Beside Rug",
+    price: 21.99 ,
+    image: "https://m.media-amazon.com/images/I/71UddNOmg5L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/2x6-Hallway-Washable-Runner-Rug/dp/B0D89V1RX1?crid=I28OJGUCZCA3&dib=eyJ2IjoiMSJ9.MPE2IGKOwOYVYQPgzX7UQOms4x64CARupRn_uWLIR9fsu-UNM_3ky-u_jZHH7EAL8w6XcXY9l-dl35fUbpfICNGDiQ2YUIAzsgTe1-k2M-Jua8IOHK_aLQTUC6Dy1WS_PDu7SQrV3DQvn2h6e2GfDx2E0aCwhemWpqQeBytTnNMLPHw01M81vhRwzcv4Cmvdt0PuAVKLaD0wl2-hTAvP1U4W6RNGsCQBBHmIrhBX1-sRYeerecb55gKNHuNb_B4HEkhruLUC4QlHv478lY0V5r1FwpgSy7BTpMcPwsD8ors.rXbmNT9YB2NHJ-x0cpF5Yw0XMeQ7Ahn2O2q8Kx0FVqo&dib_tag=se&keywords=home%2Bdecor&qid=1772271181&sprefix=home%2B%2Caps%2C397&sr=8-34&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=8404fde4500188f8a8314eca0c215ef9&language=en_US&ref_=as_li_ss_tl"
+  },
+                           
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "10inch Under Cabinet Lighting, 2 Pack Rechargeable Motion Sensor Light Indoor, 5 Levels Dimmable Magnetic Closet Lights, Wireless Under Counter Lights for Kitchen, Stairs",
+    price: 26.99 ,
+    image: "https://m.media-amazon.com/images/I/61x62WLGvNL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Rechargeable-Operated-Magnetic-Dimmable-Wireless/dp/B0BDF8CVBN?crid=I28OJGUCZCA3&dib=eyJ2IjoiMSJ9.MPE2IGKOwOYVYQPgzX7UQOms4x64CARupRn_uWLIR9fsu-UNM_3ky-u_jZHH7EAL8w6XcXY9l-dl35fUbpfICNGDiQ2YUIAzsgTe1-k2M-Jua8IOHK_aLQTUC6Dy1WS_PDu7SQrV3DQvn2h6e2GfDx2E0aCwhemWpqQeBytTnNMLPHw01M81vhRwzcv4Cmvdt0PuAVKLaD0wl2-hTAvP1U4W6RNGsCQBBHmIrhBX1-sRYeerecb55gKNHuNb_B4HEkhruLUC4QlHv478lY0V5r1FwpgSy7BTpMcPwsD8ors.rXbmNT9YB2NHJ-x0cpF5Yw0XMeQ7Ahn2O2q8Kx0FVqo&dib_tag=se&keywords=home%2Bdecor&qid=1772271181&sprefix=home%2B%2Caps%2C397&sr=8-35&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=b35adaafa2ebafbd7fb3dc57c9eef8ad&language=en_US&ref_=as_li_ss_tl"
+  },
+                  
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "Bamboo Couch Cup Holder for Drink & Snack, Couch Arm Table & Couch Armrest Tray with Couch Cup Holder Tray Table for Couch, Recliner, or Loveseat.",
+    price: 25.99 ,
+    image: "https://m.media-amazon.com/images/I/71rQ9GzbBdL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Bamboo-Couch-Cup-Holder-Recliner/dp/B0DC6TQBRH?crid=1LU956TFTDJU8&dib=eyJ2IjoiMSJ9.Su0FotdCf8NOuSLSoF1cYLo_KXyp4ILIHqQlYj0JPtwfx-Xi6JPeJG2B17j2Q6c20gaUTwOCw_jSvVcJl7yyeTF6-H3ZtEB1xYa7JY2dVKuDXQjioBbdbQ37Q4eLvT7uR2rsL5yn6eP4V1_P-yzdlxqhCZwPGPi1YF5ZmM-imPlTz7H8QYcDvzrEMpaC02JyXqgTNP97ZvO_3jlUjHaedVrJU-cv3fKq9-EWbnoy_i1GdXwqdc_tZ3or5fn2LMXpwMoAsEP7qRscx07UxeJ--Yyg9CtdoaGziZgs8yk_TyA.34WiC4cb0TFGrcmYuDT3wKcmkzDkcfmaCe8yTUxBCt0&dib_tag=se&keywords=couch&qid=1772276237&sprefix=couch%2Caps%2C356&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=ab87816dd6f4932095557dcd0638eccd&language=en_US&ref_=as_li_ss_tl"
+  },
+                
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "79inch Convertible Sleeper Sofa Bed with Cylindrical Pillow, Corduroy Folding Mattress Couch with Fixed-Shape Frame, Floor Sofa Lounge Couch for Living Room Bedroom Lounge Studio",
+    price: 379.99 ,
+    image: "https://m.media-amazon.com/images/I/81UkHUaqibL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/WHGBJA-Convertible-Cylindrical-Corduroy-Fixed-Shape/dp/B0FVWT22KS?crid=1LU956TFTDJU8&dib=eyJ2IjoiMSJ9.Su0FotdCf8NOuSLSoF1cYLo_KXyp4ILIHqQlYj0JPtwfx-Xi6JPeJG2B17j2Q6c20gaUTwOCw_jSvVcJl7yyeTF6-H3ZtEB1xYa7JY2dVKuDXQjioBbdbQ37Q4eLvT7uR2rsL5yn6eP4V1_P-yzdlxqhCZwPGPi1YF5ZmM-imPlTz7H8QYcDvzrEMpaC02JyXqgTNP97ZvO_3jlUjHaedVrJU-cv3fKq9-EWbnoy_i1GdXwqdc_tZ3or5fn2LMXpwMoAsEP7qRscx07UxeJ--Yyg9CtdoaGziZgs8yk_TyA.34WiC4cb0TFGrcmYuDT3wKcmkzDkcfmaCe8yTUxBCt0&dib_tag=se&keywords=couch&qid=1772276352&sprefix=couch%2Caps%2C356&sr=8-13-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=f3642fb7227e2e2320dffb65f5f43bda&language=en_US&ref_=as_li_ss_tl"
+  },
+                     
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "jela Foldable Sofa Bed Large Soft Foam Convertible Sleeper Chair Luxury Miss Fabric Fold Out Chair Bed Floor Couch with Back Support Floor Sofa for Living Room Bedroom (83inchx33inch,Coffee Brown)",
+    price: 139.00 ,
+    image: "https://m.media-amazon.com/images/I/81EOmMnihbL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0CNQYCJ9P?pd_rd_i=B0CNQYCJ9P&pd_rd_w=gXpzQ&content-id=amzn1.sym.8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_p=8c2f9165-8e93-42a1-8313-73d3809141a2&pf_rd_r=535TAG9N2NDCBHYYNF0H&pd_rd_wg=uynyL&pd_rd_r=31ad9d0c-e2f3-4e52-af2d-d0704d91a9cb&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=9b6c6cf0ba0639a4fcdb4aa4a8d1a9d6&language=en_US&ref_=as_li_ss_tl"
+  },
+                    
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "Folding Sofa Bed, Flannel Futon Couch Bed with Pillow and Blanket, Convertible Sleeper Chair for Living Room Bedroom, Pink",
+    price: 84.15 ,
+    image: "https://m.media-amazon.com/images/I/81xC5eLdoWL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0G34Z33Y6?pd_rd_i=B0G34Z33Y6&pd_rd_w=ku0dg&content-id=amzn1.sym.f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_p=f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_r=JH2ENTXRBTZFFT8XYA4A&pd_rd_wg=IayrK&pd_rd_r=c41bb03a-1463-4d53-976d-ce8eeb19af91&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=5910b1a8ce48d823fd1808dc24b033e4&language=en_US&ref_=as_li_ss_tl"
+  },
+      
+    {
+    category: "electronics",
+    sub: "home decor",
+    title: "KAISITE Modern Chandelier Dining Room Light Fixture Over Table 10-Light Sputnik Chandelier Ceiling Light Fixture Height Adjustable Black and Gold Mid Century Pendant Lighting for Kitchen Living Room",
+    price: 77.99 ,
+    image: "https://m.media-amazon.com/images/I/71FixVqqTBL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Chandelier-KAISITE-Lighting-Chandeliers-Bedroom-10-Lights/dp/B08FHQKM31?content-id=amzn1.sym.95c17fe7-ebcb-48de-a1a0-a239e3576d28%3Aamzn1.sym.95c17fe7-ebcb-48de-a1a0-a239e3576d28&crid=2UX717KG9HWN1&cv_ct_cx=lightings&keywords=lightings&pd_rd_i=B08FHQKM31&pd_rd_r=be78b24a-7261-48b7-aa87-2f1e4c5c7c0d&pd_rd_w=DKAcZ&pd_rd_wg=1SgKh&pf_rd_p=95c17fe7-ebcb-48de-a1a0-a239e3576d28&pf_rd_r=DTQGGYME314Z0WS640Z3&qid=1772276653&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=lightings%2Caps%2C358&sr=1-5-905f6665-3817-4290-88eb-a2363c78a4a1-spons&aref=ZTbS0kQsqX&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=3ad80ae9bdb06f946beb49ad69d89cdc&language=en_US&ref_=as_li_ss_tl"
+  },
+                 
     {
     category: "electronics",
     sub: "kitchen",
@@ -154,6 +285,123 @@ const products = [
     price: 22.99 ,
     image: "https://m.media-amazon.com/images/I/71NpF4JP7HL._AC_SL1500_.jpg",
     link: "https://www.amazon.com/Electric-Automatic-Adjustable-Coarseness-Upgraded/dp/B0DJSQQ1ZW?crid=1I7ZODV2U8J1X&dib=eyJ2IjoiMSJ9.8BMc85SBGRuxtGxbwooXvTl-wStIyLw4biDt1TSjgnZf8px3Kmi29k_KNIhnm98WovVesIQ3_fClCM4KFLyw5x6Hl7fW_-iPRi0E41-fcNLhXBqQIs-nfPnN5PBW3OqahYBTTmyBgLlHboAZm_-yG03o6yNuLn7Q69KhiC7I3iaV25XHhZcqfxZvURm621HBs6uw2p8_cs1iIOcRcGTWEJLngKzkAh0MGQ8qXLvG3C0.cNFwmxOAnvR_phFaeMuMtzSPH4QvlpmN_01AtdmjdTA&dib_tag=se&keywords=kitchen%2Belectronics&qid=1772024083&sprefix=kitchen%2Belec%2Caps%2C354&sr=8-15&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=f838fba317738b5695521cb74e0e94c6&language=en_US&ref_=as_li_ss_tl"
+  },
+    
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Cosori 9-in-1 TurboBlaze Air Fryer 6 Qt, Premium Ceramic Coating, 90°–450°F, Precise Heating for Even Results, Air Fry, Roast, Bake, Broil, Dry, Frozen, Proof, Reheat, Keep Warm, 120V, Dark Gray",
+    price: 89.99 ,
+    image: "https://m.media-amazon.com/images/I/81lTKYX5LNL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ff7229985252ba5fc4b4b420baf246e5&language=en_US&ref_=as_li_ss_tl"
+  },
+               
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Astercook Knife Set, 13 Pieces Kitchen Knives Set with Healthy Anti-Rust Coating, Dishwasher Safe, Stainless Steel Chef Knife Sets with 6 Blade Guards, Perfect Holiday Gifts for Kitchen",
+    price: 19.99,
+    image: "https://m.media-amazon.com/images/I/714bnp4jQrL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Astercook-Kitchen-Anti-Rust-Dishwasher-Stainless/dp/B0D9B96TBX?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-8&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=9798b8110da2f7f0763b7f3ea362e57f&language=en_US&ref_=as_li_ss_tl"
+  },
+   
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "KRAUS Kore 32-Inch Undermount Workstation 16 Gauge Single Bowl Stainless Steel Kitchen Sink with Accessories, KWU110-32",
+    price: 399.95,
+    image: "https://m.media-amazon.com/images/I/71N0nlpP53L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/KWU110-32-Workstation-Undermount-Integrated-Accessories/dp/B07S2DX7J9?_encoding=UTF8&content-id=amzn1.sym.b2dc4cca-d6d4-4776-92b2-3d88a5464e84%3Aamzn1.sym.b2dc4cca-d6d4-4776-92b2-3d88a5464e84&cv_ct_cx=kitchen%2Bproducts&keywords=kitchen%2Bproducts&pd_rd_i=B07S2DX7J9&pd_rd_r=ab660bde-c0e1-4c09-a5c2-297e75438d75&pd_rd_w=SiTdZ&pd_rd_wg=oX2do&pf_rd_p=b2dc4cca-d6d4-4776-92b2-3d88a5464e84&pf_rd_r=J2PKMH5V52131WWB9NHS&qid=1772276790&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-3-38f1b294-ceac-4b0f-b4a4-629ab102646f-spons&aref=JpgbWwJXLC&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=1af9e9cf9c3d69aafc82b2f6f347ab8c&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "KRAUS Bolden Commercial Style 2-Function Single Handle Pull Down Kitchen Faucet in Matte Black, KPF-1610MB",
+    price: 179.95 ,
+    image: "https://m.media-amazon.com/images/I/61WYEkPtABL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Kraus-KPF-1610MB-Bolden-Single-Kitchen/dp/B075QW4V96?pd_rd_w=Sd6iD&content-id=amzn1.sym.ea1d9533-fbb7-4608-bb6f-bfdceb6f6336&pf_rd_p=ea1d9533-fbb7-4608-bb6f-bfdceb6f6336&pf_rd_r=5JGTCDWAQN9976Z0NS10&pd_rd_wg=FP5Ch&pd_rd_r=ee94a2d2-e5e1-4377-b481-3654af968194&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=c0fa0c4f29f9f59426a19ed630f9ff09&language=en_US&ref_=as_li_ss_tl"
+  },
+           
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Extra Large Expandable Silverware Organizer, BPA-Free Food-Safe Cutlery Flatware Organizer, Kitchen Utensil Drawer Organizer, Adjustable Silverware Holder for Spoons Forks Knives, Black",
+    price: 5.99 ,
+    image: "https://m.media-amazon.com/images/I/711fUeua6GL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/ukeetap-Expandable-Silverware-Organizer-Adjustable/dp/B0F2TB2MMP?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-18&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=2b56e739ea7e6ddfbb28bc191251fb46&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Chef Preserve Compact Vacuum Sealer for Food (Vacuum Sealer Machine + 30 Reusable Vacuum Bags) Powerful Handheld Vacuum Sealer Machine, Seal Meal Saver, Portable Food Sealer",
+    price: 79.99 ,
+    image: "https://m.media-amazon.com/images/I/71XEvtKF9oL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Chef-Preserve-Vacuum-Sealer-Bags/dp/B0D3ZBFMW6?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-22-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=0f7f8da74964f40fabd4b883b9c11f47&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Priority Chef Stainless Steel Mixing Bowls with Lids Set - Premium 30Pcs with 6pc Metal Bowl Set for Kitchen, 3 Graters, Airtight Lids, Non-Slip Bases & Silicone Utensils, Black",
+    price: 39.99,
+    image: "https://m.media-amazon.com/images/I/81gn7DVSl1L._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Priority-Chef-Stainless-Steel-Mixing/dp/B0DS2PW52X?pd_rd_w=ptQsI&content-id=amzn1.sym.bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_p=bb4a0aac-c2b4-4b4b-a0c8-9aa89b28dce3&pf_rd_r=MV32X4S59AM8YVPQ3VD1&pd_rd_wg=OrRH4&pd_rd_r=5364ab66-752f-4820-9e14-ba04e8dd93ea&pd_rd_i=B0DS2PW52X&psc=1&linkCode=ll2&tag=trendcartbd-20&linkId=46c9bb33bfa9f5b0002bb9388f78197f&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "bella 2 Slice Slim Toaster, Fits-anywhere™ Kitchenware, 6 Setting Shade Control with Reheat & Cancel Buttons, Fits sourdough, 10” Long Slot, Anti Jam & Auto Shutoff, 900 Watt, Oatmilk",
+    price: 19.99 ,
+    image: "https://m.media-amazon.com/images/I/71zZ0tSkfHL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Toaster-Fits-anywhereTM-Kitchenware-Setting-Removable/dp/B0CYJBB2JQ?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-27&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=a30789c0638ffc871c79c0e248b43a62&language=en_US&ref_=as_li_ss_tl"
+  },
+       
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "BestOffice | 13 Gallon Trash Can with Lid | Automatic Touchless Garbage Can | Odor Control | Modern Oval Design | Easy to Clean | Stainless Steel | Fits Any Kitchen, Bathroom, Office or Home",
+    price: 54.99 ,
+    image: "https://m.media-amazon.com/images/I/61VDrQle9zL._SL1500_.jpg",
+    link: "https://www.amazon.com/Can-Gallon-Automatic-Garbage-High-Capacity/dp/B018LNFQWE?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-36&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=5dafaad67f2a6e808e893041d130fc84&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Zulay Kitchen Powerful Milk Frother Wand With 2 Duracell Batteries - Ultra Fast Handheld Drink Mixer - Electric Whisk Foam Maker for Coffee, Lattes, Cappuccino, Matcha, Hot Chocolate & Creamer - Black",
+    price: 9.99 ,
+    image: "https://m.media-amazon.com/images/I/811-tPSBMML._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Zulay-Original-Milk-Frother-Handheld/dp/B09D8T11YS?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-44&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=ffb49d81121cdd465e4db788ad405f33&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Ganiza Smoothie Blender, 900W Blenders for Shakes and Smoothies, 15-Piece Personal Blender and Grinder Combo for Kitchen, Smoothies Maker with 4 BPA-Free Portable Cup, Nutritious Recipe",
+    price: 31.31,
+    image: "https://m.media-amazon.com/images/I/81VoJ7+UmaL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/Ganiza-Smoothie-Smoothies-15-Piece-Nutritious/dp/B0CCDG91CS?pd_rd_w=TmLyO&content-id=amzn1.sym.751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_p=751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_r=N7T8CYWFGEF599J3Y8AK&pd_rd_wg=xAwBl&pd_rd_r=bcc1d4a8-cba2-47f7-aab5-227ae0b39160&pd_rd_i=B0CCDG91CS&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=5f6f285e151de56bbe9c2402f06816f2&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "Ninja BC151NV Blast Portable Blender, Cordless, 18oz. Vessel, Personal Blender-for Shakes & Smoothies, BPA Free, Leakproof-Lid & Sip Spout, USB-C Rechargeable, Dishwasher Safe Parts, Denim Blue",
+    price: 54.99 ,
+    image: "https://m.media-amazon.com/images/I/81EYFDZ+xKL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/dp/B0C2FF74J6?pd_rd_i=B0C2FF74J6&pd_rd_w=tm9sE&content-id=amzn1.sym.f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_p=f2f1cf8f-cab4-44dc-82ba-0ca811fb90cc&pf_rd_r=RQ4WRYXB9D0M8NJ3ABMR&pd_rd_wg=kes95&pd_rd_r=4a77eb2a-89a1-4935-9880-544a7b0b8539&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWxfdGhlbWF0aWM&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=1fac6afd51ecb39806c31e2fc2557e87&language=en_US&ref_=as_li_ss_tl"
+  },
+  
+    {
+    category: "electronics",
+    sub: "kitchen",
+    title: "SNOWCLAD Stainless Steel Cutting Board,Double Sided Steel Bread Boards for kitchen,Stainless Steel/Wheat straw pp Large Board for meat,non toxic Chopping,16 * 11 Inch,Dishwasher Safe",
+    price: 22.99 ,
+    image: "https://m.media-amazon.com/images/I/91Y8ZU6pAtL._AC_SL1500_.jpg",
+    link: "https://www.amazon.com/SNOWCLAD-Stainless-Cutting-Dishwasher-Chopping/dp/B0D7CZ9Y7D?_encoding=UTF8&content-id=amzn1.sym.cb61fcae-983b-4448-8bb5-fd4467ebdb80&dib=eyJ2IjoiMSJ9.i9FoTtxQUhJ5z6Bpm5LaWzazW26ZK9BI0oh7WcVDIFfTG3VkBF1leTgKrYVH6xbq6gte3MON_6JxGMKxMyoIRFknzmLJZBsVlQX8vAh2AUvwnCIyJkRxrb9iY2THDUI4d1yU0xjXSnawGeMkAzEMMYhScpc3fBIj-c4sweNFqe5FhyZcIIGer8aojdlQK3yB950FkBVqTe1N1Qvt67_KVCpf4oFPB9adPPLQJeLhGuqXAdjMlSzAilvRvrKJwQic3WpIPQBH-neTsC1h68Xeum3TuV4XoizNMOE2R6t4MFs.z4deK0HlaZPPiuYZuT2jVyVVdCP_Cw0YSCk-Oh0c1EE&dib_tag=se&keywords=kitchen%2Bproducts&pd_rd_r=95fd78ba-1d0f-4363-ba9d-02d92ed7c112&pd_rd_w=3RWGm&pd_rd_wg=cFoaD&qid=1772276790&sr=8-58&th=1&linkCode=ll2&tag=trendcartbd-20&linkId=3709e010578fc24aaec979388deb14f2&language=en_US&ref_=as_li_ss_tl"
   },
   
     {
